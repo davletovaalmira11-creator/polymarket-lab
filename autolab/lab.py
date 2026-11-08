@@ -10,7 +10,7 @@
 Данные: results/sht_lab.json (пишет worker v3: снимки живых окон каждые 5 мин).
 Вывод: results/lab.json для дашборда. Запуск каждые 30 минут. Без зависимостей.
 """
-import json, math, os, time, urllib.request
+import json, math, os, re, time, urllib.request
 
 GAMMA = "https://gamma-api.polymarket.com"
 SRC = "results/sht_lab.json"
@@ -70,6 +70,44 @@ def cleanup(lab):
             lst.sort()
             for start, k in lst[: len(lst) - CAP]:
                 lab.pop(k, None)
+
+SERIES = [
+    ("btc-up-or-down-5m", "BTCUSDT", 300, "sht5"),
+    ("btc-up-or-down-15m", "BTCUSDT", 900, "sht15"),
+    ("btc-up-or-down-1h", "BTCUSDT", 3600, "sht1h"),
+    ("eth-up-or-down-5m", "ETHUSDT", 300, "sht5"),
+    ("eth-up-or-down-15m", "ETHUSDT", 900, "sht15"),
+    ("sol-up-or-down-5m", "SOLUSDT", 300, "sht5"),
+]
+
+def backfill(lab):
+    """Бэкфилл истории: закрытые окна с официальным исходом из events API (без снимков)."""
+    t0 = time.time()
+    added = 0
+    for series_slug, sym, win_s, tag in SERIES:
+        if time.time() > t0 + BUDGET_S * 0.35: break
+        for off in (0, 100):
+            try:
+                evs = fetch(GAMMA + "/events?series_slug=" + series_slug + "&closed=true&limit=100&offset=" + str(off) + "&order=endDate&ascending=false", 12)
+            except Exception:
+                break
+            if not isinstance(evs, list) or not evs: break
+            fresh = False
+            for ev in evs:
+                slug = ev.get("slug", "")
+                mm = re.search(r"(\d{9,})$", slug)
+                if not mm or slug in lab: continue
+                src = ev if ev.get("outcomePrices") else (ev.get("markets") or [{}])[0]
+                pr = [fnum(x) for x in plist(src.get("outcomePrices", "[]"))]
+                if len(pr) != 2 or max(pr) < 0.99: continue
+                start = int(mm.group(1))
+                lab[slug] = {"series": series_slug, "tag": tag, "sym": sym, "win_s": win_s,
+                             "start": start, "end": start + win_s, "snaps": [],
+                             "outcome": 1 if pr[0] >= 0.5 else 0, "src": "hist"}
+                added += 1
+                fresh = True
+            if not fresh: break
+    return added
 
 def settle(lab):
     """Разметка исходов: у закрытых окон берём реальный расчёт Polymarket."""
@@ -135,6 +173,10 @@ def model_stats(ws, ids_is):
         xs = [x for x in lst if x[key] is not None]
         if not xs: return None
         return round(100.0 * sum((1 if x[key] >= 0.5 else 0) == x[2] for x in xs) / len(xs), 1)
+    def bl(lst):
+        xs = [x for x in lst if x[0] is not None and x[1] is not None]
+        if not xs: return None
+        return round(sum((((x[0] + x[1]) / 2.0) - x[2]) ** 2 for x in xs) / len(xs), 4)
     def fm(a, b):
         if a is None or b is None: return None
         return "мод " + str(a) + " / рынок " + str(b)
@@ -144,6 +186,7 @@ def model_stats(ws, ids_is):
         "oos": {"n": len(per["oos"]), "brier": brier(per["oos"], 0), "acc": acc(per["oos"], 0)},
         "mkt_cmp": {"is": fm(brier(per["is"], 0), brier(per["is"], 1)), "oos": fm(brier(per["oos"], 0), brier(per["oos"], 1))},
         "mkt_brier": {"is": brier(per["is"], 1), "oos": brier(per["oos"], 1)},
+        "blend": {"is": bl(per["is"]), "oos": bl(per["oos"])},
         "per_tag": {t: {"n": len(v), "brier": brier(v, 0), "acc": acc(v, 0)} for t, v in sorted(per_tag.items())},
     }
 
@@ -237,7 +280,20 @@ def streak_stats(ws):
                         "n_dn": dn_n, "p_after_dn": None if pd is None else round(pd, 3)})
     return out
 
-def hyps(model, rule, bins, stk, ws):
+def hour_stats(ws):
+    """Доля Up по часам UTC: гипотеза - время суток не влияет."""
+    by = {}
+    for w in ws:
+        by.setdefault(time.gmtime(w["start"]).tm_hour, []).append(w["outcome"])
+    base = (sum(w["outcome"] for w in ws) / len(ws)) if ws else 0.5
+    out = []
+    for h in sorted(by):
+        if len(by[h]) >= 50:
+            r = sum(by[h]) / len(by[h])
+            out.append({"hour": h, "n": len(by[h]), "up_rate": round(r, 3), "flag": abs(r - base) >= 0.10})
+    return out, round(base, 3)
+
+def hyps(model, rule, bins, stk, ws, hours):
     H = []
     def add(name, note, is_n, is_v, oos_n, oos_v, ok, collecting):
         status = "⏳ копим данные" if collecting else ("✅ подтверждено OOS" if ok else "❌ отвергнуто OOS")
@@ -282,20 +338,39 @@ def hyps(model, rule, bins, stk, ws):
     add("Стрики не дают эджа (эффективность)", "P(Up) после серии k в пределах 50±10%",
         len(big), "уклонений: " + str(len(dev)), len(big), "уклонений: " + str(len(dev)),
         ok5, len(ws) < 300)
+    # H6: смесь модели и рынка бьёт обоих
+    b_is, b_oos = model["blend"]["is"], model["blend"]["oos"]
+    vals = (b_is, b_oos, model["is"]["brier"], model["mkt_brier"]["is"], model["oos"]["brier"], model["mkt_brier"]["oos"])
+    ok6 = None not in vals and oos_n >= MIN_OOS and \
+        b_is < min(model["is"]["brier"], model["mkt_brier"]["is"]) and \
+        b_oos < min(model["oos"]["brier"], model["mkt_brier"]["oos"])
+    add("Смесь 50/50 модели и рынка бьёт обоих", "Brier смеси < min(модель, рынок) на обеих половинах",
+        model["is"]["n"], b_is, oos_n, b_oos, ok6, oos_n < MIN_OOS)
+    # H7: время суток не влияет на исход
+    flagged_h = [x for x in hours if x["flag"]]
+    ok7 = not flagged_h
+    names_h = ", ".join(str(x["hour"]) + ":00 UTC" for x in flagged_h[:3])
+    add("Время суток не влияет на исход Up/Down", "уклонения >= 10пп от базы при n >= 50 в часе" + (": " + names_h if names_h else ""),
+        len(hours), "уклонений: " + str(len(flagged_h)),
+        len(hours), "уклонений: " + str(len(flagged_h)),
+        ok7, len(ws) < 300)
     return H
 
 def main():
     lab = jload(SRC, {})
     if not isinstance(lab, dict): lab = {}
     cleanup(lab)
+    bf = backfill(lab)
     done = settle(lab)
     ws = windows_sorted(lab)
-    ids_is = split_ids(ws)
-    model = model_stats(ws, ids_is)
-    rule = rule_trades(ws, ids_is)
-    bins = calib_bins(ws, ids_is)
+    ws_snap = [w for w in ws if w.get("snaps")]
+    ids_is = split_ids(ws_snap)
+    model = model_stats(ws_snap, ids_is)
+    rule = rule_trades(ws_snap, ids_is)
+    bins = calib_bins(ws_snap, ids_is)
     stk = streak_stats(ws)
-    H = hyps(model, rule, bins, stk, ws)
+    hours, base_up = hour_stats(ws)
+    H = hyps(model, rule, bins, stk, ws, hours)
     settled = len(ws)
     snaps = sum(len(e.get("snaps", [])) for e in lab.values())
     span_h = round((max(w["start"] for w in ws) - min(w["start"] for w in ws)) / 3600.0, 1) if ws else 0
@@ -308,17 +383,23 @@ def main():
         "updated": now(),
         "status": "ready" if settled >= READY_N else "collecting",
         "status_note": note,
-        "settled_this_run": done,
-        "data": {"windows": len(lab), "settled": settled, "snaps": snaps, "span_h": span_h},
+        "settled_this_run": done, "backfilled": bf, "base_up_rate": base_up,
+        "data": {"windows": len(lab), "settled": settled, "snaps": snaps, "span_h": span_h,
+                 "hist": sum(1 for e in lab.values() if e.get("src") == "hist")},
         "model": model,
         "rule": rule,
         "bins": bins,
         "streaks": stk,
+        "hours": hours,
         "hyp": H,
         "golden": [{"name": g["name"], "note": g["note"]} for g in golden],
     }
     jsave(SRC, lab)
     jsave(OUT, out)
+    h3 = [h for h in H if h["name"].startswith("Правило")]
+    jsave("results/strategies.json", {"updated": now(),
+        "rule_v2": {"status": h3[0]["status"] if h3 else "⏳ копим данные", "ev_oos": rule["oos"]["ev"], "n_oos": rule["oos"]["n"]},
+        "golden": [g["name"] for g in golden]})
     print("lab: windows %d, settled %d (+%d), snaps %d, hyps %d, golden %d" % (
         len(lab), settled, done, snaps, len(H), len(golden)))
 
