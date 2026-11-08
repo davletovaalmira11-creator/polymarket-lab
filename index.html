@@ -13,7 +13,7 @@
 body { background:var(--bg); color:var(--text); font-family:Inter,system-ui,sans-serif; padding:14px; padding-bottom:40px; max-width:760px; margin:0 auto; -webkit-tap-highlight-color:transparent; }
 .hd { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
 .hd h1 { font-size:17px; font-weight:800; } .hd .tag { font-size:10px; color:var(--dim); border:1px solid var(--border); border-radius:100px; padding:4px 10px; }
-.nav { display:grid; grid-template-columns:repeat(5,1fr); gap:6px; margin-bottom:14px; }
+.nav { display:grid; grid-template-columns:repeat(6,1fr); gap:6px; margin-bottom:14px; }
 .nav button { background:var(--card); border:1px solid var(--border); color:var(--dim); border-radius:10px; padding:10px 4px; font-family:inherit; font-size:11px; font-weight:600; cursor:pointer; }
 .nav button.on { color:#fff; background:linear-gradient(135deg,#1f6feb,#a371f7); border-color:transparent; }
 .view { display:none; } .view.on { display:block; }
@@ -38,11 +38,12 @@ svg text { font-family:Inter,sans-serif; }
 </style>
 </head>
 <body>
-<div class="hd"><h1>🔮 Polymarket Lab <span style="color:var(--dim);font-weight:400;font-size:11px">v1.2</span></h1><span class="tag" id="upd">загрузка…</span></div>
+<div class="hd"><h1>🔮 Polymarket Lab <span style="color:var(--dim);font-weight:400;font-size:11px">v1.3</span></h1><span class="tag" id="upd">загрузка…</span></div>
 <div class="nav">
 <button class="on" onclick="show('ov')">📊 Обзор</button>
 <button onclick="show('sig')">⚡ Сигналы</button>
 <button onclick="show('pf')">💼 Портфель</button>
+<button onclick="show('lab')">🧪 Лаборатория</button>
 <button onclick="show('sht')">⏱ Бинари</button>
 <button onclick="show('sys')">⚙️ Система</button>
 </div>
@@ -86,6 +87,29 @@ svg text { font-family:Inter,sans-serif; }
   </div>
   <div class="panel"><h2>🧾 Закрытые бинарные сделки</h2><div class="tbl-wrap"><table id="shtc-t"></table></div></div>
 </div>
+<div class="view" id="v-lab">
+  <div class="panel"><h2>🧪 Лаборатория бинарных окон <span class="chip" id="lab-status">—</span></h2>
+    <div class="kpis" style="margin-bottom:12px">
+      <div class="kpi"><div class="label">Окон в базе</div><div class="value" id="k-labn">—</div><div class="note" id="k-labsp"></div></div>
+      <div class="kpi"><div class="label">Размечено исходов</div><div class="value" id="k-labr">—</div><div class="note">метка = реальный расчёт Polymarket</div></div>
+      <div class="kpi"><div class="label">Снимков цен</div><div class="value" id="k-labs">—</div><div class="note">снимок живых окон каждые ~5 мин</div></div>
+      <div class="kpi"><div class="label">Brier модели</div><div class="value" id="k-labb">—</div><div class="note">0.25 = монетка, меньше — лучше</div></div>
+    </div>
+    <div class="legend" id="lab-note">загружаю данные лаборатории…</div>
+  </div>
+  <div class="panel"><h2>📐 Проверка гипотез <span class="chip">анти-подгонка: сплит 70/30 по времени</span></h2>
+    <div class="tbl-wrap"><table id="hyp-t"></table></div>
+    <div class="legend">каждая гипотеза зафиксирована заранее и проверяется на «будущем» хвосте данных (OOS); статус «✅» выдаётся только если эффект одного знака на обеих половинах и хватает данных; ~10 гипотез одновременно ≈ 1 случайное срабатывание — поэтому без OOS ничего не «золотое»</div>
+  </div>
+  <div class="panel"><h2>📊 Калибровка рынка (цена Up vs реальность)</h2>
+    <div class="tbl-wrap"><table id="bin-t"></table></div>
+    <div class="legend">если в ценовом бине реальная доля «Up» устойчиво отличается от рыночной цены ≥ 5 пп (IS и OOS) — это системная ошибка рынка, т.е. кандидат на эдж</div>
+  </div>
+  <div class="panel"><h2>🔁 Серии исходов (стрики)</h2>
+    <div class="tbl-wrap"><table id="stk-t"></table></div>
+    <div class="legend">проверяем, влияет ли серия одинаковых исходов подряд на следующий; по теории эффективного рынка должно быть ~50%</div>
+  </div>
+</div>
 <div class="view" id="v-sys">
   <div class="panel"><h2>⚙️ Как это работает</h2><div style="font-size:12px;color:var(--dim);line-height:1.7">
     Воркер GitHub Actions каждые 5 минут сканирует крипто-рынки предсказаний Polymarket (gamma-api) и прогоняет 6 стратегий поиска эджа:<br>
@@ -94,7 +118,8 @@ svg text { font-family:Inter,sans-serif; }
     • <b style="color:var(--text)">Возврат к среднему</b> — цена отклонилась от нормы (z-оценка > 2σ)<br>
     • <b style="color:var(--text)">Всплеск объёма</b> — объём 24ч втрое выше недельного (информационный)<br>
     • <b style="color:var(--text)">Фаворит</b> — переоценка длинных шотов: исход 78–95% при высокой ликвидности ближе к дате расчёта<br>
-    • <b style="color:var(--text)">Бинарь 5м/15м/1ч</b> — бинарные «Up-or-Down» окна: справедливая вероятность из цены Binance и волатильности против рыночной цены; исходы резолвятся оракулом Chainlink (ничья → Up); 15м-окна считаются по TWAP, модель для них приближённая<br><br>
+    • <b style="color:var(--text)">Бинарь 5м/15м/1ч</b> — бинарные «Up-or-Down» окна: справедливая вероятность из цены Binance и волатильности против рыночной цены; исходы резолвятся оракулом Chainlink (ничья → Up); 15м-окна считаются по TWAP, модель для них приближённая<br>
+    • <b style="color:var(--text)">🧪 Лаборатория</b> — каждые 30 минут размечает исходы закрытых окон и проверяет заранее зафиксированные гипотезы на OOS-хвосте (защита от подгонки)<br><br>
     Лучшие сигналы идут в бумажный портфель $1000. Реальных денег НЕТ — только виртуальная торговля для накопления статистики.
   </div></div>
   <div class="panel"><h2>🩺 Здоровье</h2>
@@ -170,6 +195,37 @@ function render(st, sg) {
   document.getElementById("sig-t").innerHTML = st2;
   document.getElementById("upd").textContent = "обновлено " + (s.updated || "—").slice(11, 16) + " UTC";
 }
+function renderLab(l) {
+  if (!l) return;
+  var d = l.data || {};
+  document.getElementById("k-labn").textContent = f(d.windows);
+  document.getElementById("k-labsp").textContent = d.span_h ? d.span_h + " ч истории" : "";
+  document.getElementById("k-labr").textContent = f(d.settled);
+  document.getElementById("k-labs").textContent = f(d.snaps);
+  var m = l.model || {};
+  document.getElementById("k-labb").textContent = (m.is && m.is.brier !== null && m.is.brier !== undefined) ? m.is.brier : "—";
+  document.getElementById("lab-status").textContent = l.status === "ready" ? "готова к выводам" : "копит данные";
+  if (l.status_note) document.getElementById("lab-note").innerHTML = esc(l.status_note);
+  var t = "<tr><th>Гипотеза</th><th>n IS</th><th>IS</th><th>n OOS</th><th>OOS</th><th>Вердикт</th></tr>";
+  (l.hyp || []).forEach(function (h) {
+    t += "<tr><td>" + esc(h.name) + "<div style='color:var(--dim);font-size:10px'>" + esc(h.note || "") + "</div></td><td>" + f(h.is_n) + "</td><td>" + (h.is_v === null || h.is_v === undefined ? "—" : esc(String(h.is_v))) + "</td><td>" + f(h.oos_n) + "</td><td>" + (h.oos_v === null || h.oos_v === undefined ? "—" : esc(String(h.oos_v))) + "</td><td class='" + (h.ok ? "pos" : "") + "'>" + h.status + "</td></tr>";
+  });
+  if (!(l.hyp || []).length) t += "<tr><td colspan='6' class='fallback'>гипотезы появятся после первых размеченных окон (воркер пишет снимки каждые 5 мин, лаборатория размечает исходы каждые 30 мин)</td></tr>";
+  document.getElementById("hyp-t").innerHTML = t;
+  var bt = "<tr><th>Цена Up (бин)</th><th>n окон</th><th>Рынок</th><th>Реально</th><th>OOS реально</th><th>Сдвиг</th></tr>";
+  (l.bins || []).forEach(function (b) {
+    var shift = (b.real !== null && b.real !== undefined) ? (b.real - b.mkt) : null;
+    bt += "<tr" + (b.flag ? " style='box-shadow:inset 2px 0 0 var(--pos)'" : "") + "><td>" + (b.lo * 100).toFixed(0) + "–" + (b.hi * 100).toFixed(0) + "%</td><td>" + f(b.n) + "</td><td>" + (b.mkt === null ? "—" : (b.mkt * 100).toFixed(1) + "%") + "</td><td>" + (b.real === null ? "—" : (b.real * 100).toFixed(1) + "%") + "</td><td>" + (b.oos_real === null || b.oos_real === undefined ? "—" : (b.oos_real * 100).toFixed(1) + "%") + "</td><td class='" + (b.flag ? "pos" : "") + "'>" + (shift === null ? "—" : (shift > 0 ? "+" : "") + (shift * 100).toFixed(1) + " пп") + "</td></tr>";
+  });
+  if (!(l.bins || []).length) bt += "<tr><td colspan='6' class='fallback'>нужно ≥ 200 размеченных окон</td></tr>";
+  document.getElementById("bin-t").innerHTML = bt;
+  var st = "<tr><th>Серия</th><th>k подряд</th><th>n после Up</th><th>P(Up)</th><th>n после Down</th><th>P(Up)</th></tr>";
+  (l.streaks || []).forEach(function (s) {
+    st += "<tr><td>" + esc(s.tag) + "</td><td>" + s.k + "</td><td>" + f(s.n_up) + "</td><td>" + (s.p_after_up === null || s.p_after_up === undefined ? "—" : (s.p_after_up * 100).toFixed(0) + "%") + "</td><td>" + f(s.n_dn) + "</td><td>" + (s.p_after_dn === null || s.p_after_dn === undefined ? "—" : (s.p_after_dn * 100).toFixed(0) + "%") + "</td></tr>";
+  });
+  if (!(l.streaks || []).length) st += "<tr><td colspan='6' class='fallback'>нужно ≥ 100 размеченных окон на серию</td></tr>";
+  document.getElementById("stk-t").innerHTML = st;
+}
 function renderSht(sh) {
   if (!sh) return;
   var ws = sh.live || [];
@@ -196,7 +252,7 @@ function renderSht(sh) {
   document.getElementById("shtc-t").innerHTML = ct;
 }
 function refresh() {
-  Promise.all([fetchAny("state.json"), fetchAny("signals.json").catch(function () { return null; }), fetchAny("sht.json").catch(function () { return null; })]).then(function (d) { render(d[0], d[1]); renderSht(d[2]); }).catch(function () { document.getElementById("upd").textContent = "нет данных — все источники недоступны"; });
+  Promise.all([fetchAny("state.json"), fetchAny("signals.json").catch(function () { return null; }), fetchAny("sht.json").catch(function () { return null; }), fetchAny("lab.json").catch(function () { return null; })]).then(function (d) { render(d[0], d[1]); renderSht(d[2]); renderLab(d[3]); }).catch(function () { document.getElementById("upd").textContent = "нет данных — все источники недоступны"; });
 }
 refresh();
 setInterval(refresh, 120000);
