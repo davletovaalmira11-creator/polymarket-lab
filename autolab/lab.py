@@ -18,7 +18,7 @@ OUT = "results/lab.json"
 T0 = time.time()
 BUDGET_S = 200
 
-SETTLE_BATCH = 14    # сколько окон размечаем за прогон
+SETTLE_BATCH = 30    # сколько окон размечаем за прогон
 SPLIT = 0.7          # доля IS (хронологически первых)
 MIN_OOS = 30         # минимум объектов на OOS для вердикта
 MIN_BIN = 50         # минимум окон в бине калибровки
@@ -227,7 +227,7 @@ def streak_stats(ws):
 def hyps(model, rule, bins, stk, ws):
     H = []
     def add(name, note, is_n, is_v, oos_n, oos_v, ok, collecting):
-        status = "✅ подтверждено OOS" if ok else ("⏳ копим данные" if collecting else "❌ отвергнуто OOS")
+        status = "⏳ копим данные" if collecting else ("✅ подтверждено OOS" if ok else "❌ отвергнуто OOS")
         H.append({"name": name, "note": note, "is_n": is_n, "is_v": is_v,
                   "oos_n": oos_n, "oos_v": oos_v, "ok": ok, "status": status})
     oos_n = model["oos"]["n"]
