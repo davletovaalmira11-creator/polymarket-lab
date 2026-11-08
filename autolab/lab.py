@@ -132,6 +132,7 @@ def model_stats(ws, ids_is):
         "is": {"n": len(per["is"]), "brier": brier(per["is"], 0), "acc": acc(per["is"], 0)},
         "oos": {"n": len(per["oos"]), "brier": brier(per["oos"], 0), "acc": acc(per["oos"], 0)},
         "mkt_cmp": {"is": fm(brier(per["is"], 0), brier(per["is"], 1)), "oos": fm(brier(per["oos"], 0), brier(per["oos"], 1))},
+        "mkt_brier": {"is": brier(per["is"], 1), "oos": brier(per["oos"], 1)},
         "per_tag": {t: {"n": len(v), "brier": brier(v, 0), "acc": acc(v, 0)} for t, v in sorted(per_tag.items())},
     }
 
@@ -237,11 +238,11 @@ def hyps(model, rule, bins, stk, ws):
         model["is"]["n"], model["is"]["brier"], oos_n, model["oos"]["brier"],
         ok1, model["oos"]["n"] < MIN_OOS or model["is"]["n"] < 30)
     # H2: модель не хуже рынка
+    mb_is = model["mkt_brier"]["is"]
+    mb_oos = model["mkt_brier"]["oos"]
     ok2 = model["is"]["brier"] is not None and model["oos"]["brier"] is not None and \
-          model["mkt_cmp"]["is"] is not None and model["mkt_cmp"]["oos"] is not None and \
-          model["is"]["brier"] <= model["oos"]["brier"] and oos_n >= MIN_OOS
-    # честная проверка: сравнить мод vs рынок в каждой половине отдельно
-    ok2 = ok2 and model["is"]["brier"] < 0.25 and model["oos"]["brier"] < 0.25
+          mb_is is not None and mb_oos is not None and \
+          model["is"]["brier"] <= mb_is and model["oos"]["brier"] <= mb_oos and oos_n >= MIN_OOS
     add("Модель конкурирует с рынком", "Brier модель vs рынок (тот же снимок)",
         model["is"]["n"], model["mkt_cmp"]["is"], oos_n, model["mkt_cmp"]["oos"],
         ok2, oos_n < MIN_OOS)
