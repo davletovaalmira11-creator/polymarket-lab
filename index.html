@@ -91,7 +91,17 @@ svg text { font-family:Inter,sans-serif; }
 </div>
 
 <script>
-var RAW = "https://raw.githubusercontent.com/davletovaalmira11-creator/polymarket-lab/master/results/";
+var RAWS = ["results/", "https://cdn.jsdelivr.net/gh/davletovaalmira11-creator/polymarket-lab@master/results/", "https://raw.githubusercontent.com/davletovaalmira11-creator/polymarket-lab/master/results/"];
+var RAW = RAWS[0];
+function fetchAny(file) {
+  var i = 0;
+  function next() {
+    if (i >= RAWS.length) { return Promise.reject("no source"); }
+    var src = RAWS[i]; i += 1;
+    return fetch(src + file + "?t=" + Date.now()).then(function (r) { if (!r.ok) { throw 0; } return r.json(); }).catch(function () { return next(); });
+  }
+  return next();
+}
 var STR = { arb:"Арбитраж", momentum:"Импульс", mr:"Возврат к среднему", vols:"Всплеск объёма", fav:"Фаворит" };
 function show(v) { document.querySelectorAll(".view").forEach(function (x) { x.classList.remove("on"); }); document.getElementById("v-" + v).classList.add("on"); document.querySelectorAll(".nav button").forEach(function (b, i) { b.classList.remove("on"); }); event.currentTarget.classList.add("on"); }
 function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
@@ -146,8 +156,7 @@ function render(st, sg) {
   document.getElementById("upd").textContent = "обновлено " + (s.updated || "—").slice(11, 16) + " UTC";
 }
 function refresh() {
-  var b = "?t=" + Date.now();
-  Promise.all([fetch(RAW + "state.json" + b).then(function (r) { return r.json(); }), fetch(RAW + "signals.json" + b).then(function (r) { return r.json(); }).catch(function () { return null; })]).then(function (d) { render(d[0], d[1]); }).catch(function () { document.getElementById("upd").textContent = "нет данных — ждём первый прогон"; });
+  Promise.all([fetchAny("state.json"), fetchAny("signals.json").catch(function () { return null; })]).then(function (d) { render(d[0], d[1]); }).catch(function () { document.getElementById("upd").textContent = "нет данных — все источники недоступны"; });
 }
 refresh();
 setInterval(refresh, 120000);
