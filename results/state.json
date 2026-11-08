@@ -1,5 +1,5 @@
 {
- "cash": 2089.11751302,
+ "cash": 1730.6078960670002,
  "positions": {
   "will-bitcoin-reach-85k-in-november-2026": {
    "question": "Will Bitcoin reach $85,000 in November?",
@@ -19,7 +19,7 @@
    "outcome": "Yes",
    "strategy": "fav",
    "entry": 0.805,
-   "last": 0.825,
+   "last": 0.835,
    "shares": 62.05,
    "usd": 50.0,
    "opened": "2026-11-08T01:16:14Z",
@@ -67,11 +67,59 @@
    "outcome": "Yes",
    "strategy": "fav",
    "entry": 0.875,
-   "last": 0.87,
+   "last": 0.86,
    "shares": 57.15,
    "usd": 50.06,
    "opened": "2026-11-08T08:53:56Z",
    "epoch": 1794128036.468343
+  },
+  "btc-updown-5m-1794144900": {
+   "kind": "sht",
+   "slug": "btc-updown-5m-1794144900",
+   "question": "Bitcoin Up or Down - November 8, 8:35AM-8:40AM ET",
+   "series": "btc-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.88,
+   "last": 0.88,
+   "shares": 135.8,
+   "usd": 119.5,
+   "opened": "2026-11-08T13:37:06Z",
+   "epoch": 1794145026.190481,
+   "end_ts": 1794145200,
+   "fair_up": 0.0218
+  },
+  "btc-updown-15m-1794144600": {
+   "kind": "sht",
+   "slug": "btc-updown-15m-1794144600",
+   "question": "Bitcoin Up or Down - November 8, 8:30AM-8:45AM ET",
+   "series": "btc-up-or-down-15m",
+   "outcome": "Down",
+   "strategy": "sht15",
+   "entry": 0.91,
+   "last": 0.91,
+   "shares": 131.32,
+   "usd": 119.5,
+   "opened": "2026-11-08T13:37:06Z",
+   "epoch": 1794145026.1904993,
+   "end_ts": 1794145500,
+   "fair_up": 0.0226
+  },
+  "sol-updown-5m-1794144900": {
+   "kind": "sht",
+   "slug": "sol-updown-5m-1794144900",
+   "question": "Solana Up or Down - November 8, 8:35AM-8:40AM ET",
+   "series": "sol-up-or-down-5m",
+   "outcome": "Up",
+   "strategy": "sht5",
+   "entry": 0.375,
+   "last": 0.375,
+   "shares": 318.68,
+   "usd": 119.5,
+   "opened": "2026-11-08T13:37:06Z",
+   "epoch": 1794145026.1905265,
+   "end_ts": 1794145200,
+   "fair_up": 0.4315
   }
  },
  "closed": [
@@ -192,20 +240,24 @@
   [
    "2026-11-08T12:47:43Z",
    2390.02
+  ],
+  [
+   "2026-11-08T13:37:06Z",
+   2390.06
   ]
  ],
- "runs": 16,
+ "runs": 17,
  "stats": {
-  "equity": 2390.02,
-  "cash": 2089.12,
-  "open": 6,
+  "equity": 2390.06,
+  "cash": 1730.61,
+  "open": 9,
   "trades": 4,
   "wins": 4,
   "winrate": 100.0,
-  "pnl_pct": 139.0,
-  "updated": "2026-11-08T12:47:43Z",
-  "runs": 16,
-  "sht_open": 0,
+  "pnl_pct": 139.01,
+  "updated": "2026-11-08T13:37:06Z",
+  "runs": 17,
+  "sht_open": 3,
   "sht_trades": 4,
   "sht_pnl": 1390.74
  },
