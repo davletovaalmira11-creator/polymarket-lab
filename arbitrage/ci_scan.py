@@ -19,6 +19,7 @@ DATA_PATH = os.path.join(BASE_DIR, "data.json")
 
 BUDGET = int(os.environ.get("STEAM_BUDGET", "100"))
 STEAM_DELAY = float(os.environ.get("STEAM_DELAY", "3.0"))
+BUDGET_SEC = int(os.environ.get("SCAN_BUDGET_SEC", "700"))  # жёсткий лимит скана, сек
 FAIL_COOLDOWN = 3600
 CACHE_TTL = 30 * 86400
 
@@ -103,15 +104,22 @@ def main():
     print("Steam queue:", len(todo), "| budget:", BUDGET, flush=True)
 
     fetched = fails = r429 = 0
+    deadline = time.time() + BUDGET_SEC
+    consec429 = 0
     for i, name in enumerate(todo):
-        if i >= BUDGET:
+        if i >= BUDGET or time.time() > deadline:
+            print("STOP: бюджет времени/запросов исчерпан", flush=True)
             break
         try:
             res = sources.fetch_steam(name)
         except sources.RateLimited:
             r429 += 1
-            print("  429", name, flush=True)
-            time.sleep(30)
+            consec429 += 1
+            print("  429", name, "consec:", consec429, flush=True)
+            if consec429 >= 5:
+                print("STOP: Steam лимитирует подряд — выхожу с частичными данными", flush=True)
+                break
+            time.sleep(45)
             continue
         except Exception as e:
             fails += 1
@@ -122,6 +130,7 @@ def main():
             cache[name] = c
             continue
         if res and res["price"]:
+            consec429 = 0
             cache[name] = {"price": res["price"], "volume": res["volume"],
                            "ts": int(time.time()), "fails": 0}
             fetched += 1
@@ -131,6 +140,7 @@ def main():
             c["ts_fail"] = int(time.time())
             cache[name] = c
             fails += 1
+        consec429 = 0
         time.sleep(STEAM_DELAY)
 
     now = time.time()

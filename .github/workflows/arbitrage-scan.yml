@@ -15,12 +15,12 @@ permissions:
 
 concurrency:
   group: arbitrage-scan
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -35,6 +35,8 @@ jobs:
         run: python ci_scan.py 2>&1 | tee arbitrage_run.log
         working-directory: arbitrage
         continue-on-error: true
+        env:
+          SCAN_BUDGET_SEC: "700"
 
       - name: Commit data and log
         if: always()
@@ -42,7 +44,6 @@ jobs:
           git config user.name "arb-bot"
           git config user.email "bot@users.noreply.github.com"
           cp arbitrage/arbitrage_run.log arbitrage/last_run.txt 2>/dev/null || echo "(лог не создан)" > arbitrage/last_run.txt
-          echo "runner: $(uname -a)" >> arbitrage/last_run.txt
           date -u +%FT%TZ >> arbitrage/last_run.txt
           git add arbitrage/ || true
           git diff --cached --quiet || (git commit -m "arb scan [skip ci]" && git fetch origin && git rebase origin/master && git push origin HEAD:master)
