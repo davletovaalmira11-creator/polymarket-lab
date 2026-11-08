@@ -2,6 +2,8 @@
 Классические эджи (tag 21) + бинарный движок 5m/15m/1h "Up or Down":
 справедливая вероятность из живой цены Binance, старта окна и волатильности.
 Запуск каждые 5 минут. Без зависимостей.
+Риск-фильтры v2 (по диагностированному механизму проигрышей - базис Binance/Chainlink
+в концовке окна): без лонгшотов дешевле 0.10, без входа в последние 90 секунд.
 """
 import json, math, os, re, time, urllib.request
 
@@ -235,11 +237,11 @@ def sht_trade(st, windows):
     for w in windows:
         if n_sht >= MAX_SHT_POS or st["cash"] < 15: break
         if "fair_up" not in w or w["slug"] in held: continue
-        if w["liq"] < SHT_MIN_LIQ or w["tau_s"] < 30 or w["tau_s"] > w["win_s"] * 0.8: continue
+        if w["liq"] < SHT_MIN_LIQ or w["tau_s"] < 90 or w["tau_s"] > w["win_s"] * 0.8: continue
         side, px, edge = None, 0.0, 0.0
         if w["edge_up"] >= SHT_EDGE_MIN: side, px, edge = "Up", w["p_up"], w["edge_up"]
         elif w["edge_down"] >= SHT_EDGE_MIN: side, px, edge = "Down", w["p_down"], w["edge_down"]
-        if not side or px < 0.03 or px > 0.97: continue
+        if not side or px < 0.10 or px > 0.97: continue
         amt = min(0.05 * eq, st["cash"])
         if amt < 10: continue
         entry = px + 0.005

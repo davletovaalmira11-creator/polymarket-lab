@@ -26,7 +26,8 @@ BIAS_EPS = 0.05      # сдвиг >= 5 вероятностных пунктов
 STK_DEV = 0.10       # отклонение стрика от 50% для флага
 EDGE_MIN = 0.05      # правило из worker (копия, не подбирается)
 MIN_LIQ = 300.0
-PX_MIN, PX_MAX = 0.03, 0.97
+PX_MIN, PX_MAX = 0.10, 0.97   # риск-фильтр v2: без лонгшотов < 0.10 (базис Binance/Chainlink)
+TAU_MIN = 90      # риск-фильтр v2: без входа в последние 90 секунд окна
 HOLD_DAYS = 30
 CAP = 1500
 READY_N = 200        # размеченных окон для статуса "готова"
@@ -154,7 +155,7 @@ def rule_trades(ws, ids_is):
             t, p_up, fair, liq = s[0], s[1], s[2], s[3]
             if fair is None or p_up is None: continue
             tau = w["end"] - t
-            if tau < 30 or tau > w.get("win_s", 1) * 0.8: continue
+            if tau < TAU_MIN or tau > w.get("win_s", 1) * 0.8: continue
             edge_up = fair - p_up
             if edge_up >= EDGE_MIN: side, px = "Up", p_up
             elif edge_up <= -EDGE_MIN: side, px = "Down", 1.0 - p_up
@@ -182,9 +183,11 @@ def calib_bins(ws, ids_is):
     rows = []
     for w in ws:
         sn = w.get("snaps", [])
-        if not sn: continue
-        s = sn[-1]
-        if s[1] is None: continue
+        s = None
+        for x in sn:
+            if x[0] >= w["start"] and x[1] is not None:
+                s = x
+        if s is None: continue
         rows.append((s[1], w["outcome"], "is" if w["slug"] in ids_is else "oos"))
     bins = []
     for i in range(20):
@@ -296,7 +299,7 @@ def main():
     settled = len(ws)
     snaps = sum(len(e.get("snaps", [])) for e in lab.values())
     span_h = round((max(w["start"] for w in ws) - min(w["start"] for w in ws)) / 3600.0, 1) if ws else 0
-    golden = [h for h in H if h["ok"]]
+    golden = [h for h in H if h["ok"] and h["status"].startswith("✅")]
     if settled < READY_N:
         note = "Размечено " + str(settled) + " окон из " + str(len(lab)) + " в базе. Надёжные выводы с ~" + str(READY_N) + " размеченных окон (сейчас " + str(round(100.0 * settled / READY_N)) + "% пути). Правила зафиксированы заранее - подгонки нет."
     else:
