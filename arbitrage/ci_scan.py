@@ -1,8 +1,9 @@
 #!/usr/bin/env python
-"""CI-сканер арбитража (Skinport -> Steam) для GitHub Actions.
-Живёт в arbitrage/ репозитория; пишет arbitrage/data.json для панели."""
+"""CI-сканер арбитража (Skinport -> Steam). Пишет arbitrage/data.json.
+При сбое источников пишет причину в data.json (last_error) и лог."""
 import json
 import os
+import sys
 import time
 from datetime import datetime, timezone
 from urllib.parse import quote
@@ -42,6 +43,18 @@ def save(path, obj):
     os.replace(tmp, path)
 
 
+def empty_data(status, err=None):
+    return {
+        "updated": now_iso(), "updated_ts": int(time.time()),
+        "status": status, "last_error": err,
+        "skinport": {"items": 0, "total": 0},
+        "steam": {"cached": 0, "queue": 0, "fetched_this_run": 0, "fails": 0, "r429": 0},
+        "stats": {"matched": 0, "passing": 0, "best_roi": None},
+        "thresholds": {"min_roi": MIN_ROI, "min_profit": MIN_PROFIT, "min_vol": MIN_VOL},
+        "deals": [],
+    }
+
+
 def candidates(cache, catalog):
     now = time.time()
     prio = set(PRIORITY_ITEMS)
@@ -67,8 +80,14 @@ def candidates(cache, catalog):
 
 
 def main():
-    print("== ARB SCAN START", now_iso())
-    raw = sources.fetch_skinport()
+    print("== ARB SCAN START", now_iso(), flush=True)
+    try:
+        raw = sources.fetch_skinport()
+    except Exception as e:
+        print("SKINPORT ERROR:", repr(e), flush=True)
+        save(DATA_PATH, empty_data("skinport_error", str(e)))
+        sys.exit(1)
+
     catalog = {}
     for x in raw:
         name = x.get("market_hash_name")
@@ -76,13 +95,12 @@ def main():
         if not name or mp is None:
             continue
         catalog[name] = {"min_price": float(mp),
-                         "qty": int(x.get("quantity") or 0),
-                         "suggested": x.get("suggested_price")}
-    print("Skinport catalog:", len(catalog), "items")
+                         "qty": int(x.get("quantity") or 0)}
+    print("Skinport catalog:", len(catalog), "items", flush=True)
 
     cache = load_cache()
     todo = candidates(cache, catalog)
-    print("Steam queue:", len(todo), "| budget:", BUDGET)
+    print("Steam queue:", len(todo), "| budget:", BUDGET, flush=True)
 
     fetched = fails = r429 = 0
     for i, name in enumerate(todo):
@@ -92,11 +110,12 @@ def main():
             res = sources.fetch_steam(name)
         except sources.RateLimited:
             r429 += 1
+            print("  429", name, flush=True)
             time.sleep(30)
             continue
         except Exception as e:
             fails += 1
-            print("  ERR", name, e)
+            print("  ERR", name, repr(e)[:120], flush=True)
             c = cache.get(name) or {}
             c["fails"] = c.get("fails", 0) + 1
             c["ts_fail"] = int(time.time())
@@ -148,6 +167,7 @@ def main():
 
     data = {
         "updated": now_iso(), "updated_ts": int(now),
+        "status": "ok", "last_error": None,
         "skinport": {"items": len(catalog), "total": len(raw)},
         "steam": {
             "cached": sum(1 for v in cache.values() if v.get("price")),
@@ -161,9 +181,9 @@ def main():
     }
     save(CACHE_PATH, cache)
     save(DATA_PATH, data)
-    print("Fetched:", fetched, "| fails:", fails, "| 429:", r429)
-    print("Deals:", len(deals), "| passing:", passing, "| best ROI:", data["stats"]["best_roi"])
-    print("== ARB SCAN DONE")
+    print("Fetched:", fetched, "| fails:", fails, "| 429:", r429, flush=True)
+    print("Deals:", len(deals), "| passing:", passing, "| best ROI:", data["stats"]["best_roi"], flush=True)
+    print("== ARB SCAN DONE", flush=True)
 
 
 if __name__ == "__main__":
