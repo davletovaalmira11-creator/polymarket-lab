@@ -1,5 +1,5 @@
 {
- "cash": 359.96918084758835,
+ "cash": 563.5725486725884,
  "positions": {
   "will-bitcoin-reach-85k-in-november-2026": {
    "question": "Will Bitcoin reach $85,000 in November?",
@@ -7,23 +7,11 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.785,
-   "last": 0.765,
+   "last": 0.805,
    "shares": 63.63,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
    "epoch": 1794100574.6587667
-  },
-  "will-bitcoin-reach-77pt5k-in-november-2026-from-november-5": {
-   "question": "Will Bitcoin reach $77,500 in November?",
-   "slug": "will-bitcoin-reach-77pt5k-in-november-2026-from-november-5",
-   "outcome": "Yes",
-   "strategy": "fav",
-   "entry": 0.805,
-   "last": 0.805,
-   "shares": 62.05,
-   "usd": 50,
-   "opened": "2026-11-08T01:16:14Z",
-   "epoch": 1794100574.658785
   },
   "will-bitcoin-dip-to-62pt5k-in-november-2026": {
    "question": "Will Bitcoin dip to $62,500 in November?",
@@ -31,7 +19,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.88,
-   "last": 0.885,
+   "last": 0.86,
    "shares": 56.76,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
@@ -55,39 +43,11 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.915,
-   "last": 0.915,
+   "last": 0.925,
    "shares": 54.56,
    "usd": 49.98,
    "opened": "2026-11-08T02:29:10Z",
    "epoch": 1794104950.605626
-  },
-  "will-ethereum-dip-to-2200-in-november-2026": {
-   "question": "Will Ethereum dip to $2,200 in November?",
-   "slug": "will-ethereum-dip-to-2200-in-november-2026",
-   "outcome": "Yes",
-   "strategy": "fav",
-   "entry": 0.875,
-   "last": 0.915,
-   "shares": 57.15,
-   "usd": 50.06,
-   "opened": "2026-11-08T08:53:56Z",
-   "epoch": 1794128036.468343
-  },
-  "eth-updown-15m-1794172500": {
-   "kind": "sht",
-   "slug": "eth-updown-15m-1794172500",
-   "question": "Ethereum Up or Down - November 8, 4:15PM-4:30PM ET",
-   "series": "eth-up-or-down-15m",
-   "outcome": "Down",
-   "strategy": "sht15",
-   "entry": 0.34,
-   "last": 0.34,
-   "shares": 102.32,
-   "usd": 34.79,
-   "opened": "2026-11-08T21:20:19Z",
-   "epoch": 1794172819.7017028,
-   "end_ts": 1794173400,
-   "fair_up": 0.5314
   }
  },
  "closed": [
@@ -462,6 +422,42 @@
    "opened": "2026-11-08T19:25:52Z",
    "closed": "2026-11-08T20:07:29Z",
    "reason": "расчёт рынка, проигрыш"
+  },
+  {
+   "question": "Ethereum Up or Down - November 8, 4:15PM-4:30PM ET",
+   "slug": "eth-updown-15m-1794172500",
+   "outcome": "Down",
+   "entry": 0.34,
+   "exit": 1.0,
+   "ret_pct": 194.11,
+   "strategy": "sht15",
+   "opened": "2026-11-08T21:20:19Z",
+   "closed": "2026-11-08T21:57:04Z",
+   "reason": "расчёт рынка, выигрыш"
+  },
+  {
+   "question": "Will Bitcoin reach $77,500 in November?",
+   "slug": "will-bitcoin-reach-77pt5k-in-november-2026-from-november-5",
+   "outcome": "Yes",
+   "entry": 0.805,
+   "exit": 0.715,
+   "ret_pct": -11.38,
+   "strategy": "fav",
+   "opened": "2026-11-08T01:16:14Z",
+   "closed": "2026-11-08T21:57:05Z",
+   "reason": "стоп-лосс -10%"
+  },
+  {
+   "question": "Will Ethereum dip to $2,200 in November?",
+   "slug": "will-ethereum-dip-to-2200-in-november-2026",
+   "outcome": "Yes",
+   "entry": 0.875,
+   "exit": 0.9995,
+   "ret_pct": 14.03,
+   "strategy": "fav",
+   "opened": "2026-11-08T08:53:56Z",
+   "closed": "2026-11-08T21:57:05Z",
+   "reason": "тейк-профит +10%"
   }
  ],
  "curve": [
@@ -592,22 +588,26 @@
   [
    "2026-11-08T21:20:19Z",
    695.78
+  ],
+  [
+   "2026-11-08T21:57:26Z",
+   764.03
   ]
  ],
- "runs": 35,
+ "runs": 36,
  "stats": {
-  "equity": 695.78,
-  "cash": 359.97,
-  "open": 7,
-  "trades": 31,
-  "wins": 15,
-  "winrate": 48.4,
-  "pnl_pct": -30.42,
-  "updated": "2026-11-08T21:20:19Z",
-  "runs": 35,
-  "sht_open": 1,
-  "sht_trades": 31,
-  "sht_pnl": -304.12
+  "equity": 764.03,
+  "cash": 563.57,
+  "open": 4,
+  "trades": 34,
+  "wins": 17,
+  "winrate": 50.0,
+  "pnl_pct": -23.6,
+  "updated": "2026-11-08T21:57:26Z",
+  "runs": 36,
+  "sht_open": 0,
+  "sht_trades": 32,
+  "sht_pnl": -236.59
  },
  "done_keys": {},
  "cal": [
@@ -764,6 +764,11 @@
   {
    "p": 0.3319,
    "win": 0,
+   "tag": "sht15"
+  },
+  {
+   "p": 0.4686,
+   "win": 1,
    "tag": "sht15"
   }
  ]
