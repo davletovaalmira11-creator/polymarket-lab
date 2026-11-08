@@ -13,7 +13,7 @@
 body { background:var(--bg); color:var(--text); font-family:Inter,system-ui,sans-serif; padding:14px; padding-bottom:40px; max-width:760px; margin:0 auto; -webkit-tap-highlight-color:transparent; }
 .hd { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
 .hd h1 { font-size:17px; font-weight:800; } .hd .tag { font-size:10px; color:var(--dim); border:1px solid var(--border); border-radius:100px; padding:4px 10px; }
-.nav { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin-bottom:14px; }
+.nav { display:grid; grid-template-columns:repeat(5,1fr); gap:6px; margin-bottom:14px; }
 .nav button { background:var(--card); border:1px solid var(--border); color:var(--dim); border-radius:10px; padding:10px 4px; font-family:inherit; font-size:11px; font-weight:600; cursor:pointer; }
 .nav button.on { color:#fff; background:linear-gradient(135deg,#1f6feb,#a371f7); border-color:transparent; }
 .view { display:none; } .view.on { display:block; }
@@ -38,11 +38,12 @@ svg text { font-family:Inter,sans-serif; }
 </style>
 </head>
 <body>
-<div class="hd"><h1>🔮 Polymarket Lab <span style="color:var(--dim);font-weight:400;font-size:11px">v1.1</span></h1><span class="tag" id="upd">загрузка…</span></div>
+<div class="hd"><h1>🔮 Polymarket Lab <span style="color:var(--dim);font-weight:400;font-size:11px">v1.2</span></h1><span class="tag" id="upd">загрузка…</span></div>
 <div class="nav">
 <button class="on" onclick="show('ov')">📊 Обзор</button>
 <button onclick="show('sig')">⚡ Сигналы</button>
 <button onclick="show('pf')">💼 Портфель</button>
+<button onclick="show('sht')">⏱ Бинари</button>
 <button onclick="show('sys')">⚙️ Система</button>
 </div>
 
@@ -72,14 +73,28 @@ svg text { font-family:Inter,sans-serif; }
   <div class="panel"><h2>🧾 История сделок</h2><div class="tbl-wrap"><table id="cls-t"></table></div></div>
 </div>
 
+<div class="view" id="v-sht">
+  <div class="panel"><h2>⏱ Бинарные окна 5м · 15м · 1ч <span class="chip" id="sht-live">—</span></h2>
+    <div class="kpis" style="margin-bottom:12px">
+      <div class="kpi"><div class="label">Точность модели</div><div class="value" id="k-acc">—</div><div class="note">доля верных прогнозов</div></div>
+      <div class="kpi"><div class="label">Brier-оценка</div><div class="value" id="k-brier">—</div><div class="note">0.25 = монетка, меньше — лучше</div></div>
+      <div class="kpi"><div class="label">Бинарных сделок</div><div class="value" id="k-shtn">—</div><div class="note" id="k-shtpnl"></div></div>
+      <div class="kpi"><div class="label">Активных окон</div><div class="value" id="k-shtw">—</div><div class="note">BTC · ETH · SOL Up-or-Down</div></div>
+    </div>
+    <div class="tbl-wrap"><table id="sht-t"></table></div>
+    <div class="legend">справедливая вероятность «Up» считается из живой цены Binance, цены старта окна и волатильности (логнормальная модель); «эдж» = разница модели и рыночной цены; сделка открывается при эдже ≥ 5%, ликвидности ≥ $300 и не позже 20% до конца окна. Торгуется только бумажный капитал.</div>
+  </div>
+  <div class="panel"><h2>🧾 Закрытые бинарные сделки</h2><div class="tbl-wrap"><table id="shtc-t"></table></div></div>
+</div>
 <div class="view" id="v-sys">
   <div class="panel"><h2>⚙️ Как это работает</h2><div style="font-size:12px;color:var(--dim);line-height:1.7">
-    Воркер GitHub Actions каждые 30 минут сканирует крипто-рынки предсказаний Polymarket (gamma-api) и прогоняет 5 стратегий поиска эджа:<br>
+    Воркер GitHub Actions каждые 5 минут сканирует крипто-рынки предсказаний Polymarket (gamma-api) и прогоняет 6 стратегий поиска эджа:<br>
     • <b style="color:var(--text)">Арбитраж</b> — сумма цен Да+Нет ниже 1 минус издержки<br>
     • <b style="color:var(--text)">Импульс</b> — устойчивый сдвиг цены за 3 дня<br>
     • <b style="color:var(--text)">Возврат к среднему</b> — цена отклонилась от нормы (z-оценка > 2σ)<br>
     • <b style="color:var(--text)">Всплеск объёма</b> — объём 24ч втрое выше недельного (информационный)<br>
-    • <b style="color:var(--text)">Фаворит</b> — переоценка длинных шотов: исход 78–95% при высокой ликвидности ближе к дате расчёта<br><br>
+    • <b style="color:var(--text)">Фаворит</b> — переоценка длинных шотов: исход 78–95% при высокой ликвидности ближе к дате расчёта<br>
+    • <b style="color:var(--text)">Бинарь 5м/15м/1ч</b> — бинарные «Up-or-Down» окна: справедливая вероятность из цены Binance и волатильности против рыночной цены; исходы резолвятся оракулом Chainlink (ничья → Up); 15м-окна считаются по TWAP, модель для них приближённая<br><br>
     Лучшие сигналы идут в бумажный портфель $1000. Реальных денег НЕТ — только виртуальная торговля для накопления статистики.
   </div></div>
   <div class="panel"><h2>🩺 Здоровье</h2>
@@ -102,7 +117,7 @@ function fetchAny(file) {
   }
   return next();
 }
-var STR = { arb:"Арбитраж", momentum:"Импульс", mr:"Возврат к среднему", vols:"Всплеск объёма", fav:"Фаворит" };
+var STR = { arb:"Арбитраж", momentum:"Импульс", mr:"Возврат к среднему", vols:"Всплеск объёма", fav:"Фаворит", sht5:"Бинарь 5м", sht15:"Бинарь 15м", sht1h:"Бинарь 1ч" };
 function show(v) { document.querySelectorAll(".view").forEach(function (x) { x.classList.remove("on"); }); document.getElementById("v-" + v).classList.add("on"); document.querySelectorAll(".nav button").forEach(function (b, i) { b.classList.remove("on"); }); event.currentTarget.classList.add("on"); }
 function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
 function f(x) { return x === undefined || x === null || isNaN(x) ? "—" : x; }
@@ -155,8 +170,33 @@ function render(st, sg) {
   document.getElementById("sig-t").innerHTML = st2;
   document.getElementById("upd").textContent = "обновлено " + (s.updated || "—").slice(11, 16) + " UTC";
 }
+function renderSht(sh) {
+  if (!sh) return;
+  var ws = sh.live || [];
+  document.getElementById("k-shtw").textContent = ws.length;
+  var cal = sh.cal || {};
+  document.getElementById("k-acc").textContent = cal.acc === null || cal.acc === undefined ? "—" : cal.acc + "%";
+  document.getElementById("k-brier").textContent = cal.brier === null || cal.brier === undefined ? "—" : cal.brier;
+  document.getElementById("k-shtn").textContent = f(cal.n);
+  document.getElementById("sht-live").textContent = ws.length + " живых";
+  var t = "<tr><th>Окно</th><th>Осталось</th><th>Цена Up</th><th>Модель Up</th><th>Эдж</th><th>Ликв.</th></tr>";
+  ws.forEach(function (w) {
+    var left = Math.max(0, Math.round(w.end - Date.now() / 1000));
+    var mm = Math.floor(left / 60), ss = left % 60;
+    var hasF = w.fair_up !== undefined && w.fair_up !== null;
+    var edge = hasF ? (w.edge_up >= w.edge_down ? w.edge_up : w.edge_down) : null;
+    t += "<tr><td>" + esc(w.title).slice(0, 55) + "<div style='color:var(--dim);font-size:10px'>" + w.series + " · " + w.sym + "</div></td><td>" + mm + ":" + (ss < 10 ? "0" : "") + ss + "</td><td>" + w.p_up + "</td><td class='" + (hasF && w.p_up < w.fair_up ? "pos" : "") + "'>" + (hasF ? w.fair_up : "—") + "</td><td class='" + (edge !== null && edge > 0.05 ? "pos" : "") + "'>" + (edge === null ? "—" : (edge > 0 ? "+" : "") + (edge * 100).toFixed(1) + "%") + "</td><td>" + Math.round(w.liq) + "</td></tr>";
+  });
+  if (!ws.length) t += "<tr><td colspan='6' class='fallback'>живых окон сейчас нет — скан каждые 5 минут</td></tr>";
+  document.getElementById("sht-t").innerHTML = t;
+  var cl = sh.settled || [];
+  var ct = "<tr><th>Окно</th><th>Сторона</th><th>Вход</th><th>Итог</th><th>P&L</th></tr>";
+  cl.slice(0, 15).forEach(function (c2) { ct += "<tr><td>" + esc(c2.question).slice(0, 45) + "</td><td>" + c2.outcome + "</td><td>" + c2.entry + "</td><td>" + (c2.ret_pct > 0 ? "✅ выигрыш" : "❌ проигрыш") + "</td><td class='" + (c2.ret_pct > 0 ? "pos" : "neg") + "'>" + pct(c2.ret_pct) + "</td></tr>"; });
+  if (!cl.length) ct += "<tr><td colspan='5' class='fallback'>бинарных сделок пока нет — движок ждёт эдж ≥ 5%</td></tr>";
+  document.getElementById("shtc-t").innerHTML = ct;
+}
 function refresh() {
-  Promise.all([fetchAny("state.json"), fetchAny("signals.json").catch(function () { return null; })]).then(function (d) { render(d[0], d[1]); }).catch(function () { document.getElementById("upd").textContent = "нет данных — все источники недоступны"; });
+  Promise.all([fetchAny("state.json"), fetchAny("signals.json").catch(function () { return null; }), fetchAny("sht.json").catch(function () { return null; })]).then(function (d) { render(d[0], d[1]); renderSht(d[2]); }).catch(function () { document.getElementById("upd").textContent = "нет данных — все источники недоступны"; });
 }
 refresh();
 setInterval(refresh, 120000);
