@@ -35,10 +35,24 @@ tr:last-child td { border-bottom:none; }
 .chip.buy { color:#fff; background:linear-gradient(135deg,#1a7f37,#3fb950); border-color:transparent; }
 svg text { font-family:Inter,sans-serif; }
 .fallback { color:var(--dim); font-size:11px; padding:14px; text-align:center; }
+@media (max-width:720px) {
+  body { padding:10px; padding-bottom:30px; }
+  .nav { grid-template-columns:repeat(3,1fr); gap:6px; }
+  .nav button { padding:9px 2px; font-size:10.5px; }
+  .hd h1 { font-size:15px; }
+  .kpi .value { font-size:19px; }
+  table { font-size:11px; }
+  td, th { padding:6px; }
+  .panel { padding:12px; }
+}
+@media (max-width:380px) {
+  .nav { grid-template-columns:repeat(2,1fr); }
+  .kpi .value { font-size:17px; }
+}
 </style>
 </head>
 <body>
-<div class="hd"><h1>🔮 Polymarket Lab <span style="color:var(--dim);font-weight:400;font-size:11px">v1.3</span></h1><span class="tag" id="upd">загрузка…</span></div>
+<div class="hd"><h1>🔮 Polymarket Lab <span style="color:var(--dim);font-weight:400;font-size:11px">v1.4</span></h1><span class="tag" id="upd">загрузка…</span></div>
 <div class="nav">
 <button class="on" onclick="show('ov')">📊 Обзор</button>
 <button onclick="show('sig')">⚡ Сигналы</button>
@@ -97,6 +111,10 @@ svg text { font-family:Inter,sans-serif; }
     </div>
     <div class="legend" id="lab-note">загружаю данные лаборатории…</div>
   </div>
+  <div class="panel"><h2>✨ Что нашла лаборатория <span class="chip" id="lab-find-n">…</span></h2>
+    <div id="lab-find">…</div>
+    <div class="legend">✨ паттерн-кандидат = закономерность обнаружена, теперь проверяем, недооценивает ли её рынок в цене · ✅ подтверждено на «будущем» хвосте данных (OOS) — только такие становятся торговыми стратегиями · ⏳ мало данных · ❌ гипотеза не подтвердилась</div>
+  </div>
   <div class="panel"><h2>📐 Проверка гипотез <span class="chip">анти-подгонка: сплит 70/30 по времени</span></h2>
     <div class="tbl-wrap"><table id="hyp-t"></table></div>
     <div class="legend">каждая гипотеза зафиксирована заранее и проверяется на «будущем» хвосте данных (OOS); статус «✅» выдаётся только если эффект одного знака на обеих половинах и хватает данных; ~10 гипотез одновременно ≈ 1 случайное срабатывание — поэтому без OOS ничего не «золотое»</div>
@@ -124,7 +142,7 @@ svg text { font-family:Inter,sans-serif; }
   </div></div>
   <div class="panel"><h2>🩺 Здоровье</h2>
     <div class="kpis">
-      <div class="kpi"><div class="label">Прогонов воркера</div><div class="value" id="k-runs">—</div><div class="note">каждые 30 минут</div></div>
+      <div class="kpi"><div class="label">Прогонов воркера</div><div class="value" id="k-runs">—</div><div class="note">каждые 5 минут</div></div>
       <div class="kpi"><div class="label">Обновлено</div><div class="value" style="font-size:14px" id="k-upd">—</div><div class="note">UTC</div></div>
     </div>
   </div>
@@ -195,20 +213,41 @@ function render(st, sg) {
   document.getElementById("sig-t").innerHTML = st2;
   document.getElementById("upd").textContent = "обновлено " + (s.updated || "—").slice(11, 16) + " UTC";
 }
+function renderFindings(l) {
+  var el = document.getElementById("lab-find");
+  var h = "";
+  var gold = [], cand = [];
+  (l.hyp || []).forEach(function (x) {
+    var s = String(x.status || "");
+    if (s.indexOf("✅") === 0) { gold.push(x); }
+    else if (s.indexOf("✨") === 0) { cand.push(x); }
+  });
+  var vv = function (x) { return (x === null || x === undefined) ? "—" : esc(String(x)); };
+  gold.forEach(function (g) {
+    h += "<div class='kpi' style='margin-bottom:10px'><div class='label'>✅ Подтверждено OOS — золотая стратегия</div><div class='value' style='font-size:14px'>" + esc(g.name) + "</div><div class='note'>прошло: IS " + vv(g.is_v) + " · будущее OOS " + vv(g.oos_v) + "</div><div class='note'>" + esc(g.note || "") + "</div></div>";
+  });
+  cand.forEach(function (g) {
+    h += "<div class='kpi' style='margin-bottom:10px'><div class='label'>✨ Паттерн-кандидат</div><div class='value' style='font-size:14px'>" + esc(g.name) + "</div><div class='note'>прошло: IS " + vv(g.is_v) + " · будущее OOS " + vv(g.oos_v) + "</div><div class='note'>" + esc(g.note || "") + "</div></div>";
+  });
+  if (!h) h = "<div class='fallback'>подтверждённых паттернов пока нет — кандидаты видны в таблице гипотез ниже, статусы обновляются каждые 30 минут</div>";
+  el.innerHTML = h;
+  document.getElementById("lab-find-n").textContent = (gold.length + cand.length) > 0 ? ("✨ " + cand.length + " · ✅ " + gold.length) : "пока чисто";
+}
 function renderLab(l) {
   if (!l) return;
   var d = l.data || {};
   document.getElementById("k-labn").textContent = f(d.windows);
-  document.getElementById("k-labsp").textContent = d.span_h ? d.span_h + " ч истории" : "";
+  document.getElementById("k-labsp").textContent = d.span_h ? d.span_h + " ч · из истории " + f(d.hist) : "";
   document.getElementById("k-labr").textContent = f(d.settled);
   document.getElementById("k-labs").textContent = f(d.snaps);
   var m = l.model || {};
   document.getElementById("k-labb").textContent = (m.is && m.is.brier !== null && m.is.brier !== undefined) ? m.is.brier : "—";
   document.getElementById("lab-status").textContent = l.status === "ready" ? "готова к выводам" : "копит данные";
   if (l.status_note) document.getElementById("lab-note").innerHTML = esc(l.status_note);
+  renderFindings(l);
   var t = "<tr><th>Гипотеза</th><th>n IS</th><th>IS</th><th>n OOS</th><th>OOS</th><th>Вердикт</th></tr>";
   (l.hyp || []).forEach(function (h) {
-    t += "<tr><td>" + esc(h.name) + "<div style='color:var(--dim);font-size:10px'>" + esc(h.note || "") + "</div></td><td>" + f(h.is_n) + "</td><td>" + (h.is_v === null || h.is_v === undefined ? "—" : esc(String(h.is_v))) + "</td><td>" + f(h.oos_n) + "</td><td>" + (h.oos_v === null || h.oos_v === undefined ? "—" : esc(String(h.oos_v))) + "</td><td class='" + (h.ok ? "pos" : "") + "'>" + h.status + "</td></tr>";
+    t += "<tr><td>" + esc(h.name) + "<div style='color:var(--dim);font-size:10px'>" + esc(h.note || "") + "</div></td><td>" + f(h.is_n) + "</td><td>" + (h.is_v === null || h.is_v === undefined ? "—" : esc(String(h.is_v))) + "</td><td>" + f(h.oos_n) + "</td><td>" + (h.oos_v === null || h.oos_v === undefined ? "—" : esc(String(h.oos_v))) + "</td><td class='" + ((String(h.status).indexOf("✨") === 0 || String(h.status).indexOf("✅") === 0) ? "pos" : (String(h.status).indexOf("❌") === 0 ? "neg" : "")) + "'>" + h.status + "</td></tr>";
   });
   if (!(l.hyp || []).length) t += "<tr><td colspan='6' class='fallback'>гипотезы появятся после первых размеченных окон (воркер пишет снимки каждые 5 мин, лаборатория размечает исходы каждые 30 мин)</td></tr>";
   document.getElementById("hyp-t").innerHTML = t;
