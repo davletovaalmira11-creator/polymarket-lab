@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: "7,37 * * * *"
   workflow_dispatch:
+  push:
+    branches: [master]
+    paths: [".github/workflows/pm-lab.yml", "autolab/lab.py"]
 concurrency:
   group: pm-lab
   cancel-in-progress: true
