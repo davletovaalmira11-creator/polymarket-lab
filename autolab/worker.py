@@ -1,4 +1,4 @@
-"""Polymarket Lab worker v2.
+"""Polymarket Lab worker v3 (+ лог снимков живых окон для лаборатории).
 Классические эджи (tag 21) + бинарный движок 5m/15m/1h "Up or Down":
 справедливая вероятность из живой цены Binance, старта окна и волатильности.
 Запуск каждые 5 минут. Без зависимостей.
@@ -7,7 +7,7 @@ import json, math, os, re, time, urllib.request
 
 GAMMA = "https://gamma-api.polymarket.com"
 BIN = "https://data-api.binance.vision/api/v3/klines"
-ST = {"state": "results/state.json", "signals": "results/signals.json", "scan": "results/scan.json", "sht": "results/sht.json"}
+ST = {"state": "results/state.json", "signals": "results/signals.json", "scan": "results/scan.json", "sht": "results/sht.json", "lab": "results/sht_lab.json"}
 CASH0 = 1000.0
 MAX_POS = 6
 HIST_TOP = 12
@@ -293,6 +293,37 @@ def settle_sht(st):
         st["stats"]["sht_trades"] = int(st["stats"].get("sht_trades", 0)) + 1
         st["stats"]["sht_pnl"] = round(float(st["stats"].get("sht_pnl", 0)) + payout - pos["usd"], 2)
 
+LAB_CAP = 1500
+LAB_SNAPS = 6
+
+def lab_log(windows):
+    """Снимки живых окон для лаборатории: время, цена Up, fair, ликвидность."""
+    lab = jload(ST["lab"], {})
+    if not isinstance(lab, dict): lab = {}
+    t_now = int(time.time())
+    for w in windows:
+        key = w["slug"]
+        e = lab.get(key)
+        if e is None:
+            e = {"series": w["series"], "tag": w["tag"], "sym": w["sym"],
+                 "win_s": w["win_s"], "start": w["start"], "end": w["end"],
+                 "snaps": [], "outcome": None}
+            lab[key] = e
+        snaps = e["snaps"]
+        if not snaps or t_now - snaps[-1][0] >= 60:
+            snaps.append([t_now, w["p_up"], w.get("fair_up"), w["liq"]])
+            if len(snaps) > LAB_SNAPS: del snaps[0]
+    for k in list(lab.keys()):
+        if not isinstance(lab.get(k), dict) or lab[k].get("end", 0) < t_now - 30 * 86400:
+            lab.pop(k, None)
+    by = {}
+    for k, e in lab.items(): by.setdefault(e["series"], []).append((e["start"], k))
+    for ser, lst in by.items():
+        if len(lst) > LAB_CAP:
+            lst.sort()
+            for start, k in lst[: len(lst) - LAB_CAP]: lab.pop(k, None)
+    jsave(ST["lab"], lab)
+
 def main():
     st = jload(ST["state"], {"cash": CASH0, "positions": {}, "closed": [], "curve": [[now(), CASH0]], "runs": 0, "done_keys": {}, "cal": []})
     settle_sht(st)
@@ -336,6 +367,7 @@ def main():
         keys[s["slug"]] = now()
     windows = sht_scan()
     sht_trade(st, windows)
+    lab_log(windows)
     eq = st["cash"] + sum(p["shares"] * p.get("last", p["entry"]) for p in st["positions"].values())
     st["curve"].append([now(), round(eq, 2)])
     st["curve"] = st["curve"][-1500:]
