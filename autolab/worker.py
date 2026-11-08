@@ -266,9 +266,9 @@ def settle_sht(st):
         else:
             try:
                 mk = fetch(GAMMA + "/markets?slug=" + pos["slug"], 10)
-                if isinstance(mk, list) and mk and mk[0].get("closed"):
+                if isinstance(mk, list) and mk:
                     pr = [fnum(x) for x in plist(mk[0].get("outcomePrices", "[]"))]
-                    if len(pr) == 2:
+                    if len(pr) == 2 and max(pr) >= 0.99:
                         idx = 0 if pos["outcome"] == "Up" else 1
                         final = pr[idx]
                         reason = "расчёт рынка"

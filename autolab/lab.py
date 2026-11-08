@@ -87,7 +87,7 @@ def settle(lab):
         if not (isinstance(mk, list) and mk):
             continue
         pr = [fnum(x) for x in plist(mk[0].get("outcomePrices", "[]"))]
-        if len(pr) == 2 and (pr[0] >= 0.5 or pr[1] >= 0.5):
+        if len(pr) == 2 and max(pr) >= 0.99:
             lab[k]["outcome"] = 1 if pr[0] >= 0.5 else 0
             done += 1
     return done
