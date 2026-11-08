@@ -1,1 +1,76 @@
-{"cash":1000,"positions":{},"closed":[],"curve":[["2026-11-08T00:00:00Z",1000]],"runs":0,"stats":{"equity":1000,"cash":1000,"open":0,"trades":0,"wins":0,"winrate":0,"pnl_pct":0,"updated":"2026-11-08T00:00:00Z","runs":0}}
+{
+ "cash": 800.0,
+ "positions": {
+  "will-bitcoin-reach-85k-in-november-2026": {
+   "question": "Will Bitcoin reach $85,000 in November?",
+   "slug": "will-bitcoin-reach-85k-in-november-2026",
+   "outcome": "No",
+   "strategy": "fav",
+   "entry": 0.785,
+   "last": 0.785,
+   "shares": 63.63,
+   "usd": 50.0,
+   "opened": "2026-11-08T01:16:14Z",
+   "epoch": 1794100574.6587667
+  },
+  "will-bitcoin-reach-77pt5k-in-november-2026-from-november-5": {
+   "question": "Will Bitcoin reach $77,500 in November?",
+   "slug": "will-bitcoin-reach-77pt5k-in-november-2026-from-november-5",
+   "outcome": "Yes",
+   "strategy": "fav",
+   "entry": 0.805,
+   "last": 0.805,
+   "shares": 62.05,
+   "usd": 50.0,
+   "opened": "2026-11-08T01:16:14Z",
+   "epoch": 1794100574.658785
+  },
+  "will-bitcoin-dip-to-62pt5k-in-november-2026": {
+   "question": "Will Bitcoin dip to $62,500 in November?",
+   "slug": "will-bitcoin-dip-to-62pt5k-in-november-2026",
+   "outcome": "No",
+   "strategy": "fav",
+   "entry": 0.88,
+   "last": 0.88,
+   "shares": 56.76,
+   "usd": 50.0,
+   "opened": "2026-11-08T01:16:14Z",
+   "epoch": 1794100574.658789
+  },
+  "will-bitcoin-dip-to-60k-in-november-2026": {
+   "question": "Will Bitcoin dip to $60,000 in November?",
+   "slug": "will-bitcoin-dip-to-60k-in-november-2026",
+   "outcome": "No",
+   "strategy": "fav",
+   "entry": 0.925,
+   "last": 0.925,
+   "shares": 54.0,
+   "usd": 50.0,
+   "opened": "2026-11-08T01:16:14Z",
+   "epoch": 1794100574.6587923
+  }
+ },
+ "closed": [],
+ "curve": [
+  [
+   "2026-11-08T00:00:00Z",
+   1000
+  ],
+  [
+   "2026-11-08T01:16:14Z",
+   999.8
+  ]
+ ],
+ "runs": 1,
+ "stats": {
+  "equity": 999.8,
+  "cash": 800.0,
+  "open": 4,
+  "trades": 0,
+  "wins": 0,
+  "winrate": 0.0,
+  "pnl_pct": -0.02,
+  "updated": "2026-11-08T01:16:14Z",
+  "runs": 1
+ }
+}
