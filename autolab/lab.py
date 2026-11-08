@@ -280,6 +280,57 @@ def streak_stats(ws):
                         "n_dn": dn_n, "p_after_dn": None if pd is None else round(pd, 3)})
     return out
 
+def streak_edge(ws):
+    """Walk-forward тест стрик-эджа: вероятности момента оцениваем на старых 70%,
+    сделки правила проверяем ТОЛЬКО на новых 30% (чистый OOS, без утечек)."""
+    ws = sorted(ws, key=lambda w: w["start"])
+    cut = int(len(ws) * SPLIT)
+    old, new = ws[:cut], ws[cut:]
+    by = {}
+    for w in ws:
+        by.setdefault(w["series"], []).append((w["start"], w["outcome"]))
+    for s in by: by[s].sort()
+    prev = {}
+    for s, lst in by.items():
+        for i in range(1, len(lst)):
+            prev[lst[i][0]] = lst[i - 1][1]
+    cnt = {1: [0, 0], 0: [0, 0]}
+    for w in old:
+        pv = prev.get(w["start"])
+        if pv is None: continue
+        cnt[pv][1] += 1
+        cnt[pv][0] += w["outcome"]
+    pu = (cnt[1][0] / cnt[1][1]) if cnt[1][1] >= 50 else None
+    pd = (cnt[0][0] / cnt[0][1]) if cnt[0][1] >= 50 else None
+    trades = []
+    if pu is not None and pd is not None:
+        for w in new:
+            if not w.get("snaps"): continue
+            pv = prev.get(w["start"])
+            if pv is None: continue
+            for s in sorted(w["snaps"], key=lambda x: x[0]):
+                t, p_up = s[0], s[1]
+                if p_up is None: continue
+                tau = w["end"] - t
+                if tau < TAU_MIN or tau > w.get("win_s", 1) * 0.8: continue
+                side, px = None, 0.0
+                if pv == 1 and pu - p_up >= EDGE_MIN: side, px = "Up", p_up
+                elif pv == 0 and p_up - pd >= EDGE_MIN: side, px = "Down", 1.0 - p_up
+                if side is None: continue
+                if px < PX_MIN or px > PX_MAX: continue
+                if not s[3] or s[3] < MIN_LIQ: continue
+                win = 1 if ((w["outcome"] == 1) == (side == "Up")) else 0
+                pnl = (1.0 / (px + 0.005) - 1.0) if win else -1.0
+                trades.append({"t": t, "win": win, "pnl": round(pnl, 3), "px": round(px, 3), "tag": w.get("tag", "?")})
+                break
+    def agg(sub):
+        if not sub: return {"n": 0, "winrate": None, "ev": None}
+        pnl = sum(x["pnl"] for x in sub)
+        return {"n": len(sub), "winrate": round(100.0 * sum(x["win"] for x in sub) / len(sub), 1), "ev": round(pnl / len(sub), 3)}
+    return {"probs": {"after_up": None if pu is None else round(pu, 3), "after_down": None if pd is None else round(pd, 3)},
+            "n_est": {"up": cnt[1][1], "down": cnt[0][1]},
+            "oos": agg(trades), "trades": trades[-12:]}
+
 def hour_stats(ws):
     """Доля Up по часам UTC: гипотеза - время суток не влияет."""
     by = {}
@@ -293,7 +344,7 @@ def hour_stats(ws):
             out.append({"hour": h, "n": len(by[h]), "up_rate": round(r, 3), "flag": abs(r - base) >= 0.10})
     return out, round(base, 3)
 
-def hyps(model, rule, bins, stk, ws, hours):
+def hyps(model, rule, bins, stk, ws, hours, se):
     H = []
     def add(name, note, is_n, is_v, oos_n, oos_v, ok, collecting):
         status = "⏳ копим данные" if collecting else ("✅ подтверждено OOS" if ok else "❌ отвергнуто OOS")
@@ -358,6 +409,12 @@ def hyps(model, rule, bins, stk, ws, hours):
         ok7, len(ws) < 300)
     if not ok7 and len(ws) >= 300:
         H[-1]["status"] = "✨ паттерн: время суток влияет"
+    # H8: стрик-эдж - рынок недооценивает моментум (walk-forward)
+    so = se["oos"]
+    ok8 = so["ev"] is not None and so["ev"] > 0 and so["n"] >= MIN_OOS
+    add("Стрик-эдж: рынок недооценивает моментум", "вероятности из старых 70% данных, сделки только на новых 30%; P(Up|после Up)=" + str(se["probs"]["after_up"]) + ", P(Up|после Down)=" + str(se["probs"]["after_down"]),
+        se["n_est"]["up"] + se["n_est"]["down"], "P(up|up)=" + str(se["probs"]["after_up"]),
+        so["n"], so["ev"], ok8, so["n"] < MIN_OOS)
     return H
 
 def main():
@@ -374,7 +431,10 @@ def main():
     bins = calib_bins(ws_snap, ids_is)
     stk = streak_stats(ws)
     hours, base_up = hour_stats(ws)
-    H = hyps(model, rule, bins, stk, ws, hours)
+    se = streak_edge(ws)
+    H = hyps(model, rule, bins, stk, ws, hours, se)
+    h8 = [h for h in H if h["name"].startswith("Стрик-эдж")]
+    h8s = h8[0]["status"] if h8 else "⏳ копим данные"
     settled = len(ws)
     snaps = sum(len(e.get("snaps", [])) for e in lab.values())
     span_h = round((max(w["start"] for w in ws) - min(w["start"] for w in ws)) / 3600.0, 1) if ws else 0
@@ -395,6 +455,7 @@ def main():
         "bins": bins,
         "streaks": stk,
         "hours": hours,
+        "streak_edge": se,
         "hyp": H,
         "golden": [{"name": g["name"], "note": g["note"]} for g in golden],
     }
@@ -404,7 +465,8 @@ def main():
     jsave("results/strategies.json", {"updated": now(),
         "rule_v2": {"status": h3[0]["status"] if h3 else "⏳ копим данные", "ev_oos": rule["oos"]["ev"], "n_oos": rule["oos"]["n"]},
         "golden": [g["name"] for g in golden],
-        "patterns": [h["name"] + " | " + h["note"] for h in H if h["status"].startswith("✨")]})
+        "patterns": [h["name"] + " | " + h["note"] for h in H if h["status"].startswith("✨")],
+        "streak_v1": {"status": h8s, "probs": se["probs"], "oos": se["oos"]}})
     print("lab: windows %d, settled %d (+%d), snaps %d, hyps %d, golden %d" % (
         len(lab), settled, done, snaps, len(H), len(golden)))
 

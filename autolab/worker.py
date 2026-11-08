@@ -256,6 +256,43 @@ def sht_trade(st, windows):
         held.add(w["slug"])
         n_sht += 1
 
+def sht_trade_streaks(st, windows):
+    """Авто-стратегия моментума: включается ТОЛЬКО когда лаборатория подтвердила стрик-эдж (✅)."""
+    strat = jload("results/strategies.json", {})
+    sv = strat.get("streak_v1") or {}
+    if not str(sv.get("status", "")).startswith("✅"): return
+    probs = sv.get("probs") or {}
+    pu, pd = probs.get("after_up"), probs.get("after_down")
+    if pu is None or pd is None: return
+    lab = jload(ST["lab"], {})
+    eq = st["cash"] + sum(p["shares"] * p.get("last", p["entry"]) for p in st["positions"].values())
+    n_sht = sum(1 for p in st["positions"].values() if p.get("kind") == "sht")
+    held = set(p["slug"] for p in st["positions"].values())
+    for w in windows:
+        if n_sht >= MAX_SHT_POS or st["cash"] < 15: break
+        if w["slug"] in held: continue
+        prev_slug = re.sub(r"\d{9,}$", str(w["start"] - w["win_s"]), w["slug"])
+        pv = (lab.get(prev_slug) or {}).get("outcome")
+        if pv is None: continue
+        tau = w["end"] - time.time()
+        if tau < 90 or tau > w["win_s"] * 0.8 or w["liq"] < SHT_MIN_LIQ: continue
+        side, px = None, 0.0
+        if pv == 1 and pu - w["p_up"] >= SHT_EDGE_MIN: side, px = "Up", w["p_up"]
+        elif pv == 0 and w["p_up"] - pd >= SHT_EDGE_MIN: side, px = "Down", w["p_down"]
+        if not side or px < 0.10 or px > 0.97: continue
+        amt = min(0.05 * eq, st["cash"])
+        if amt < 10: continue
+        entry = px + 0.005
+        shares = amt / entry
+        st["cash"] -= amt
+        st["positions"][w["slug"]] = {"kind": "sht", "slug": w["slug"], "question": w["title"],
+            "series": w["series"], "outcome": side, "strategy": "stk" + w["tag"][-2:],
+            "entry": round(entry, 4), "last": round(entry, 4), "shares": round(shares, 2),
+            "usd": round(amt, 2), "opened": now(), "epoch": time.time(), "end_ts": w["end"],
+            "fair_up": round(pu if pv == 1 else pd, 4)}
+        held.add(w["slug"])
+        n_sht += 1
+
 def settle_sht(st):
     for key in list(st["positions"].keys()):
         pos = st["positions"].get(key)
@@ -380,6 +417,7 @@ def main():
         keys[s["slug"]] = now()
     windows = sht_scan()
     sht_trade(st, windows)
+    sht_trade_streaks(st, windows)
     lab_log(windows)
     eq = st["cash"] + sum(p["shares"] * p.get("last", p["entry"]) for p in st["positions"].values())
     st["curve"].append([now(), round(eq, 2)])
@@ -403,7 +441,7 @@ def main():
     jsave(ST["scan"], {"updated": now(), "scanned": len(ms), "runs": st["runs"]})
     live = [w for w in windows if w["start"] <= time.time() < w["end"] or "fair_up" in w]
     live.sort(key=lambda x: x["end"])
-    settled_sht = [c for c in closed if str(c.get("strategy", "")).startswith("sht")][::-1][:12]
+    settled_sht = [c for c in closed if str(c.get("strategy", "")).startswith(("sht", "stk"))][::-1][:12]
     jsave(ST["sht"], {"updated": now(), "live": live[:14],
         "cal": {"n": len(cal), "brier": brier, "acc": acc},
         "settled": settled_sht})
