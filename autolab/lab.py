@@ -338,6 +338,8 @@ def hyps(model, rule, bins, stk, ws, hours):
     add("Стрики не дают эджа (эффективность)", "P(Up) после серии k в пределах 50±10%",
         len(big), "уклонений: " + str(len(dev)), len(big), "уклонений: " + str(len(dev)),
         ok5, len(ws) < 300)
+    if not ok5 and len(ws) >= 300:
+        H[-1]["status"] = "✨ паттерн: стрики влияют на исход"
     # H6: смесь модели и рынка бьёт обоих
     b_is, b_oos = model["blend"]["is"], model["blend"]["oos"]
     vals = (b_is, b_oos, model["is"]["brier"], model["mkt_brier"]["is"], model["oos"]["brier"], model["mkt_brier"]["oos"])
@@ -354,6 +356,8 @@ def hyps(model, rule, bins, stk, ws, hours):
         len(hours), "уклонений: " + str(len(flagged_h)),
         len(hours), "уклонений: " + str(len(flagged_h)),
         ok7, len(ws) < 300)
+    if not ok7 and len(ws) >= 300:
+        H[-1]["status"] = "✨ паттерн: время суток влияет"
     return H
 
 def main():
@@ -399,7 +403,8 @@ def main():
     h3 = [h for h in H if h["name"].startswith("Правило")]
     jsave("results/strategies.json", {"updated": now(),
         "rule_v2": {"status": h3[0]["status"] if h3 else "⏳ копим данные", "ev_oos": rule["oos"]["ev"], "n_oos": rule["oos"]["n"]},
-        "golden": [g["name"] for g in golden]})
+        "golden": [g["name"] for g in golden],
+        "patterns": [h["name"] + " | " + h["note"] for h in H if h["status"].startswith("✨")]})
     print("lab: windows %d, settled %d (+%d), snaps %d, hyps %d, golden %d" % (
         len(lab), settled, done, snaps, len(H), len(golden)))
 
