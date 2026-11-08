@@ -264,22 +264,33 @@ def settle_sht(st):
             final = 0.5
             reason = "нет данных расчёта"
         else:
+            pr = None
             try:
                 mk = fetch(GAMMA + "/markets?slug=" + pos["slug"], 10)
                 if isinstance(mk, list) and mk:
                     pr = [fnum(x) for x in plist(mk[0].get("outcomePrices", "[]"))]
-                    if len(pr) == 2 and max(pr) >= 0.99:
-                        idx = 0 if pos["outcome"] == "Up" else 1
-                        final = pr[idx]
-                        reason = "расчёт рынка"
             except Exception:
-                continue
+                pr = None
+            if not pr or len(pr) != 2 or max(pr) < 0.99:
+                # закрытые окна удаляются из /markets - берём исход из /events
+                try:
+                    ev = fetch(GAMMA + "/events?slug=" + pos["slug"], 10)
+                    if isinstance(ev, list) and ev:
+                        e0 = ev[0]
+                        src = e0 if e0.get("outcomePrices") else (e0.get("markets") or [{}])[0]
+                        pr = [fnum(x) for x in plist(src.get("outcomePrices", "[]"))]
+                except Exception:
+                    pass
+            if pr and len(pr) == 2 and max(pr) >= 0.99:
+                idx = 0 if pos["outcome"] == "Up" else 1
+                final = pr[idx]
+                reason = "расчёт рынка"
         if final is None: continue
         st["positions"].pop(key)
+        payout = pos["shares"] * final
         win = final >= 0.5
-        payout = pos["shares"] * 1.0 if win else 0.0
         st["cash"] += payout * (1 - FEE / 2)
-        ret = (payout / pos["usd"] - 1.0) if win else -1.0
+        ret = payout / pos["usd"] - 1.0
         st["closed"].append({"question": pos["question"], "slug": pos["slug"],
             "outcome": pos["outcome"], "entry": pos["entry"], "exit": 1.0 if win else 0.0,
             "ret_pct": round(ret * 100, 2), "strategy": pos["strategy"],

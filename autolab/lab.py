@@ -80,14 +80,24 @@ def settle(lab):
     for end, k in cands:
         if done >= SETTLE_BATCH or time.time() > T0 + BUDGET_S * 0.5:
             break
+        pr = None
         try:
             mk = fetch(GAMMA + "/markets?slug=" + k, 10)
+            if isinstance(mk, list) and mk:
+                pr = [fnum(x) for x in plist(mk[0].get("outcomePrices", "[]"))]
         except Exception:
-            continue
-        if not (isinstance(mk, list) and mk):
-            continue
-        pr = [fnum(x) for x in plist(mk[0].get("outcomePrices", "[]"))]
-        if len(pr) == 2 and max(pr) >= 0.99:
+            pr = None
+        if not pr or len(pr) != 2 or max(pr) < 0.99:
+            # закрытые окна удаляются из /markets - берём исход из /events
+            try:
+                ev = fetch(GAMMA + "/events?slug=" + k, 10)
+                if isinstance(ev, list) and ev:
+                    e0 = ev[0]
+                    src = e0 if e0.get("outcomePrices") else (e0.get("markets") or [{}])[0]
+                    pr = [fnum(x) for x in plist(src.get("outcomePrices", "[]"))]
+            except Exception:
+                pr = None
+        if pr and len(pr) == 2 and max(pr) >= 0.99:
             lab[k]["outcome"] = 1 if pr[0] >= 0.5 else 0
             done += 1
     return done
