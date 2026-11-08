@@ -1,7 +1,7 @@
 name: pm-worker
 on:
   schedule:
-    - cron: "7,37 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
   push:
     branches: [master]
@@ -14,14 +14,14 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - name: Scan + paper trade
-        run: timeout 480 python autolab/worker.py
+        run: timeout 240 python autolab/worker.py
         continue-on-error: true
       - name: Commit results
         run: |
