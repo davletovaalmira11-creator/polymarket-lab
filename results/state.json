@@ -1,5 +1,5 @@
 {
- "cash": 553.7861389380707,
+ "cash": 516.1014819911672,
  "positions": {
   "will-bitcoin-reach-85k-in-november-2026": {
    "question": "Will Bitcoin reach $85,000 in November?",
@@ -7,7 +7,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.785,
-   "last": 0.805,
+   "last": 0.8,
    "shares": 63.63,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
@@ -19,7 +19,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.88,
-   "last": 0.87,
+   "last": 0.875,
    "shares": 56.76,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
@@ -48,6 +48,22 @@
    "usd": 49.98,
    "opened": "2026-11-08T02:29:10Z",
    "epoch": 1794104950.605626
+  },
+  "eth-updown-15m-1794181500": {
+   "kind": "sht",
+   "slug": "eth-updown-15m-1794181500",
+   "question": "Ethereum Up or Down - November 8, 6:45PM-7:00PM ET",
+   "series": "eth-up-or-down-15m",
+   "outcome": "Up",
+   "strategy": "sht15",
+   "entry": 0.32,
+   "last": 0.32,
+   "shares": 117.76,
+   "usd": 37.68,
+   "opened": "2026-11-08T23:48:47Z",
+   "epoch": 1794181727.060862,
+   "end_ts": 1794182400,
+   "fair_up": 0.3656
   }
  },
  "closed": [
@@ -648,20 +664,24 @@
   [
    "2026-11-08T23:12:52Z",
    753.73
+  ],
+  [
+   "2026-11-08T23:48:47Z",
+   753.69
   ]
  ],
- "runs": 38,
+ "runs": 39,
  "stats": {
-  "equity": 753.73,
-  "cash": 553.79,
-  "open": 4,
+  "equity": 753.69,
+  "cash": 516.1,
+  "open": 5,
   "trades": 38,
   "wins": 19,
   "winrate": 50.0,
   "pnl_pct": -24.63,
-  "updated": "2026-11-08T23:12:52Z",
-  "runs": 38,
-  "sht_open": 0,
+  "updated": "2026-11-08T23:48:47Z",
+  "runs": 39,
+  "sht_open": 1,
   "sht_trades": 36,
   "sht_pnl": -246.22
  },
