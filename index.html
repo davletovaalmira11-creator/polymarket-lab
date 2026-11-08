@@ -38,7 +38,7 @@ svg text { font-family:Inter,sans-serif; }
 </style>
 </head>
 <body>
-<div class="hd"><h1>🔮 Polymarket Lab <span style="color:var(--dim);font-weight:400;font-size:11px">v1</span></h1><span class="tag" id="upd">загрузка…</span></div>
+<div class="hd"><h1>🔮 Polymarket Lab <span style="color:var(--dim);font-weight:400;font-size:11px">v1.1</span></h1><span class="tag" id="upd">загрузка…</span></div>
 <div class="nav">
 <button class="on" onclick="show('ov')">📊 Обзор</button>
 <button onclick="show('sig')">⚡ Сигналы</button>
@@ -150,7 +150,7 @@ function render(st, sg) {
   document.getElementById("k-scn").textContent = sg ? f(sg.scanned) : "—";
   document.getElementById("sig-n").textContent = sigs.length;
   var st2 = "<tr><th>Стратегия</th><th>Рынок</th><th>Исход</th><th>Цена</th><th>Эдж</th><th>Ликв.</th><th>До конца</th></tr>";
-  sigs.slice(0, 25).forEach(function (s2) { st2 += "<tr><td>" + (STR[s2.strategy] || s2.strategy) + "</td><td>" + esc(s2.question).slice(0, 60) + (s2.note ? "<div style='color:var(--dim);font-size:10px'>" + esc(s2.note) + "</div>" : "") + "</td><td><span class='chip" + (s2.tradeable ? " buy' : "'") + ">" + s2.outcome + "</span></td><td>" + s2.price + "</td><td class='" + (s2.edge > 0 ? "pos" : "") + "'>" + f(s2.edge) + "</td><td>" + Math.round(s2.liq / 1000) + "k</td><td>" + f(s2.days_left) + " дн</td></tr>"; });
+  sigs.slice(0, 25).forEach(function (s2) { st2 += "<tr><td>" + (STR[s2.strategy] || s2.strategy) + "</td><td>" + esc(s2.question).slice(0, 60) + (s2.note ? "<div style='color:var(--dim);font-size:10px'>" + esc(s2.note) + "</div>" : "") + "</td><td><span class='chip" + (s2.tradeable ? " buy'" : "'") + ">" + s2.outcome + "</span></td><td>" + s2.price + "</td><td class='" + (s2.edge > 0 ? "pos" : "") + "'>" + f(s2.edge) + "</td><td>" + Math.round(s2.liq / 1000) + "k</td><td>" + f(s2.days_left) + " дн</td></tr>"; });
   if (!sigs.length) st2 += "<tr><td colspan='7' class='fallback'>сигналов сейчас нет — рынки эффективны или скан ещё не прошёл</td></tr>";
   document.getElementById("sig-t").innerHTML = st2;
   document.getElementById("upd").textContent = "обновлено " + (s.updated || "—").slice(11, 16) + " UTC";
