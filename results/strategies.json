@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-09T01:06:59Z",
+ "updated": "2026-11-09T02:12:29Z",
  "rule_v2": {
   "status": "⏳ копим данные",
-  "ev_oos": 0.883,
-  "n_oos": 6
+  "ev_oos": 0.767,
+  "n_oos": 4
  },
  "golden": [],
  "patterns": [
@@ -13,13 +13,13 @@
  "streak_v1": {
   "status": "⏳ копим данные",
   "probs": {
-   "after_up": 0.513,
-   "after_down": 0.471
+   "after_up": 0.515,
+   "after_down": 0.48
   },
   "oos": {
-   "n": 20,
-   "winrate": 50.0,
-   "ev": 0.538
+   "n": 21,
+   "winrate": 52.4,
+   "ev": 0.665
   }
  }
 }
