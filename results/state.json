@@ -19,7 +19,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.88,
-   "last": 0.865,
+   "last": 0.875,
    "shares": 56.76,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
@@ -31,7 +31,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.925,
-   "last": 0.905,
+   "last": 0.915,
    "shares": 54,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
@@ -43,27 +43,11 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.915,
-   "last": 0.92,
+   "last": 0.925,
    "shares": 54.56,
    "usd": 49.98,
    "opened": "2026-11-08T02:29:10Z",
    "epoch": 1794104950.605626
-  },
-  "eth-updown-15m-1794183300": {
-   "kind": "sht",
-   "slug": "eth-updown-15m-1794183300",
-   "question": "Ethereum Up or Down - November 8, 7:15PM-7:30PM ET",
-   "series": "eth-up-or-down-15m",
-   "outcome": "Down",
-   "strategy": "sht15",
-   "entry": 0.15,
-   "last": 0.15,
-   "shares": 238.5,
-   "usd": 35.77,
-   "opened": "2026-11-09T00:24:09Z",
-   "epoch": 1794183849.2556016,
-   "end_ts": 1794184200,
-   "fair_up": 0.7164
   }
  },
  "closed": [
@@ -534,6 +518,18 @@
    "opened": "2026-11-08T23:48:47Z",
    "closed": "2026-11-09T00:23:51Z",
    "reason": "расчёт рынка, проигрыш"
+  },
+  {
+   "question": "Ethereum Up or Down - November 8, 7:15PM-7:30PM ET",
+   "slug": "eth-updown-15m-1794183300",
+   "outcome": "Down",
+   "entry": 0.15,
+   "exit": 0.0,
+   "ret_pct": -100.0,
+   "strategy": "sht15",
+   "opened": "2026-11-09T00:24:09Z",
+   "closed": "2026-11-09T01:42:13Z",
+   "reason": "расчёт рынка, проигрыш"
   }
  ],
  "curve": [
@@ -684,22 +680,26 @@
   [
    "2026-11-09T00:24:09Z",
    715.49
+  ],
+  [
+   "2026-11-09T01:42:32Z",
+   681.09
   ]
  ],
- "runs": 40,
+ "runs": 41,
  "stats": {
-  "equity": 715.49,
+  "equity": 681.09,
   "cash": 480.33,
-  "open": 5,
-  "trades": 39,
+  "open": 4,
+  "trades": 40,
   "wins": 19,
-  "winrate": 48.7,
-  "pnl_pct": -28.45,
-  "updated": "2026-11-09T00:24:09Z",
-  "runs": 40,
-  "sht_open": 1,
-  "sht_trades": 37,
-  "sht_pnl": -283.9
+  "winrate": 47.5,
+  "pnl_pct": -31.89,
+  "updated": "2026-11-09T01:42:32Z",
+  "runs": 41,
+  "sht_open": 0,
+  "sht_trades": 38,
+  "sht_pnl": -319.67
  },
  "done_keys": {},
  "cal": [
@@ -885,6 +885,11 @@
   },
   {
    "p": 0.3656,
+   "win": 0,
+   "tag": "sht15"
+  },
+  {
+   "p": 0.2836,
    "win": 0,
    "tag": "sht15"
   }
