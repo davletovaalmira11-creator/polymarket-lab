@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T10:17:54Z",
+ "updated": "2026-11-09T11:16:53Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,12 +9,27 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 190558 против среднего 61731",
-   "liq": 186367,
-   "v24": 190558,
+   "note": "объём 24ч 190563 против среднего 61731",
+   "liq": 179182,
+   "v24": 190563,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 52.6,
+   "days_left": 52.5,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "btc-updown-15m-1794222000",
+   "question": "Bitcoin Up or Down - November 9, 6:00AM-6:15AM ET",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 5611 против среднего 802",
+   "liq": 175816,
+   "v24": 5611,
+   "z": 0.0,
+   "end": "2026-11-09",
+   "days_left": 0.0,
    "tradeable": false
   },
   {
@@ -25,11 +40,11 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 117954 против среднего 21019",
-   "liq": 124150,
+   "liq": 121999,
    "v24": 117954,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 52.6,
+   "days_left": 52.5,
    "tradeable": false
   },
   {
@@ -40,26 +55,11 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 10160 против среднего 1626",
-   "liq": 119206,
+   "liq": 113999,
    "v24": 10160,
    "z": 0.0,
    "end": "2026-11-09",
    "days_left": 0.0,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-dip-to-35000-by-december-31-2026-744-877-748-219-467-465-646-211-122-947-537-552-555-361-972-954-635-887-657-996-643",
-   "question": "Will Bitcoin dip to $35,000 by December 31, 2026?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 35528 против среднего 6955",
-   "liq": 116381,
-   "v24": 35528,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 52.6,
    "tradeable": false
   }
  ]
