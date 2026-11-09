@@ -1,5 +1,5 @@
 {
- "cash": 932.8467754403464,
+ "cash": 875.9693241683291,
  "positions": {
   "will-bitcoin-reach-85k-in-november-2026": {
    "question": "Will Bitcoin reach $85,000 in November?",
@@ -7,7 +7,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.785,
-   "last": 0.825,
+   "last": 0.815,
    "shares": 63.63,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
@@ -19,7 +19,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.88,
-   "last": 0.885,
+   "last": 0.895,
    "shares": 56.76,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
@@ -48,6 +48,22 @@
    "usd": 49.98,
    "opened": "2026-11-08T02:29:10Z",
    "epoch": 1794104950.605626
+  },
+  "sol-updown-5m-1794255900": {
+   "kind": "sht",
+   "slug": "sol-updown-5m-1794255900",
+   "question": "Solana Up or Down - November 9, 3:25PM-3:30PM ET",
+   "series": "sol-up-or-down-5m",
+   "outcome": "Up",
+   "strategy": "sht5",
+   "entry": 0.255,
+   "last": 0.255,
+   "shares": 223.05,
+   "usd": 56.88,
+   "opened": "2026-11-09T20:26:07Z",
+   "epoch": 1794255967.173472,
+   "end_ts": 1794256200,
+   "fair_up": 0.51
   }
  },
  "closed": [
@@ -1028,20 +1044,24 @@
   [
    "2026-11-09T19:30:57Z",
    1137.62
+  ],
+  [
+   "2026-11-09T20:26:07Z",
+   1137.55
   ]
  ],
- "runs": 58,
+ "runs": 59,
  "stats": {
-  "equity": 1137.62,
-  "cash": 932.85,
-  "open": 4,
+  "equity": 1137.55,
+  "cash": 875.97,
+  "open": 5,
   "trades": 63,
   "wins": 32,
   "winrate": 50.8,
-  "pnl_pct": 13.76,
-  "updated": "2026-11-09T19:30:57Z",
-  "runs": 58,
-  "sht_open": 0,
+  "pnl_pct": 13.75,
+  "updated": "2026-11-09T20:26:07Z",
+  "runs": 59,
+  "sht_open": 1,
   "sht_trades": 61,
   "sht_pnl": 134.45
  },
