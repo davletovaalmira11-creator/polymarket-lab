@@ -1,5 +1,5 @@
 {
- "cash": 2639.525606791916,
+ "cash": 2212.8437057731285,
  "positions": {
   "will-bitcoin-reach-85k-in-november-2026": {
    "question": "Will Bitcoin reach $85,000 in November?",
@@ -7,7 +7,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.785,
-   "last": 0.815,
+   "last": 0.82,
    "shares": 63.63,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
@@ -48,6 +48,54 @@
    "usd": 49.98,
    "opened": "2026-11-08T02:29:10Z",
    "epoch": 1794104950.605626
+  },
+  "btc-updown-5m-1794276600": {
+   "kind": "sht",
+   "slug": "btc-updown-5m-1794276600",
+   "question": "Bitcoin Up or Down - November 9, 9:10PM-9:15PM ET",
+   "series": "btc-up-or-down-5m",
+   "outcome": "Up",
+   "strategy": "sht5",
+   "entry": 0.37,
+   "last": 0.37,
+   "shares": 384.4,
+   "usd": 142.23,
+   "opened": "2026-11-10T02:12:48Z",
+   "epoch": 1794276768.0080013,
+   "end_ts": 1794276900,
+   "fair_up": 0.5576
+  },
+  "eth-updown-5m-1794276600": {
+   "kind": "sht",
+   "slug": "eth-updown-5m-1794276600",
+   "question": "Ethereum Up or Down - November 9, 9:10PM-9:15PM ET",
+   "series": "eth-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.33,
+   "last": 0.33,
+   "shares": 430.99,
+   "usd": 142.23,
+   "opened": "2026-11-10T02:12:48Z",
+   "epoch": 1794276768.008033,
+   "end_ts": 1794276900,
+   "fair_up": 0.582
+  },
+  "sol-updown-5m-1794276600": {
+   "kind": "sht",
+   "slug": "sol-updown-5m-1794276600",
+   "question": "Solana Up or Down - November 9, 9:10PM-9:15PM ET",
+   "series": "sol-up-or-down-5m",
+   "outcome": "Up",
+   "strategy": "sht5",
+   "entry": 0.14,
+   "last": 0.14,
+   "shares": 1015.91,
+   "usd": 142.23,
+   "opened": "2026-11-10T02:12:48Z",
+   "epoch": 1794276768.0080512,
+   "end_ts": 1794276900,
+   "fair_up": 0.3124
   }
  },
  "closed": [
@@ -1200,20 +1248,24 @@
   [
    "2026-11-10T01:09:05Z",
    2844.23
+  ],
+  [
+   "2026-11-10T02:12:48Z",
+   2844.55
   ]
  ],
- "runs": 65,
+ "runs": 66,
  "stats": {
-  "equity": 2844.23,
-  "cash": 2639.53,
-  "open": 4,
+  "equity": 2844.55,
+  "cash": 2212.84,
+  "open": 7,
   "trades": 75,
   "wins": 40,
   "winrate": 53.3,
-  "pnl_pct": 184.42,
-  "updated": "2026-11-10T01:09:05Z",
-  "runs": 65,
-  "sht_open": 0,
+  "pnl_pct": 184.45,
+  "updated": "2026-11-10T02:12:48Z",
+  "runs": 66,
+  "sht_open": 3,
   "sht_trades": 73,
   "sht_pnl": 1843.75
  },
