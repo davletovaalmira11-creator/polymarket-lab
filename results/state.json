@@ -1,5 +1,5 @@
 {
- "cash": 2153.1072869211575,
+ "cash": 1922.667698229042,
  "positions": {
   "will-bitcoin-dip-to-62pt5k-in-november-2026": {
    "question": "Will Bitcoin dip to $62,500 in November?",
@@ -31,11 +31,43 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.915,
-   "last": 0.9565,
+   "last": 0.9575,
    "shares": 54.56,
    "usd": 49.98,
    "opened": "2026-11-08T02:29:10Z",
    "epoch": 1794104950.605626
+  },
+  "btc-updown-15m-1794354300": {
+   "kind": "sht",
+   "slug": "btc-updown-15m-1794354300",
+   "question": "Bitcoin Up or Down - November 10, 6:45PM-7:00PM ET",
+   "series": "btc-up-or-down-15m",
+   "outcome": "Up",
+   "strategy": "sht15",
+   "entry": 0.29,
+   "last": 0.29,
+   "shares": 397.31,
+   "usd": 115.22,
+   "opened": "2026-11-10T23:50:07Z",
+   "epoch": 1794354607.9001536,
+   "end_ts": 1794355200,
+   "fair_up": 0.374
+  },
+  "eth-updown-15m-1794354300": {
+   "kind": "sht",
+   "slug": "eth-updown-15m-1794354300",
+   "question": "Ethereum Up or Down - November 10, 6:45PM-7:00PM ET",
+   "series": "eth-up-or-down-15m",
+   "outcome": "Up",
+   "strategy": "sht15",
+   "entry": 0.16,
+   "last": 0.16,
+   "shares": 720.12,
+   "usd": 115.22,
+   "opened": "2026-11-10T23:50:07Z",
+   "epoch": 1794354607.9001765,
+   "end_ts": 1794355200,
+   "fair_up": 0.3292
   }
  },
  "closed": [
@@ -1668,20 +1700,24 @@
   [
    "2026-11-10T23:13:30Z",
    2304.34
+  ],
+  [
+   "2026-11-10T23:50:07Z",
+   2304.4
   ]
  ],
- "runs": 89,
+ "runs": 90,
  "stats": {
-  "equity": 2304.34,
-  "cash": 2153.11,
-  "open": 3,
+  "equity": 2304.4,
+  "cash": 1922.67,
+  "open": 5,
   "trades": 107,
   "wins": 54,
   "winrate": 50.5,
-  "pnl_pct": 130.43,
-  "updated": "2026-11-10T23:13:30Z",
-  "runs": 89,
-  "sht_open": 0,
+  "pnl_pct": 130.44,
+  "updated": "2026-11-10T23:50:07Z",
+  "runs": 90,
+  "sht_open": 2,
   "sht_trades": 104,
   "sht_pnl": 1306.22
  },
