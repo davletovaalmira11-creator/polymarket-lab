@@ -7,7 +7,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.88,
-   "last": 0.875,
+   "last": 0.895,
    "shares": 56.76,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
@@ -19,7 +19,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.925,
-   "last": 0.925,
+   "last": 0.935,
    "shares": 54,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
@@ -31,59 +31,11 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.915,
-   "last": 0.9615,
+   "last": 0.9585,
    "shares": 54.56,
    "usd": 49.98,
    "opened": "2026-11-08T02:29:10Z",
    "epoch": 1794104950.605626
-  },
-  "btc-updown-5m-1794411000": {
-   "kind": "sht",
-   "slug": "btc-updown-5m-1794411000",
-   "question": "Bitcoin Up or Down - November 11, 10:30AM-10:35AM ET",
-   "series": "btc-up-or-down-5m",
-   "outcome": "Down",
-   "strategy": "sht5",
-   "entry": 0.34,
-   "last": 0.34,
-   "shares": 320.16,
-   "usd": 108.85,
-   "opened": "2026-11-11T15:31:59Z",
-   "epoch": 1794411119.9171443,
-   "end_ts": 1794411300,
-   "fair_up": 0.3765
-  },
-  "eth-updown-5m-1794411000": {
-   "kind": "sht",
-   "slug": "eth-updown-5m-1794411000",
-   "question": "Ethereum Up or Down - November 11, 10:30AM-10:35AM ET",
-   "series": "eth-up-or-down-5m",
-   "outcome": "Down",
-   "strategy": "sht5",
-   "entry": 0.265,
-   "last": 0.265,
-   "shares": 410.77,
-   "usd": 108.85,
-   "opened": "2026-11-11T15:31:59Z",
-   "epoch": 1794411119.917176,
-   "end_ts": 1794411300,
-   "fair_up": 0.3183
-  },
-  "sol-updown-5m-1794411000": {
-   "kind": "sht",
-   "slug": "sol-updown-5m-1794411000",
-   "question": "Solana Up or Down - November 11, 10:30AM-10:35AM ET",
-   "series": "sol-up-or-down-5m",
-   "outcome": "Down",
-   "strategy": "sht5",
-   "entry": 0.36,
-   "last": 0.36,
-   "shares": 302.37,
-   "usd": 108.85,
-   "opened": "2026-11-11T15:31:59Z",
-   "epoch": 1794411119.917197,
-   "end_ts": 1794411300,
-   "fair_up": 0.1638
   }
  },
  "closed": [
@@ -1706,6 +1658,42 @@
    "opened": "2026-11-11T11:37:40Z",
    "closed": "2026-11-11T12:37:51Z",
    "reason": "расчёт рынка, проигрыш"
+  },
+  {
+   "question": "Bitcoin Up or Down - November 11, 10:30AM-10:35AM ET",
+   "slug": "btc-updown-5m-1794411000",
+   "outcome": "Down",
+   "entry": 0.34,
+   "exit": 0.0,
+   "ret_pct": -100.0,
+   "strategy": "sht5",
+   "opened": "2026-11-11T15:31:59Z",
+   "closed": "2026-11-11T16:29:03Z",
+   "reason": "расчёт рынка, проигрыш"
+  },
+  {
+   "question": "Ethereum Up or Down - November 11, 10:30AM-10:35AM ET",
+   "slug": "eth-updown-5m-1794411000",
+   "outcome": "Down",
+   "entry": 0.265,
+   "exit": 0.0,
+   "ret_pct": -100.0,
+   "strategy": "sht5",
+   "opened": "2026-11-11T15:31:59Z",
+   "closed": "2026-11-11T16:29:03Z",
+   "reason": "расчёт рынка, проигрыш"
+  },
+  {
+   "question": "Solana Up or Down - November 11, 10:30AM-10:35AM ET",
+   "slug": "sol-updown-5m-1794411000",
+   "outcome": "Down",
+   "entry": 0.36,
+   "exit": 0.0,
+   "ret_pct": -100.0,
+   "strategy": "sht5",
+   "opened": "2026-11-11T15:31:59Z",
+   "closed": "2026-11-11T16:29:03Z",
+   "reason": "расчёт рынка, проигрыш"
   }
  ],
  "curve": [
@@ -2120,22 +2108,26 @@
   [
    "2026-11-11T15:32:00Z",
    2177.07
+  ],
+  [
+   "2026-11-11T16:29:26Z",
+   1852.02
   ]
  ],
- "runs": 106,
+ "runs": 107,
  "stats": {
-  "equity": 2177.07,
+  "equity": 1852.02,
   "cash": 1698.43,
-  "open": 6,
-  "trades": 135,
+  "open": 3,
+  "trades": 138,
   "wins": 63,
-  "winrate": 46.7,
-  "pnl_pct": 117.71,
-  "updated": "2026-11-11T15:32:00Z",
-  "runs": 106,
-  "sht_open": 3,
-  "sht_trades": 132,
-  "sht_pnl": 1180.79
+  "winrate": 45.7,
+  "pnl_pct": 85.2,
+  "updated": "2026-11-11T16:29:26Z",
+  "runs": 107,
+  "sht_open": 0,
+  "sht_trades": 135,
+  "sht_pnl": 854.24
  },
  "done_keys": {},
  "cal": [
@@ -2796,6 +2788,21 @@
   },
   {
    "p": 0.673,
+   "win": 0,
+   "tag": "sht5"
+  },
+  {
+   "p": 0.6235,
+   "win": 0,
+   "tag": "sht5"
+  },
+  {
+   "p": 0.6817,
+   "win": 0,
+   "tag": "sht5"
+  },
+  {
+   "p": 0.8362,
    "win": 0,
    "tag": "sht5"
   }
