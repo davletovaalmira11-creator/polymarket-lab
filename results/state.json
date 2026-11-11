@@ -1,5 +1,5 @@
 {
- "cash": 2024.9936158232122,
+ "cash": 1698.4334074497306,
  "positions": {
   "will-bitcoin-dip-to-62pt5k-in-november-2026": {
    "question": "Will Bitcoin dip to $62,500 in November?",
@@ -36,6 +36,54 @@
    "usd": 49.98,
    "opened": "2026-11-08T02:29:10Z",
    "epoch": 1794104950.605626
+  },
+  "btc-updown-5m-1794411000": {
+   "kind": "sht",
+   "slug": "btc-updown-5m-1794411000",
+   "question": "Bitcoin Up or Down - November 11, 10:30AM-10:35AM ET",
+   "series": "btc-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.34,
+   "last": 0.34,
+   "shares": 320.16,
+   "usd": 108.85,
+   "opened": "2026-11-11T15:31:59Z",
+   "epoch": 1794411119.9171443,
+   "end_ts": 1794411300,
+   "fair_up": 0.3765
+  },
+  "eth-updown-5m-1794411000": {
+   "kind": "sht",
+   "slug": "eth-updown-5m-1794411000",
+   "question": "Ethereum Up or Down - November 11, 10:30AM-10:35AM ET",
+   "series": "eth-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.265,
+   "last": 0.265,
+   "shares": 410.77,
+   "usd": 108.85,
+   "opened": "2026-11-11T15:31:59Z",
+   "epoch": 1794411119.917176,
+   "end_ts": 1794411300,
+   "fair_up": 0.3183
+  },
+  "sol-updown-5m-1794411000": {
+   "kind": "sht",
+   "slug": "sol-updown-5m-1794411000",
+   "question": "Solana Up or Down - November 11, 10:30AM-10:35AM ET",
+   "series": "sol-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.36,
+   "last": 0.36,
+   "shares": 302.37,
+   "usd": 108.85,
+   "opened": "2026-11-11T15:31:59Z",
+   "epoch": 1794411119.917197,
+   "end_ts": 1794411300,
+   "fair_up": 0.1638
   }
  },
  "closed": [
@@ -2068,20 +2116,24 @@
   [
    "2026-11-11T14:45:32Z",
    2177.07
+  ],
+  [
+   "2026-11-11T15:32:00Z",
+   2177.07
   ]
  ],
- "runs": 105,
+ "runs": 106,
  "stats": {
   "equity": 2177.07,
-  "cash": 2024.99,
-  "open": 3,
+  "cash": 1698.43,
+  "open": 6,
   "trades": 135,
   "wins": 63,
   "winrate": 46.7,
   "pnl_pct": 117.71,
-  "updated": "2026-11-11T14:45:32Z",
-  "runs": 105,
-  "sht_open": 0,
+  "updated": "2026-11-11T15:32:00Z",
+  "runs": 106,
+  "sht_open": 3,
   "sht_trades": 132,
   "sht_pnl": 1180.79
  },
