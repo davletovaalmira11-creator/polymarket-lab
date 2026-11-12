@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-12T16:33:13Z",
+ "updated": "2026-11-12T17:26:16Z",
  "rule_v2": {
   "status": "✅ подтверждено OOS",
-  "ev_oos": 0.084,
-  "n_oos": 35
+  "ev_oos": 0.027,
+  "n_oos": 39
  },
  "golden": [
   "Модель точнее монетки",
@@ -17,7 +17,7 @@
  "streak_v1": {
   "status": "⏳ копим данные",
   "probs": {
-   "after_up": 0.498,
+   "after_up": 0.497,
    "after_down": 0.479
   },
   "oos": {
