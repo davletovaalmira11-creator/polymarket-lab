@@ -1,5 +1,5 @@
 {
- "cash": 2409.59321222296,
+ "cash": 2773.79864222296,
  "positions": {
   "will-bitcoin-dip-to-62pt5k-in-november-2026": {
    "question": "Will Bitcoin dip to $62,500 in November?",
@@ -31,27 +31,11 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.915,
-   "last": 0.9645,
+   "last": 0.9665,
    "shares": 54.56,
    "usd": 49.98,
    "opened": "2026-11-08T02:29:10Z",
    "epoch": 1794104950.605626
-  },
-  "btc-updown-5m-1794480600": {
-   "kind": "sht",
-   "slug": "btc-updown-5m-1794480600",
-   "question": "Bitcoin Up or Down - November 12, 5:50AM-5:55AM ET",
-   "series": "btc-up-or-down-5m",
-   "outcome": "Down",
-   "strategy": "sht5",
-   "entry": 0.37,
-   "last": 0.37,
-   "shares": 364.57,
-   "usd": 134.89,
-   "opened": "2026-11-12T10:51:55Z",
-   "epoch": 1794480715.4727778,
-   "end_ts": 1794480900,
-   "fair_up": 0.4937
   }
  },
  "closed": [
@@ -1998,6 +1982,18 @@
    "opened": "2026-11-12T09:53:20Z",
    "closed": "2026-11-12T10:51:34Z",
    "reason": "расчёт рынка, проигрыш"
+  },
+  {
+   "question": "Bitcoin Up or Down - November 12, 5:50AM-5:55AM ET",
+   "slug": "btc-updown-5m-1794480600",
+   "outcome": "Down",
+   "entry": 0.37,
+   "exit": 1.0,
+   "ret_pct": 170.27,
+   "strategy": "sht5",
+   "opened": "2026-11-12T10:51:55Z",
+   "closed": "2026-11-12T11:44:55Z",
+   "reason": "расчёт рынка, выигрыш"
   }
  ],
  "curve": [
@@ -2488,22 +2484,26 @@
   [
    "2026-11-12T10:51:55Z",
    2697.83
+  ],
+  [
+   "2026-11-12T11:45:20Z",
+   2927.25
   ]
  ],
- "runs": 125,
+ "runs": 126,
  "stats": {
-  "equity": 2697.83,
-  "cash": 2409.59,
-  "open": 4,
-  "trades": 162,
-  "wins": 75,
-  "winrate": 46.3,
-  "pnl_pct": 169.78,
-  "updated": "2026-11-12T10:51:55Z",
-  "runs": 125,
-  "sht_open": 1,
-  "sht_trades": 159,
-  "sht_pnl": 1703.73
+  "equity": 2927.25,
+  "cash": 2773.8,
+  "open": 3,
+  "trades": 163,
+  "wins": 76,
+  "winrate": 46.6,
+  "pnl_pct": 192.73,
+  "updated": "2026-11-12T11:45:20Z",
+  "runs": 126,
+  "sht_open": 0,
+  "sht_trades": 160,
+  "sht_pnl": 1933.41
  },
  "done_keys": {},
  "cal": [
@@ -3300,6 +3300,11 @@
   {
    "p": 0.2367,
    "win": 0,
+   "tag": "sht5"
+  },
+  {
+   "p": 0.5063,
+   "win": 1,
    "tag": "sht5"
   }
  ]
