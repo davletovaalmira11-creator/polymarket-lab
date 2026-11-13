@@ -1,25 +1,13 @@
 {
- "cash": 2773.79864222296,
+ "cash": 2816.89310462296,
  "positions": {
-  "will-bitcoin-dip-to-62pt5k-in-november-2026": {
-   "question": "Will Bitcoin dip to $62,500 in November?",
-   "slug": "will-bitcoin-dip-to-62pt5k-in-november-2026",
-   "outcome": "No",
-   "strategy": "fav",
-   "entry": 0.88,
-   "last": 0.805,
-   "shares": 56.76,
-   "usd": 50,
-   "opened": "2026-11-08T01:16:14Z",
-   "epoch": 1794100574.658789
-  },
   "will-bitcoin-dip-to-60k-in-november-2026": {
    "question": "Will Bitcoin dip to $60,000 in November?",
    "slug": "will-bitcoin-dip-to-60k-in-november-2026",
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.925,
-   "last": 0.885,
+   "last": 0.875,
    "shares": 54,
    "usd": 50,
    "opened": "2026-11-08T01:16:14Z",
@@ -31,7 +19,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.915,
-   "last": 0.9825,
+   "last": 0.9835,
    "shares": 54.56,
    "usd": 49.98,
    "opened": "2026-11-08T02:29:10Z",
@@ -1994,6 +1982,18 @@
    "opened": "2026-11-12T10:51:55Z",
    "closed": "2026-11-12T11:44:55Z",
    "reason": "расчёт рынка, выигрыш"
+  },
+  {
+   "question": "Will Bitcoin dip to $62,500 in November?",
+   "slug": "will-bitcoin-dip-to-62pt5k-in-november-2026",
+   "outcome": "No",
+   "entry": 0.88,
+   "exit": 0.76,
+   "ret_pct": -13.84,
+   "strategy": "fav",
+   "opened": "2026-11-08T01:16:14Z",
+   "closed": "2026-11-13T03:15:37Z",
+   "reason": "стоп-лосс -10%"
   }
  ],
  "curve": [
@@ -2552,19 +2552,23 @@
   [
    "2026-11-13T02:24:05Z",
    2920.89
+  ],
+  [
+   "2026-11-13T03:15:39Z",
+   2917.8
   ]
  ],
- "runs": 142,
+ "runs": 143,
  "stats": {
-  "equity": 2920.89,
-  "cash": 2773.8,
-  "open": 3,
-  "trades": 163,
+  "equity": 2917.8,
+  "cash": 2816.89,
+  "open": 2,
+  "trades": 164,
   "wins": 76,
-  "winrate": 46.6,
-  "pnl_pct": 192.09,
-  "updated": "2026-11-13T02:24:05Z",
-  "runs": 142,
+  "winrate": 46.3,
+  "pnl_pct": 191.78,
+  "updated": "2026-11-13T03:15:39Z",
+  "runs": 143,
   "sht_open": 0,
   "sht_trades": 160,
   "sht_pnl": 1933.41
