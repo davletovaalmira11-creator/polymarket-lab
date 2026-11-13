@@ -1,7 +1,22 @@
 {
- "updated": "2026-11-13T03:15:39Z",
+ "updated": "2026-11-13T04:17:51Z",
  "scanned": 200,
  "signals": [
+  {
+   "strategy": "vols",
+   "slug": "will-bitcoin-reach-90000-by-december-31-2026-113-862-581-343",
+   "question": "Will Bitcoin reach $90,000 by December 31, 2026?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 93817 против среднего 30806",
+   "liq": 218923,
+   "v24": 93817,
+   "z": 0.0,
+   "end": "2027-01-01",
+   "days_left": 48.8,
+   "tradeable": false
+  },
   {
    "strategy": "vols",
    "slug": "bitcoin-above-82k-on-november-13-2026",
@@ -10,7 +25,7 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 36676 против среднего 6716",
-   "liq": 135486,
+   "liq": 135510,
    "v24": 36676,
    "z": 0.0,
    "end": "2026-11-13",
