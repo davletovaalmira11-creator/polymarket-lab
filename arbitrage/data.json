@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15T15:48:57+00:00",
- "updated_ts": 1794757737,
+ "updated": "2026-11-15T16:51:38+00:00",
+ "updated_ts": 1794761498,
  "status": "ok",
  "last_error": null,
  "skinport": {
@@ -9,14 +9,14 @@
  },
  "steam": {
   "cached": 486,
-  "queue": 20513,
+  "queue": 20629,
   "fetched_this_run": 0,
   "fails": 0,
   "r429": 5
  },
  "stats": {
   "matched": 464,
-  "passing": 99,
+  "passing": 102,
   "best_roi": 73.9
  },
  "thresholds": {
@@ -45,7 +45,7 @@
    "profit": 0.13,
    "roi": 73.9,
    "volume": 451,
-   "qty": 2401,
+   "qty": 2402,
    "steam_ts": 1794747688,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Alpine%20Camo%20%28Field-Tested%29",
@@ -76,6 +76,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Sawed-Off%20%7C%20Black%20Sand%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=Sawed-Off%20%7C%20Black%20Sand%20%28Field-Tested%29"
+  },
+  {
+   "name": "USP-S | Ticket to Hell (Minimal Wear)",
+   "buy": 0.45,
+   "steam": 0.85,
+   "profit": 0.29,
+   "roi": 64.3,
+   "volume": 483,
+   "qty": 433,
+   "steam_ts": 1794743248,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Ticket%20to%20Hell%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Ticket%20to%20Hell%20%28Minimal%20Wear%29"
   },
   {
    "name": "M4A4 | Magnesium (Well-Worn)",
@@ -175,11 +188,24 @@
    "profit": 0.12,
    "roi": 51.2,
    "volume": 102,
-   "qty": 409,
+   "qty": 410,
    "steam_ts": 1794747514,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/P250%20%7C%20Cyber%20Shell%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=P250%20%7C%20Cyber%20Shell%20%28Field-Tested%29"
+  },
+  {
+   "name": "Glock-18 | Umbral Rabbit (Field-Tested)",
+   "buy": 0.23,
+   "steam": 0.4,
+   "profit": 0.12,
+   "roi": 51.2,
+   "volume": 733,
+   "qty": 1241,
+   "steam_ts": 1794747636,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Umbral%20Rabbit%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Umbral%20Rabbit%20%28Field-Tested%29"
   },
   {
    "name": "MP7 | Just Smile (Well-Worn)",
@@ -195,17 +221,17 @@
    "skinport_url": "https://skinport.com/market?search=MP7%20%7C%20Just%20Smile%20%28Well-Worn%29"
   },
   {
-   "name": "Glock-18 | Umbral Rabbit (Field-Tested)",
+   "name": "MAC-10 | Sakkaku (Battle-Scarred)",
    "buy": 0.23,
    "steam": 0.4,
    "profit": 0.12,
    "roi": 51.2,
-   "volume": 733,
-   "qty": 1242,
-   "steam_ts": 1794747636,
+   "volume": 225,
+   "qty": 540,
+   "steam_ts": 1794747605,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Umbral%20Rabbit%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Umbral%20Rabbit%20%28Field-Tested%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Sakkaku%20%28Battle-Scarred%29",
+   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Sakkaku%20%28Battle-Scarred%29"
   },
   {
    "name": "Austin 2025 Mirage Souvenir Highlight Package",
@@ -214,24 +240,11 @@
    "profit": 1.02,
    "roi": 50.6,
    "volume": 53,
-   "qty": 586,
+   "qty": 587,
    "steam_ts": 1794739856,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Austin%202025%20Mirage%20Souvenir%20Highlight%20Package",
    "skinport_url": "https://skinport.com/market?search=Austin%202025%20Mirage%20Souvenir%20Highlight%20Package"
-  },
-  {
-   "name": "MAC-10 | Oceanic (Field-Tested)",
-   "buy": 0.22,
-   "steam": 0.38,
-   "profit": 0.11,
-   "roi": 50.2,
-   "volume": 83,
-   "qty": 350,
-   "steam_ts": 1794747673,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Oceanic%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Oceanic%20%28Field-Tested%29"
   },
   {
    "name": "Galil AR | Akoben (Field-Tested)",
@@ -247,17 +260,43 @@
    "skinport_url": "https://skinport.com/market?search=Galil%20AR%20%7C%20Akoben%20%28Field-Tested%29"
   },
   {
+   "name": "MAC-10 | Oceanic (Field-Tested)",
+   "buy": 0.22,
+   "steam": 0.38,
+   "profit": 0.11,
+   "roi": 50.2,
+   "volume": 83,
+   "qty": 350,
+   "steam_ts": 1794747673,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Oceanic%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Oceanic%20%28Field-Tested%29"
+  },
+  {
    "name": "M4A4 | Etch Lord (Field-Tested)",
    "buy": 0.25,
    "steam": 0.43,
    "profit": 0.12,
    "roi": 49.6,
    "volume": 599,
-   "qty": 1002,
+   "qty": 1003,
    "steam_ts": 1794747477,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Etch%20Lord%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=M4A4%20%7C%20Etch%20Lord%20%28Field-Tested%29"
+  },
+  {
+   "name": "Desert Eagle | Corinthian (Field-Tested)",
+   "buy": 0.32,
+   "steam": 0.55,
+   "profit": 0.16,
+   "roi": 49.5,
+   "volume": 132,
+   "qty": 340,
+   "steam_ts": 1794743521,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Corinthian%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Corinthian%20%28Field-Tested%29"
   },
   {
    "name": "SG 553 | Heavy Metal (Field-Tested)",
@@ -292,7 +331,7 @@
    "profit": 0.15,
    "roi": 48.7,
    "volume": 144,
-   "qty": 488,
+   "qty": 489,
    "steam_ts": 1794743536,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Magnesium%20%28Field-Tested%29",
@@ -325,56 +364,17 @@
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Hypnoteyes%20%28Holo%29"
   },
   {
-   "name": "Operation Broken Fang Case",
-   "buy": 3.72,
-   "steam": 6.33,
-   "profit": 1.78,
-   "roi": 48.0,
-   "volume": 741,
-   "qty": 11497,
-   "steam_ts": 1794736741,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Operation%20Broken%20Fang%20Case",
-   "skinport_url": "https://skinport.com/market?search=Operation%20Broken%20Fang%20Case"
-  },
-  {
-   "name": "Desert Eagle | Blue Ply (Well-Worn)",
-   "buy": 0.23,
-   "steam": 0.39,
-   "profit": 0.11,
-   "roi": 47.4,
-   "volume": 183,
-   "qty": 340,
-   "steam_ts": 1794747645,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Blue%20Ply%20%28Well-Worn%29",
-   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Blue%20Ply%20%28Well-Worn%29"
-  },
-  {
    "name": "AWP | Pit Viper (Minimal Wear)",
    "buy": 0.88,
    "steam": 1.49,
    "profit": 0.42,
    "roi": 47.2,
    "volume": 269,
-   "qty": 335,
+   "qty": 334,
    "steam_ts": 1794740030,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Pit%20Viper%20%28Minimal%20Wear%29",
    "skinport_url": "https://skinport.com/market?search=AWP%20%7C%20Pit%20Viper%20%28Minimal%20Wear%29"
-  },
-  {
-   "name": "Operation Riptide Case",
-   "buy": 4.3,
-   "steam": 7.25,
-   "profit": 2.0,
-   "roi": 46.6,
-   "volume": 312,
-   "qty": 4704,
-   "steam_ts": 1794736681,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Operation%20Riptide%20Case",
-   "skinport_url": "https://skinport.com/market?search=Operation%20Riptide%20Case"
   },
   {
    "name": "Glock-18 | Off World (Field-Tested)",
@@ -409,37 +409,11 @@
    "profit": 0.16,
    "roi": 44.9,
    "volume": 93,
-   "qty": 377,
+   "qty": 378,
    "steam_ts": 1794743484,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20XM1014%20%7C%20Zombie%20Offensive%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20XM1014%20%7C%20Zombie%20Offensive%20%28Field-Tested%29"
-  },
-  {
-   "name": "StatTrak™ USP-S | PC-GRN (Field-Tested)",
-   "buy": 0.18,
-   "steam": 0.3,
-   "profit": 0.08,
-   "roi": 44.9,
-   "volume": 163,
-   "qty": 492,
-   "steam_ts": 1794747754,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20USP-S%20%7C%20PC-GRN%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20USP-S%20%7C%20PC-GRN%20%28Field-Tested%29"
-  },
-  {
-   "name": "SSG 08 | Acid Fade (Factory New)",
-   "buy": 0.45,
-   "steam": 0.75,
-   "profit": 0.2,
-   "roi": 44.9,
-   "volume": 327,
-   "qty": 2780,
-   "steam_ts": 1794743300,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/SSG%2008%20%7C%20Acid%20Fade%20%28Factory%20New%29",
-   "skinport_url": "https://skinport.com/market?search=SSG%2008%20%7C%20Acid%20Fade%20%28Factory%20New%29"
   },
   {
    "name": "Souvenir MP5-SD | Lab Rats (Field-Tested)",
@@ -455,6 +429,45 @@
    "skinport_url": "https://skinport.com/market?search=Souvenir%20MP5-SD%20%7C%20Lab%20Rats%20%28Field-Tested%29"
   },
   {
+   "name": "SSG 08 | Acid Fade (Factory New)",
+   "buy": 0.45,
+   "steam": 0.75,
+   "profit": 0.2,
+   "roi": 44.9,
+   "volume": 327,
+   "qty": 2779,
+   "steam_ts": 1794743300,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/SSG%2008%20%7C%20Acid%20Fade%20%28Factory%20New%29",
+   "skinport_url": "https://skinport.com/market?search=SSG%2008%20%7C%20Acid%20Fade%20%28Factory%20New%29"
+  },
+  {
+   "name": "M4A1-S | Mud-Spec (Minimal Wear)",
+   "buy": 0.42,
+   "steam": 0.7,
+   "profit": 0.19,
+   "roi": 44.9,
+   "volume": 123,
+   "qty": 413,
+   "steam_ts": 1794743331,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20Mud-Spec%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Mud-Spec%20%28Minimal%20Wear%29"
+  },
+  {
+   "name": "StatTrak™ USP-S | PC-GRN (Field-Tested)",
+   "buy": 0.18,
+   "steam": 0.3,
+   "profit": 0.08,
+   "roi": 44.9,
+   "volume": 163,
+   "qty": 492,
+   "steam_ts": 1794747754,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20USP-S%20%7C%20PC-GRN%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20USP-S%20%7C%20PC-GRN%20%28Field-Tested%29"
+  },
+  {
    "name": "ESL One Cologne 2014 Legends",
    "buy": 47.42,
    "steam": 78.98,
@@ -466,6 +479,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/ESL%20One%20Cologne%202014%20Legends",
    "skinport_url": "https://skinport.com/market?search=ESL%20One%20Cologne%202014%20Legends"
+  },
+  {
+   "name": "Berlin 2019 Legends Autograph Capsule",
+   "buy": 0.79,
+   "steam": 1.31,
+   "profit": 0.35,
+   "roi": 44.2,
+   "volume": 42,
+   "qty": 1400,
+   "steam_ts": 1794740039,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Berlin%202019%20Legends%20Autograph%20Capsule",
+   "skinport_url": "https://skinport.com/market?search=Berlin%202019%20Legends%20Autograph%20Capsule"
   },
   {
    "name": "eSports 2014 Summer Case",
@@ -487,7 +513,7 @@
    "profit": 0.11,
    "roi": 43.8,
    "volume": 120,
-   "qty": 926,
+   "qty": 927,
    "steam_ts": 1794747480,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Allure%20%28Field-Tested%29",
@@ -507,6 +533,19 @@
    "skinport_url": "https://skinport.com/market?search=Stockholm%202021%20Dust%20II%20Souvenir%20Package"
   },
   {
+   "name": "Fracture Case",
+   "buy": 0.25,
+   "steam": 0.41,
+   "profit": 0.11,
+   "roi": 42.6,
+   "volume": 16994,
+   "qty": 30499,
+   "steam_ts": 1794747567,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Fracture%20Case",
+   "skinport_url": "https://skinport.com/market?search=Fracture%20Case"
+  },
+  {
    "name": "Prisma Case",
    "buy": 0.75,
    "steam": 1.23,
@@ -518,19 +557,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Prisma%20Case",
    "skinport_url": "https://skinport.com/market?search=Prisma%20Case"
-  },
-  {
-   "name": "Fracture Case",
-   "buy": 0.25,
-   "steam": 0.41,
-   "profit": 0.11,
-   "roi": 42.6,
-   "volume": 16994,
-   "qty": 30507,
-   "steam_ts": 1794747567,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Fracture%20Case",
-   "skinport_url": "https://skinport.com/market?search=Fracture%20Case"
   },
   {
    "name": "Five-SeveN | Hybrid (Well-Worn)",
@@ -585,17 +611,17 @@
    "skinport_url": "https://skinport.com/market?search=UMP-45%20%7C%20Oscillator%20%28Field-Tested%29"
   },
   {
-   "name": "Sticker | Flex",
-   "buy": 0.72,
-   "steam": 1.17,
-   "profit": 0.3,
-   "roi": 41.3,
-   "volume": 180,
-   "qty": 1041,
-   "steam_ts": 1794740083,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Flex",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Flex"
+   "name": "Operation Broken Fang Case",
+   "buy": 3.89,
+   "steam": 6.33,
+   "profit": 1.61,
+   "roi": 41.5,
+   "volume": 741,
+   "qty": 11495,
+   "steam_ts": 1794736741,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Operation%20Broken%20Fang%20Case",
+   "skinport_url": "https://skinport.com/market?search=Operation%20Broken%20Fang%20Case"
   },
   {
    "name": "USP-S | PC-GRN (Minimal Wear)",
@@ -611,17 +637,30 @@
    "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20PC-GRN%20%28Minimal%20Wear%29"
   },
   {
-   "name": "Paris 2023 Mirage Souvenir Package",
-   "buy": 1.89,
-   "steam": 3.07,
-   "profit": 0.78,
-   "roi": 41.2,
-   "volume": 377,
-   "qty": 1501,
-   "steam_ts": 1794739893,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Paris%202023%20Mirage%20Souvenir%20Package",
-   "skinport_url": "https://skinport.com/market?search=Paris%202023%20Mirage%20Souvenir%20Package"
+   "name": "Sticker | Flex",
+   "buy": 0.72,
+   "steam": 1.17,
+   "profit": 0.3,
+   "roi": 41.3,
+   "volume": 180,
+   "qty": 1041,
+   "steam_ts": 1794740083,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Flex",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Flex"
+  },
+  {
+   "name": "Desert Eagle | Blue Ply (Well-Worn)",
+   "buy": 0.24,
+   "steam": 0.39,
+   "profit": 0.1,
+   "roi": 41.3,
+   "volume": 183,
+   "qty": 339,
+   "steam_ts": 1794747645,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Blue%20Ply%20%28Well-Worn%29",
+   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Blue%20Ply%20%28Well-Worn%29"
   },
   {
    "name": "Katowice 2019 Minor Challengers Autograph Capsule",
@@ -637,30 +676,17 @@
    "skinport_url": "https://skinport.com/market?search=Katowice%202019%20Minor%20Challengers%20Autograph%20Capsule"
   },
   {
-   "name": "AK-47 | Elite Build (Battle-Scarred)",
-   "buy": 1.06,
-   "steam": 1.72,
-   "profit": 0.44,
-   "roi": 41.1,
-   "volume": 122,
-   "qty": 300,
-   "steam_ts": 1794711441,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Elite%20Build%20%28Battle-Scarred%29",
-   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Elite%20Build%20%28Battle-Scarred%29"
-  },
-  {
-   "name": "M4A1-S | Mud-Spec (Field-Tested)",
-   "buy": 0.21,
-   "steam": 0.34,
-   "profit": 0.09,
-   "roi": 40.8,
-   "volume": 387,
-   "qty": 1191,
-   "steam_ts": 1794747704,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20Mud-Spec%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Mud-Spec%20%28Field-Tested%29"
+   "name": "Paris 2023 Mirage Souvenir Package",
+   "buy": 1.89,
+   "steam": 3.07,
+   "profit": 0.78,
+   "roi": 41.2,
+   "volume": 377,
+   "qty": 1501,
+   "steam_ts": 1794739893,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Paris%202023%20Mirage%20Souvenir%20Package",
+   "skinport_url": "https://skinport.com/market?search=Paris%202023%20Mirage%20Souvenir%20Package"
   },
   {
    "name": "M249 | O.S.I.P.R. (Field-Tested)",
@@ -674,19 +700,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/M249%20%7C%20O.S.I.P.R.%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=M249%20%7C%20O.S.I.P.R.%20%28Field-Tested%29"
-  },
-  {
-   "name": "FAMAS | Crypsis (Field-Tested)",
-   "buy": 0.21,
-   "steam": 0.34,
-   "profit": 0.09,
-   "roi": 40.8,
-   "volume": 48,
-   "qty": 315,
-   "steam_ts": 1794747747,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Crypsis%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=FAMAS%20%7C%20Crypsis%20%28Field-Tested%29"
   },
   {
    "name": "CZ75-Auto | Circaetus (Field-Tested)",
@@ -715,6 +728,32 @@
    "skinport_url": "https://skinport.com/market?search=AUG%20%7C%20Luxe%20Trim%20%28Field-Tested%29"
   },
   {
+   "name": "FAMAS | Crypsis (Field-Tested)",
+   "buy": 0.21,
+   "steam": 0.34,
+   "profit": 0.09,
+   "roi": 40.8,
+   "volume": 48,
+   "qty": 315,
+   "steam_ts": 1794747747,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Crypsis%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=FAMAS%20%7C%20Crypsis%20%28Field-Tested%29"
+  },
+  {
+   "name": "M4A1-S | Mud-Spec (Field-Tested)",
+   "buy": 0.21,
+   "steam": 0.34,
+   "profit": 0.09,
+   "roi": 40.8,
+   "volume": 387,
+   "qty": 1191,
+   "steam_ts": 1794747704,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20Mud-Spec%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Mud-Spec%20%28Field-Tested%29"
+  },
+  {
    "name": "Winter Offensive Weapon Case",
    "buy": 7.08,
    "steam": 11.44,
@@ -741,19 +780,6 @@
    "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Uncharted%20%28Field-Tested%29"
   },
   {
-   "name": "SG 553 | Aloha (Field-Tested)",
-   "buy": 0.18,
-   "steam": 0.29,
-   "profit": 0.07,
-   "roi": 40.1,
-   "volume": 138,
-   "qty": 297,
-   "steam_ts": 1794711456,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/SG%20553%20%7C%20Aloha%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=SG%20553%20%7C%20Aloha%20%28Field-Tested%29"
-  },
-  {
    "name": "Berlin 2019 Returning Challengers Autograph Capsule",
    "buy": 0.72,
    "steam": 1.16,
@@ -767,13 +793,26 @@
    "skinport_url": "https://skinport.com/market?search=Berlin%202019%20Returning%20Challengers%20Autograph%20Capsule"
   },
   {
+   "name": "SG 553 | Aloha (Field-Tested)",
+   "buy": 0.18,
+   "steam": 0.29,
+   "profit": 0.07,
+   "roi": 40.1,
+   "volume": 138,
+   "qty": 297,
+   "steam_ts": 1794711456,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/SG%20553%20%7C%20Aloha%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=SG%20553%20%7C%20Aloha%20%28Field-Tested%29"
+  },
+  {
    "name": "Gamma 2 Case",
    "buy": 2.05,
    "steam": 3.3,
    "profit": 0.82,
    "roi": 40.0,
    "volume": 3508,
-   "qty": 17075,
+   "qty": 17066,
    "steam_ts": 1794739862,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Gamma%202%20Case",
@@ -786,7 +825,7 @@
    "profit": 0.52,
    "roi": 39.8,
    "volume": 13,
-   "qty": 434,
+   "qty": 435,
    "steam_ts": 1794739971,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20s1mple%20%28Holo%29%20%7C%20Stockholm%202021",
@@ -832,56 +871,17 @@
    "skinport_url": "https://skinport.com/market?search=Horizon%20Case"
   },
   {
-   "name": "StatTrak™ SSG 08 | Memorial (Field-Tested)",
-   "buy": 0.15,
-   "steam": 0.24,
-   "profit": 0.06,
-   "roi": 39.1,
-   "volume": 94,
-   "qty": 449,
-   "steam_ts": 1794751105,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20SSG%2008%20%7C%20Memorial%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20SSG%2008%20%7C%20Memorial%20%28Field-Tested%29"
-  },
-  {
-   "name": "Prisma 2 Case",
-   "buy": 0.7,
-   "steam": 1.12,
-   "profit": 0.27,
-   "roi": 39.1,
-   "volume": 10758,
-   "qty": 49546,
-   "steam_ts": 1794740086,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Prisma%202%20Case",
-   "skinport_url": "https://skinport.com/market?search=Prisma%202%20Case"
-  },
-  {
-   "name": "P90 | Grim (Field-Tested)",
-   "buy": 0.25,
-   "steam": 0.4,
-   "profit": 0.1,
-   "roi": 39.1,
-   "volume": 152,
-   "qty": 345,
-   "steam_ts": 1794747539,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/P90%20%7C%20Grim%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=P90%20%7C%20Grim%20%28Field-Tested%29"
-  },
-  {
-   "name": "P250 | X-Ray (Minimal Wear)",
+   "name": "Clutch Case",
    "buy": 0.3,
    "steam": 0.48,
    "profit": 0.12,
    "roi": 39.1,
-   "volume": 190,
-   "qty": 525,
-   "steam_ts": 1794743561,
+   "volume": 4545,
+   "qty": 29834,
+   "steam_ts": 1794743527,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/P250%20%7C%20X-Ray%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=P250%20%7C%20X-Ray%20%28Minimal%20Wear%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Clutch%20Case",
+   "skinport_url": "https://skinport.com/market?search=Clutch%20Case"
   },
   {
    "name": "Nova | Candy Apple (Factory New)",
@@ -897,17 +897,56 @@
    "skinport_url": "https://skinport.com/market?search=Nova%20%7C%20Candy%20Apple%20%28Factory%20New%29"
   },
   {
-   "name": "MAC-10 | Sakkaku (Battle-Scarred)",
+   "name": "StatTrak™ SSG 08 | Memorial (Field-Tested)",
+   "buy": 0.15,
+   "steam": 0.24,
+   "profit": 0.06,
+   "roi": 39.1,
+   "volume": 94,
+   "qty": 448,
+   "steam_ts": 1794751105,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20SSG%2008%20%7C%20Memorial%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20SSG%2008%20%7C%20Memorial%20%28Field-Tested%29"
+  },
+  {
+   "name": "Prisma 2 Case",
+   "buy": 0.7,
+   "steam": 1.12,
+   "profit": 0.27,
+   "roi": 39.1,
+   "volume": 10758,
+   "qty": 49538,
+   "steam_ts": 1794740086,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Prisma%202%20Case",
+   "skinport_url": "https://skinport.com/market?search=Prisma%202%20Case"
+  },
+  {
+   "name": "P250 | X-Ray (Minimal Wear)",
+   "buy": 0.3,
+   "steam": 0.48,
+   "profit": 0.12,
+   "roi": 39.1,
+   "volume": 190,
+   "qty": 525,
+   "steam_ts": 1794743561,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/P250%20%7C%20X-Ray%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=P250%20%7C%20X-Ray%20%28Minimal%20Wear%29"
+  },
+  {
+   "name": "P90 | Grim (Field-Tested)",
    "buy": 0.25,
    "steam": 0.4,
    "profit": 0.1,
    "roi": 39.1,
-   "volume": 225,
-   "qty": 539,
-   "steam_ts": 1794747605,
+   "volume": 152,
+   "qty": 345,
+   "steam_ts": 1794747539,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Sakkaku%20%28Battle-Scarred%29",
-   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Sakkaku%20%28Battle-Scarred%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/P90%20%7C%20Grim%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=P90%20%7C%20Grim%20%28Field-Tested%29"
   },
   {
    "name": "M4A1-S | VariCamo (Minimal Wear)",
@@ -921,19 +960,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20VariCamo%20%28Minimal%20Wear%29",
    "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20VariCamo%20%28Minimal%20Wear%29"
-  },
-  {
-   "name": "Clutch Case",
-   "buy": 0.3,
-   "steam": 0.48,
-   "profit": 0.12,
-   "roi": 39.1,
-   "volume": 4545,
-   "qty": 29834,
-   "steam_ts": 1794743527,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Clutch%20Case",
-   "skinport_url": "https://skinport.com/market?search=Clutch%20Case"
   },
   {
    "name": "Paris 2023 Overpass Souvenir Package",
@@ -962,32 +988,6 @@
    "skinport_url": "https://skinport.com/market?search=Sticker%20Capsule%202"
   },
   {
-   "name": "Souvenir MP5-SD | Lab Rats (Minimal Wear)",
-   "buy": 0.22,
-   "steam": 0.35,
-   "profit": 0.08,
-   "roi": 38.3,
-   "volume": 161,
-   "qty": 353,
-   "steam_ts": 1794747766,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Souvenir%20MP5-SD%20%7C%20Lab%20Rats%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=Souvenir%20MP5-SD%20%7C%20Lab%20Rats%20%28Minimal%20Wear%29"
-  },
-  {
-   "name": "M4A1-S | Mud-Spec (Minimal Wear)",
-   "buy": 0.44,
-   "steam": 0.7,
-   "profit": 0.17,
-   "roi": 38.3,
-   "volume": 123,
-   "qty": 413,
-   "steam_ts": 1794743331,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20Mud-Spec%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Mud-Spec%20%28Minimal%20Wear%29"
-  },
-  {
    "name": "Desert Eagle | Calligraffiti (Field-Tested)",
    "buy": 0.22,
    "steam": 0.35,
@@ -999,6 +999,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Calligraffiti%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Calligraffiti%20%28Field-Tested%29"
+  },
+  {
+   "name": "Souvenir MP5-SD | Lab Rats (Minimal Wear)",
+   "buy": 0.22,
+   "steam": 0.35,
+   "profit": 0.08,
+   "roi": 38.3,
+   "volume": 161,
+   "qty": 353,
+   "steam_ts": 1794747766,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Souvenir%20MP5-SD%20%7C%20Lab%20Rats%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=Souvenir%20MP5-SD%20%7C%20Lab%20Rats%20%28Minimal%20Wear%29"
   },
   {
    "name": "M4A4 | Magnesium (Battle-Scarred)",
@@ -1059,7 +1072,7 @@
    "profit": 3.56,
    "roi": 37.8,
    "volume": 123,
-   "qty": 1413,
+   "qty": 1414,
    "steam_ts": 1794736538,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/eSports%202013%20Winter%20Case",
@@ -1079,17 +1092,17 @@
    "skinport_url": "https://skinport.com/market?search=M4A4%20%7C%20Etch%20Lord%20%28Minimal%20Wear%29"
   },
   {
-   "name": "Five-SeveN | Hybrid (Field-Tested)",
-   "buy": 0.26,
-   "steam": 0.41,
-   "profit": 0.1,
-   "roi": 37.1,
-   "volume": 274,
-   "qty": 924,
-   "steam_ts": 1794747560,
+   "name": "AK-47 | Elite Build (Battle-Scarred)",
+   "buy": 1.09,
+   "steam": 1.72,
+   "profit": 0.41,
+   "roi": 37.2,
+   "volume": 122,
+   "qty": 295,
+   "steam_ts": 1794711441,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Five-SeveN%20%7C%20Hybrid%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=Five-SeveN%20%7C%20Hybrid%20%28Field-Tested%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Elite%20Build%20%28Battle-Scarred%29",
+   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Elite%20Build%20%28Battle-Scarred%29"
   },
   {
    "name": "Five-SeveN | Hybrid (Battle-Scarred)",
@@ -1105,6 +1118,19 @@
    "skinport_url": "https://skinport.com/market?search=Five-SeveN%20%7C%20Hybrid%20%28Battle-Scarred%29"
   },
   {
+   "name": "Five-SeveN | Hybrid (Field-Tested)",
+   "buy": 0.26,
+   "steam": 0.41,
+   "profit": 0.1,
+   "roi": 37.1,
+   "volume": 274,
+   "qty": 925,
+   "steam_ts": 1794747560,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Five-SeveN%20%7C%20Hybrid%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=Five-SeveN%20%7C%20Hybrid%20%28Field-Tested%29"
+  },
+  {
    "name": "Antwerp 2022 Mirage Souvenir Package",
    "buy": 2.56,
    "steam": 4.03,
@@ -1118,17 +1144,30 @@
    "skinport_url": "https://skinport.com/market?search=Antwerp%202022%20Mirage%20Souvenir%20Package"
   },
   {
-   "name": "Nova | Windblown (Factory New)",
-   "buy": 0.3,
-   "steam": 0.47,
-   "profit": 0.11,
-   "roi": 36.2,
-   "volume": 71,
-   "qty": 1799,
-   "steam_ts": 1794743558,
+   "name": "XM1014 | Zombie Offensive (Minimal Wear)",
+   "buy": 0.42,
+   "steam": 0.66,
+   "profit": 0.15,
+   "roi": 36.6,
+   "volume": 292,
+   "qty": 518,
+   "steam_ts": 1794743411,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Nova%20%7C%20Windblown%20%28Factory%20New%29",
-   "skinport_url": "https://skinport.com/market?search=Nova%20%7C%20Windblown%20%28Factory%20New%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/XM1014%20%7C%20Zombie%20Offensive%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=XM1014%20%7C%20Zombie%20Offensive%20%28Minimal%20Wear%29"
+  },
+  {
+   "name": "CS20 Case",
+   "buy": 0.53,
+   "steam": 0.83,
+   "profit": 0.19,
+   "roi": 36.2,
+   "volume": 2498,
+   "qty": 35556,
+   "steam_ts": 1794743260,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/CS20%20Case",
+   "skinport_url": "https://skinport.com/market?search=CS20%20Case"
   },
   {
    "name": "Glock-18 | Block-18 (Minimal Wear)",
@@ -1144,6 +1183,19 @@
    "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Block-18%20%28Minimal%20Wear%29"
   },
   {
+   "name": "Nova | Windblown (Factory New)",
+   "buy": 0.3,
+   "steam": 0.47,
+   "profit": 0.11,
+   "roi": 36.2,
+   "volume": 71,
+   "qty": 1799,
+   "steam_ts": 1794743558,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Nova%20%7C%20Windblown%20%28Factory%20New%29",
+   "skinport_url": "https://skinport.com/market?search=Nova%20%7C%20Windblown%20%28Factory%20New%29"
+  },
+  {
    "name": "StatTrak™ Swap Tool",
    "buy": 0.78,
    "steam": 1.22,
@@ -1157,13 +1209,26 @@
    "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20Swap%20Tool"
   },
   {
+   "name": "AUG | Snake Pit (Factory New)",
+   "buy": 0.16,
+   "steam": 0.25,
+   "profit": 0.06,
+   "roi": 35.9,
+   "volume": 55,
+   "qty": 414,
+   "steam_ts": 1794751086,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/AUG%20%7C%20Snake%20Pit%20%28Factory%20New%29",
+   "skinport_url": "https://skinport.com/market?search=AUG%20%7C%20Snake%20Pit%20%28Factory%20New%29"
+  },
+  {
    "name": "Operation Breakout Weapon Case",
    "buy": 5.68,
    "steam": 8.88,
    "profit": 2.04,
    "roi": 35.9,
    "volume": 1778,
-   "qty": 38977,
+   "qty": 38931,
    "steam_ts": 1794736395,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Operation%20Breakout%20Weapon%20Case",
@@ -1194,19 +1259,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/CZ75-Auto%20%7C%20Copper%20Fiber%20%28Factory%20New%29",
    "skinport_url": "https://skinport.com/market?search=CZ75-Auto%20%7C%20Copper%20Fiber%20%28Factory%20New%29"
-  },
-  {
-   "name": "AUG | Snake Pit (Factory New)",
-   "buy": 0.16,
-   "steam": 0.25,
-   "profit": 0.06,
-   "roi": 35.9,
-   "volume": 55,
-   "qty": 414,
-   "steam_ts": 1794751086,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/AUG%20%7C%20Snake%20Pit%20%28Factory%20New%29",
-   "skinport_url": "https://skinport.com/market?search=AUG%20%7C%20Snake%20Pit%20%28Factory%20New%29"
   },
   {
    "name": "StatTrak™ Galil AR | Control (Field-Tested)",
@@ -1248,19 +1300,6 @@
    "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Sakkaku%20%28Well-Worn%29"
   },
   {
-   "name": "M4A4 | Etch Lord (Well-Worn)",
-   "buy": 0.25,
-   "steam": 0.39,
-   "profit": 0.09,
-   "roi": 35.7,
-   "volume": 218,
-   "qty": 981,
-   "steam_ts": 1794747598,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Etch%20Lord%20%28Well-Worn%29",
-   "skinport_url": "https://skinport.com/market?search=M4A4%20%7C%20Etch%20Lord%20%28Well-Worn%29"
-  },
-  {
    "name": "XM1014 | Entombed (Minimal Wear)",
    "buy": 2.82,
    "steam": 4.4,
@@ -1272,6 +1311,19 @@
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/XM1014%20%7C%20Entombed%20%28Minimal%20Wear%29",
    "skinport_url": "https://skinport.com/market?search=XM1014%20%7C%20Entombed%20%28Minimal%20Wear%29"
+  },
+  {
+   "name": "M4A4 | Etch Lord (Well-Worn)",
+   "buy": 0.25,
+   "steam": 0.39,
+   "profit": 0.09,
+   "roi": 35.7,
+   "volume": 218,
+   "qty": 981,
+   "steam_ts": 1794747598,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Etch%20Lord%20%28Well-Worn%29",
+   "skinport_url": "https://skinport.com/market?search=M4A4%20%7C%20Etch%20Lord%20%28Well-Worn%29"
   },
   {
    "name": "Operation Phoenix Weapon Case",
@@ -1326,6 +1378,19 @@
    "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20M4A1-S%20%7C%20Night%20Terror%20%28Field-Tested%29"
   },
   {
+   "name": "Glock-18 | Oxide Blaze (Field-Tested)",
+   "buy": 0.2,
+   "steam": 0.31,
+   "profit": 0.07,
+   "roi": 34.8,
+   "volume": 160,
+   "qty": 574,
+   "steam_ts": 1794747732,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Oxide%20Blaze%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Oxide%20Blaze%20%28Field-Tested%29"
+  },
+  {
    "name": "MP9 | Modest Threat (Field-Tested)",
    "buy": 0.2,
    "steam": 0.31,
@@ -1339,17 +1404,17 @@
    "skinport_url": "https://skinport.com/market?search=MP9%20%7C%20Modest%20Threat%20%28Field-Tested%29"
   },
   {
-   "name": "Glock-18 | Oxide Blaze (Field-Tested)",
+   "name": "Tec-9 | Red Quartz (Minimal Wear)",
    "buy": 0.2,
    "steam": 0.31,
    "profit": 0.07,
    "roi": 34.8,
-   "volume": 160,
-   "qty": 574,
-   "steam_ts": 1794747732,
+   "volume": 402,
+   "qty": 627,
+   "steam_ts": 1794747719,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Oxide%20Blaze%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Oxide%20Blaze%20%28Field-Tested%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Tec-9%20%7C%20Red%20Quartz%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=Tec-9%20%7C%20Red%20Quartz%20%28Minimal%20Wear%29"
   },
   {
    "name": "Dual Berettas | Cobalt Quartz (Field-Tested)",
@@ -1371,24 +1436,11 @@
    "profit": 28.42,
    "roi": 34.8,
    "volume": 27,
-   "qty": 347,
+   "qty": 348,
    "steam_ts": 1794736401,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/CS%3AGO%20Weapon%20Case",
    "skinport_url": "https://skinport.com/market?search=CS%3AGO%20Weapon%20Case"
-  },
-  {
-   "name": "Tec-9 | Red Quartz (Minimal Wear)",
-   "buy": 0.2,
-   "steam": 0.31,
-   "profit": 0.07,
-   "roi": 34.8,
-   "volume": 402,
-   "qty": 627,
-   "steam_ts": 1794747719,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Tec-9%20%7C%20Red%20Quartz%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=Tec-9%20%7C%20Red%20Quartz%20%28Minimal%20Wear%29"
   },
   {
    "name": "Community Sticker Capsule 1",
@@ -1404,19 +1456,6 @@
    "skinport_url": "https://skinport.com/market?search=Community%20Sticker%20Capsule%201"
   },
   {
-   "name": "StatTrak™ Music Kit | Hundredth, FREE",
-   "buy": 0.55,
-   "steam": 0.85,
-   "profit": 0.19,
-   "roi": 34.4,
-   "volume": 54,
-   "qty": 836,
-   "steam_ts": 1794743279,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20Music%20Kit%20%7C%20Hundredth%2C%20FREE",
-   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20Music%20Kit%20%7C%20Hundredth%2C%20FREE"
-  },
-  {
    "name": "R8 Revolver | Tango (Field-Tested)",
    "buy": 0.22,
    "steam": 0.34,
@@ -1430,30 +1469,43 @@
    "skinport_url": "https://skinport.com/market?search=R8%20Revolver%20%7C%20Tango%20%28Field-Tested%29"
   },
   {
+   "name": "StatTrak™ Music Kit | Hundredth, FREE",
+   "buy": 0.55,
+   "steam": 0.85,
+   "profit": 0.19,
+   "roi": 34.4,
+   "volume": 54,
+   "qty": 836,
+   "steam_ts": 1794743279,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20Music%20Kit%20%7C%20Hundredth%2C%20FREE",
+   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20Music%20Kit%20%7C%20Hundredth%2C%20FREE"
+  },
+  {
    "name": "R8 Revolver | Blaze (Factory New)",
    "buy": 1.9,
    "steam": 2.93,
    "profit": 0.65,
    "roi": 34.1,
    "volume": 57,
-   "qty": 362,
+   "qty": 363,
    "steam_ts": 1794739928,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/R8%20Revolver%20%7C%20Blaze%20%28Factory%20New%29",
    "skinport_url": "https://skinport.com/market?search=R8%20Revolver%20%7C%20Blaze%20%28Factory%20New%29"
   },
   {
-   "name": "Shattered Web Case",
-   "buy": 2.99,
-   "steam": 4.6,
-   "profit": 1.01,
+   "name": "Paris 2023 Ancient Souvenir Package",
+   "buy": 2.32,
+   "steam": 3.57,
+   "profit": 0.78,
    "roi": 33.8,
-   "volume": 205,
-   "qty": 6889,
-   "steam_ts": 1794736855,
+   "volume": 90,
+   "qty": 399,
+   "steam_ts": 1794736945,
    "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Shattered%20Web%20Case",
-   "skinport_url": "https://skinport.com/market?search=Shattered%20Web%20Case"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Paris%202023%20Ancient%20Souvenir%20Package",
+   "skinport_url": "https://skinport.com/market?search=Paris%202023%20Ancient%20Souvenir%20Package"
   },
   {
    "name": "Sawed-Off | Analog Input (Field-Tested)",
@@ -1469,17 +1521,17 @@
    "skinport_url": "https://skinport.com/market?search=Sawed-Off%20%7C%20Analog%20Input%20%28Field-Tested%29"
   },
   {
-   "name": "Paris 2023 Ancient Souvenir Package",
-   "buy": 2.32,
-   "steam": 3.57,
-   "profit": 0.78,
+   "name": "Shattered Web Case",
+   "buy": 2.99,
+   "steam": 4.6,
+   "profit": 1.01,
    "roi": 33.8,
-   "volume": 90,
-   "qty": 399,
-   "steam_ts": 1794736945,
+   "volume": 205,
+   "qty": 6889,
+   "steam_ts": 1794736855,
    "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Paris%202023%20Ancient%20Souvenir%20Package",
-   "skinport_url": "https://skinport.com/market?search=Paris%202023%20Ancient%20Souvenir%20Package"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Shattered%20Web%20Case",
+   "skinport_url": "https://skinport.com/market?search=Shattered%20Web%20Case"
   },
   {
    "name": "MP7 | Just Smile (Field-Tested)",
@@ -1508,17 +1560,17 @@
    "skinport_url": "https://skinport.com/market?search=Antwerp%202022%20Contenders%20Autograph%20Capsule"
   },
   {
-   "name": "Sticker | FURIA (Holo) | Antwerp 2022",
-   "buy": 7.37,
-   "steam": 11.33,
-   "profit": 2.48,
+   "name": "Glove Case Key",
+   "buy": 12.98,
+   "steam": 19.95,
+   "profit": 4.37,
    "roi": 33.7,
-   "volume": 13,
-   "qty": 286,
-   "steam_ts": 1794711529,
+   "volume": 0,
+   "qty": 421,
+   "steam_ts": 1794736477,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20FURIA%20%28Holo%29%20%7C%20Antwerp%202022",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20FURIA%20%28Holo%29%20%7C%20Antwerp%202022"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Glove%20Case%20Key",
+   "skinport_url": "https://skinport.com/market?search=Glove%20Case%20Key"
   },
   {
    "name": "StatTrak™ Music Kit | Beartooth, Aggressive",
@@ -1534,19 +1586,6 @@
    "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20Music%20Kit%20%7C%20Beartooth%2C%20Aggressive"
   },
   {
-   "name": "Glove Case Key",
-   "buy": 12.98,
-   "steam": 19.95,
-   "profit": 4.37,
-   "roi": 33.7,
-   "volume": 0,
-   "qty": 421,
-   "steam_ts": 1794736477,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Glove%20Case%20Key",
-   "skinport_url": "https://skinport.com/market?search=Glove%20Case%20Key"
-  },
-  {
    "name": "Desert Eagle | Heat Treated (Field-Tested)",
    "buy": 0.8,
    "steam": 1.23,
@@ -1558,6 +1597,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Heat%20Treated%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Heat%20Treated%20%28Field-Tested%29"
+  },
+  {
+   "name": "Sticker | FURIA (Holo) | Antwerp 2022",
+   "buy": 7.37,
+   "steam": 11.33,
+   "profit": 2.48,
+   "roi": 33.7,
+   "volume": 13,
+   "qty": 286,
+   "steam_ts": 1794711529,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20FURIA%20%28Holo%29%20%7C%20Antwerp%202022",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20FURIA%20%28Holo%29%20%7C%20Antwerp%202022"
   },
   {
    "name": "Revolver Case",
@@ -1599,17 +1651,30 @@
    "skinport_url": "https://skinport.com/market?search=Tec-9%20%7C%20Brother%20%28Field-Tested%29"
   },
   {
-   "name": "XM1014 | Zombie Offensive (Minimal Wear)",
-   "buy": 0.43,
-   "steam": 0.66,
-   "profit": 0.14,
+   "name": "Stockholm 2021 Contenders Sticker Capsule",
+   "buy": 0.99,
+   "steam": 1.52,
+   "profit": 0.33,
    "roi": 33.5,
-   "volume": 292,
-   "qty": 518,
-   "steam_ts": 1794743411,
+   "volume": 70,
+   "qty": 5691,
+   "steam_ts": 1794740021,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/XM1014%20%7C%20Zombie%20Offensive%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=XM1014%20%7C%20Zombie%20Offensive%20%28Minimal%20Wear%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Stockholm%202021%20Contenders%20Sticker%20Capsule",
+   "skinport_url": "https://skinport.com/market?search=Stockholm%202021%20Contenders%20Sticker%20Capsule"
+  },
+  {
+   "name": "Glock-18 | Block-18 (Field-Tested)",
+   "buy": 0.3,
+   "steam": 0.46,
+   "profit": 0.1,
+   "roi": 33.3,
+   "volume": 743,
+   "qty": 1824,
+   "steam_ts": 1794747529,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Block-18%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Block-18%20%28Field-Tested%29"
   },
   {
    "name": "SCAR-20 | Poultrygeist (Factory New)",
@@ -1625,6 +1690,19 @@
    "skinport_url": "https://skinport.com/market?search=SCAR-20%20%7C%20Poultrygeist%20%28Factory%20New%29"
   },
   {
+   "name": "Sticker | Battle Scarred (Holo)",
+   "buy": 5.53,
+   "steam": 8.48,
+   "profit": 1.84,
+   "roi": 33.3,
+   "volume": 18,
+   "qty": 1167,
+   "steam_ts": 1794739834,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Battle%20Scarred%20%28Holo%29",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Battle%20Scarred%20%28Holo%29"
+  },
+  {
    "name": "Nova | Rising Sun (Battle-Scarred)",
    "buy": 0.3,
    "steam": 0.46,
@@ -1636,19 +1714,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Nova%20%7C%20Rising%20Sun%20%28Battle-Scarred%29",
    "skinport_url": "https://skinport.com/market?search=Nova%20%7C%20Rising%20Sun%20%28Battle-Scarred%29"
-  },
-  {
-   "name": "Glock-18 | Block-18 (Field-Tested)",
-   "buy": 0.3,
-   "steam": 0.46,
-   "profit": 0.1,
-   "roi": 33.3,
-   "volume": 743,
-   "qty": 1824,
-   "steam_ts": 1794747529,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Block-18%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Block-18%20%28Field-Tested%29"
   },
   {
    "name": "CS:GO Weapon Case 3",
@@ -1735,7 +1800,7 @@
    "profit": 0.13,
    "roi": 32.6,
    "volume": 75,
-   "qty": 440,
+   "qty": 441,
    "steam_ts": 1794743374,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20Galil%20AR%20%7C%20Connexion%20%28Field-Tested%29",
@@ -1748,7 +1813,7 @@
    "profit": 7.51,
    "roi": 32.6,
    "volume": 75,
-   "qty": 352,
+   "qty": 351,
    "steam_ts": 1794739825,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Legion%20of%20Anubis%20%28Field-Tested%29",
@@ -1800,7 +1865,7 @@
    "profit": 0.22,
    "roi": 31.7,
    "volume": 10397,
-   "qty": 84428,
+   "qty": 84477,
    "steam_ts": 1794740105,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Danger%20Zone%20Case",
@@ -1833,6 +1898,19 @@
    "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Pipe%20Down%20%28Field-Tested%29"
   },
   {
+   "name": "Ground Rebel  | Elite Crew",
+   "buy": 6.73,
+   "steam": 10.17,
+   "profit": 2.11,
+   "roi": 31.4,
+   "volume": 139,
+   "qty": 281,
+   "steam_ts": 1794711504,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Ground%20Rebel%20%20%7C%20Elite%20Crew",
+   "skinport_url": "https://skinport.com/market?search=Ground%20Rebel%20%20%7C%20Elite%20Crew"
+  },
+  {
    "name": "M4A1-S | Night Terror (Field-Tested)",
    "buy": 0.43,
    "steam": 0.65,
@@ -1844,32 +1922,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20Night%20Terror%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Night%20Terror%20%28Field-Tested%29"
-  },
-  {
-   "name": "Ground Rebel  | Elite Crew",
-   "buy": 6.73,
-   "steam": 10.17,
-   "profit": 2.11,
-   "roi": 31.4,
-   "volume": 139,
-   "qty": 282,
-   "steam_ts": 1794711504,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Ground%20Rebel%20%20%7C%20Elite%20Crew",
-   "skinport_url": "https://skinport.com/market?search=Ground%20Rebel%20%20%7C%20Elite%20Crew"
-  },
-  {
-   "name": "CS20 Case",
-   "buy": 0.55,
-   "steam": 0.83,
-   "profit": 0.17,
-   "roi": 31.2,
-   "volume": 2498,
-   "qty": 35556,
-   "steam_ts": 1794743260,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/CS20%20Case",
-   "skinport_url": "https://skinport.com/market?search=CS20%20Case"
   },
   {
    "name": "Spectrum Case Key",
@@ -1885,19 +1937,6 @@
    "skinport_url": "https://skinport.com/market?search=Spectrum%20Case%20Key"
   },
   {
-   "name": "Stockholm 2021 Contenders Sticker Capsule",
-   "buy": 1.01,
-   "steam": 1.52,
-   "profit": 0.31,
-   "roi": 30.9,
-   "volume": 70,
-   "qty": 5691,
-   "steam_ts": 1794740021,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Stockholm%202021%20Contenders%20Sticker%20Capsule",
-   "skinport_url": "https://skinport.com/market?search=Stockholm%202021%20Contenders%20Sticker%20Capsule"
-  },
-  {
    "name": "StatTrak™ MP5-SD | Kitbash (Field-Tested)",
    "buy": 0.4,
    "steam": 0.6,
@@ -1909,6 +1948,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20MP5-SD%20%7C%20Kitbash%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20MP5-SD%20%7C%20Kitbash%20%28Field-Tested%29"
+  },
+  {
+   "name": "MAC-10 | Pipsqueak (Field-Tested)",
+   "buy": 0.18,
+   "steam": 0.27,
+   "profit": 0.05,
+   "roi": 30.4,
+   "volume": 239,
+   "qty": 360,
+   "steam_ts": 1794747778,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Pipsqueak%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Pipsqueak%20%28Field-Tested%29"
   },
   {
    "name": "SSG 08 | Zeno (Field-Tested)",
@@ -1937,19 +1989,6 @@
    "skinport_url": "https://skinport.com/market?search=SCAR-20%20%7C%20Enforcer%20%28Field-Tested%29"
   },
   {
-   "name": "PP-Bizon | Space Cat (Minimal Wear)",
-   "buy": 0.48,
-   "steam": 0.72,
-   "profit": 0.15,
-   "roi": 30.4,
-   "volume": 188,
-   "qty": 384,
-   "steam_ts": 1794743346,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/PP-Bizon%20%7C%20Space%20Cat%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=PP-Bizon%20%7C%20Space%20Cat%20%28Minimal%20Wear%29"
-  },
-  {
    "name": "MAG-7 | Foresight (Factory New)",
    "buy": 0.18,
    "steam": 0.27,
@@ -1961,19 +2000,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/MAG-7%20%7C%20Foresight%20%28Factory%20New%29",
    "skinport_url": "https://skinport.com/market?search=MAG-7%20%7C%20Foresight%20%28Factory%20New%29"
-  },
-  {
-   "name": "MAC-10 | Pipsqueak (Field-Tested)",
-   "buy": 0.18,
-   "steam": 0.27,
-   "profit": 0.05,
-   "roi": 30.4,
-   "volume": 239,
-   "qty": 360,
-   "steam_ts": 1794747778,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Pipsqueak%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Pipsqueak%20%28Field-Tested%29"
   },
   {
    "name": "M4A1-S | Night Terror (Battle-Scarred)",
@@ -2002,30 +2028,43 @@
    "skinport_url": "https://skinport.com/market?search=Galil%20AR%20%7C%20Control%20%28Minimal%20Wear%29"
   },
   {
+   "name": "PP-Bizon | Space Cat (Minimal Wear)",
+   "buy": 0.48,
+   "steam": 0.72,
+   "profit": 0.15,
+   "roi": 30.4,
+   "volume": 188,
+   "qty": 384,
+   "steam_ts": 1794743346,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/PP-Bizon%20%7C%20Space%20Cat%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=PP-Bizon%20%7C%20Space%20Cat%20%28Minimal%20Wear%29"
+  },
+  {
    "name": "Chroma 3 Case",
    "buy": 2.4,
    "steam": 3.59,
    "profit": 0.72,
    "roi": 30.1,
    "volume": 2505,
-   "qty": 19537,
+   "qty": 19538,
    "steam_ts": 1794739850,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Chroma%203%20Case",
    "skinport_url": "https://skinport.com/market?search=Chroma%203%20Case"
   },
   {
-   "name": "M4A1-S | Black Lotus (Minimal Wear)",
-   "buy": 4.71,
-   "steam": 7.03,
-   "profit": 1.4,
+   "name": "Dreams & Nightmares Case",
+   "buy": 0.65,
+   "steam": 0.97,
+   "profit": 0.19,
    "roi": 29.8,
-   "volume": 179,
-   "qty": 661,
-   "steam_ts": 1794736738,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20Black%20Lotus%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Black%20Lotus%20%28Minimal%20Wear%29"
+   "volume": 110308,
+   "qty": 57080,
+   "steam_ts": 1794740114,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Dreams%20%26%20Nightmares%20Case",
+   "skinport_url": "https://skinport.com/market?search=Dreams%20%26%20Nightmares%20Case"
   },
   {
    "name": "Name Tag",
@@ -2034,7 +2073,7 @@
    "profit": 0.89,
    "roi": 29.7,
    "volume": 90,
-   "qty": 923,
+   "qty": 924,
    "steam_ts": 1794736864,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Name%20Tag",
@@ -2054,17 +2093,17 @@
    "skinport_url": "https://skinport.com/market?search=Paris%202023%20Anubis%20Souvenir%20Package"
   },
   {
-   "name": "Desert Eagle | Corinthian (Field-Tested)",
-   "buy": 0.37,
-   "steam": 0.55,
-   "profit": 0.11,
-   "roi": 29.3,
-   "volume": 132,
-   "qty": 340,
-   "steam_ts": 1794743521,
+   "name": "AWP | Pit Viper (Field-Tested)",
+   "buy": 0.68,
+   "steam": 1.01,
+   "profit": 0.2,
+   "roi": 29.2,
+   "volume": 469,
+   "qty": 549,
+   "steam_ts": 1794743245,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Corinthian%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Corinthian%20%28Field-Tested%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Pit%20Viper%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=AWP%20%7C%20Pit%20Viper%20%28Field-Tested%29"
   },
   {
    "name": "M4A1-S | Emphorosaur-S (Field-Tested)",
@@ -2078,19 +2117,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20Emphorosaur-S%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Emphorosaur-S%20%28Field-Tested%29"
-  },
-  {
-   "name": "AWP | Pit Viper (Field-Tested)",
-   "buy": 0.68,
-   "steam": 1.01,
-   "profit": 0.2,
-   "roi": 29.2,
-   "volume": 469,
-   "qty": 550,
-   "steam_ts": 1794743245,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Pit%20Viper%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=AWP%20%7C%20Pit%20Viper%20%28Field-Tested%29"
   },
   {
    "name": "Berlin 2019 Returning Challengers (Holo-Foil)",
@@ -2119,6 +2145,19 @@
    "skinport_url": "https://skinport.com/market?search=MAG-7%20%7C%20Monster%20Call%20%28Field-Tested%29"
   },
   {
+   "name": "MAC-10 | Button Masher (Field-Tested)",
+   "buy": 0.29,
+   "steam": 0.43,
+   "profit": 0.08,
+   "roi": 28.9,
+   "volume": 32,
+   "qty": 305,
+   "steam_ts": 1794743570,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Button%20Masher%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Button%20Masher%20%28Field-Tested%29"
+  },
+  {
    "name": "Sticker | Battle Scarred",
    "buy": 2.49,
    "steam": 3.69,
@@ -2132,17 +2171,17 @@
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Battle%20Scarred"
   },
   {
-   "name": "MAC-10 | Button Masher (Field-Tested)",
-   "buy": 0.29,
-   "steam": 0.43,
-   "profit": 0.08,
-   "roi": 28.9,
-   "volume": 32,
-   "qty": 305,
-   "steam_ts": 1794743570,
+   "name": "AWP | Capillary (Field-Tested)",
+   "buy": 0.52,
+   "steam": 0.77,
+   "profit": 0.15,
+   "roi": 28.8,
+   "volume": 646,
+   "qty": 791,
+   "steam_ts": 1794743312,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Button%20Masher%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Button%20Masher%20%28Field-Tested%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Capillary%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=AWP%20%7C%20Capillary%20%28Field-Tested%29"
   },
   {
    "name": "Sticker | Blue Gem (Glitter)",
@@ -2182,19 +2221,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/MAG-7%20%7C%20Monster%20Call%20%28Well-Worn%29",
    "skinport_url": "https://skinport.com/market?search=MAG-7%20%7C%20Monster%20Call%20%28Well-Worn%29"
-  },
-  {
-   "name": "AWP | Capillary (Field-Tested)",
-   "buy": 0.52,
-   "steam": 0.77,
-   "profit": 0.15,
-   "roi": 28.8,
-   "volume": 646,
-   "qty": 790,
-   "steam_ts": 1794743312,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Capillary%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=AWP%20%7C%20Capillary%20%28Field-Tested%29"
   },
   {
    "name": "Operation Vanguard Weapon Case",
@@ -2249,19 +2275,6 @@
    "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Meteorite%20%28Factory%20New%29"
   },
   {
-   "name": "P250 | Valence (Field-Tested)",
-   "buy": 0.21,
-   "steam": 0.31,
-   "profit": 0.06,
-   "roi": 28.4,
-   "volume": 125,
-   "qty": 319,
-   "steam_ts": 1794747695,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/P250%20%7C%20Valence%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=P250%20%7C%20Valence%20%28Field-Tested%29"
-  },
-  {
    "name": "Sawed-Off | Analog Input (Minimal Wear)",
    "buy": 0.4,
    "steam": 0.59,
@@ -2294,7 +2307,7 @@
    "profit": 0.58,
    "roi": 28.1,
    "volume": 2311,
-   "qty": 15213,
+   "qty": 15202,
    "steam_ts": 1794739890,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Gamma%20Case",
@@ -2312,19 +2325,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Stockholm%202021%20Champions%20Autograph%20Capsule",
    "skinport_url": "https://skinport.com/market?search=Stockholm%202021%20Champions%20Autograph%20Capsule"
-  },
-  {
-   "name": "Sticker | Battle Scarred (Holo)",
-   "buy": 5.76,
-   "steam": 8.48,
-   "profit": 1.61,
-   "roi": 28.0,
-   "volume": 18,
-   "qty": 1166,
-   "steam_ts": 1794739834,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Battle%20Scarred%20%28Holo%29",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Battle%20Scarred%20%28Holo%29"
   },
   {
    "name": "SSG 08 | Memorial (Minimal Wear)",
@@ -2353,30 +2353,30 @@
    "skinport_url": "https://skinport.com/market?search=Zeus%20x27%20%7C%20Olympus%20%28Minimal%20Wear%29"
   },
   {
+   "name": "Spectrum 2 Case",
+   "buy": 2.04,
+   "steam": 2.99,
+   "profit": 0.56,
+   "roi": 27.5,
+   "volume": 4176,
+   "qty": 46678,
+   "steam_ts": 1794739878,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Spectrum%202%20Case",
+   "skinport_url": "https://skinport.com/market?search=Spectrum%202%20Case"
+  },
+  {
    "name": "Soldier | Phoenix",
    "buy": 3.31,
    "steam": 4.85,
    "profit": 0.91,
    "roi": 27.4,
    "volume": 106,
-   "qty": 292,
+   "qty": 291,
    "steam_ts": 1794711475,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Soldier%20%7C%20Phoenix",
    "skinport_url": "https://skinport.com/market?search=Soldier%20%7C%20Phoenix"
-  },
-  {
-   "name": "StatTrak™ M4A1-S | Emphorosaur-S (Field-Tested)",
-   "buy": 0.69,
-   "steam": 1.01,
-   "profit": 0.19,
-   "roi": 27.3,
-   "volume": 148,
-   "qty": 312,
-   "steam_ts": 1794740092,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20M4A1-S%20%7C%20Emphorosaur-S%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20M4A1-S%20%7C%20Emphorosaur-S%20%28Field-Tested%29"
   },
   {
    "name": "Shanghai 2024 Legends Sticker Capsule",
@@ -2392,6 +2392,19 @@
    "skinport_url": "https://skinport.com/market?search=Shanghai%202024%20Legends%20Sticker%20Capsule"
   },
   {
+   "name": "StatTrak™ M4A1-S | Emphorosaur-S (Field-Tested)",
+   "buy": 0.69,
+   "steam": 1.01,
+   "profit": 0.19,
+   "roi": 27.3,
+   "volume": 148,
+   "qty": 312,
+   "steam_ts": 1794740092,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20M4A1-S%20%7C%20Emphorosaur-S%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20M4A1-S%20%7C%20Emphorosaur-S%20%28Field-Tested%29"
+  },
+  {
    "name": "SG 553 | Dragon Tech (Field-Tested)",
    "buy": 0.28,
    "steam": 0.41,
@@ -2403,6 +2416,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/SG%20553%20%7C%20Dragon%20Tech%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=SG%20553%20%7C%20Dragon%20Tech%20%28Field-Tested%29"
+  },
+  {
+   "name": "USP-S | Ticket to Hell (Field-Tested)",
+   "buy": 0.41,
+   "steam": 0.6,
+   "profit": 0.11,
+   "roi": 27.3,
+   "volume": 742,
+   "qty": 1476,
+   "steam_ts": 1794743462,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Ticket%20to%20Hell%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Ticket%20to%20Hell%20%28Field-Tested%29"
   },
   {
    "name": "MP5-SD | Kitbash (Field-Tested)",
@@ -2418,32 +2444,6 @@
    "skinport_url": "https://skinport.com/market?search=MP5-SD%20%7C%20Kitbash%20%28Field-Tested%29"
   },
   {
-   "name": "USP-S | Ticket to Hell (Field-Tested)",
-   "buy": 0.41,
-   "steam": 0.6,
-   "profit": 0.11,
-   "roi": 27.3,
-   "volume": 742,
-   "qty": 1475,
-   "steam_ts": 1794743462,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Ticket%20to%20Hell%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Ticket%20to%20Hell%20%28Field-Tested%29"
-  },
-  {
-   "name": "AK-47 | Elite Build (Well-Worn)",
-   "buy": 1.06,
-   "steam": 1.55,
-   "profit": 0.29,
-   "roi": 27.2,
-   "volume": 284,
-   "qty": 433,
-   "steam_ts": 1794739999,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Elite%20Build%20%28Well-Worn%29",
-   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Elite%20Build%20%28Well-Worn%29"
-  },
-  {
    "name": "Souvenir MAC-10 | Urban DDPAT (Field-Tested)",
    "buy": 0.39,
    "steam": 0.57,
@@ -2455,6 +2455,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Souvenir%20MAC-10%20%7C%20Urban%20DDPAT%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=Souvenir%20MAC-10%20%7C%20Urban%20DDPAT%20%28Field-Tested%29"
+  },
+  {
+   "name": "Operation Riptide Case",
+   "buy": 4.96,
+   "steam": 7.25,
+   "profit": 1.34,
+   "roi": 27.1,
+   "volume": 312,
+   "qty": 4700,
+   "steam_ts": 1794736681,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Operation%20Riptide%20Case",
+   "skinport_url": "https://skinport.com/market?search=Operation%20Riptide%20Case"
   },
   {
    "name": "AK-47 | Asiimov (Field-Tested)",
@@ -2476,11 +2489,24 @@
    "profit": 1.97,
    "roi": 26.9,
    "volume": 171,
-   "qty": 331,
+   "qty": 333,
    "steam_ts": 1794736605,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/%27The%20Doctor%27%20Romanov%20%7C%20Sabre",
    "skinport_url": "https://skinport.com/market?search=%27The%20Doctor%27%20Romanov%20%7C%20Sabre"
+  },
+  {
+   "name": "Dual Berettas | Cobalt Quartz (Factory New)",
+   "buy": 0.48,
+   "steam": 0.7,
+   "profit": 0.13,
+   "roi": 26.8,
+   "volume": 113,
+   "qty": 343,
+   "steam_ts": 1794743328,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Dual%20Berettas%20%7C%20Cobalt%20Quartz%20%28Factory%20New%29",
+   "skinport_url": "https://skinport.com/market?search=Dual%20Berettas%20%7C%20Cobalt%20Quartz%20%28Factory%20New%29"
   },
   {
    "name": "Sticker | Gold Web",
@@ -2496,32 +2522,6 @@
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Gold%20Web"
   },
   {
-   "name": "Spectrum 2 Case",
-   "buy": 2.05,
-   "steam": 2.99,
-   "profit": 0.55,
-   "roi": 26.8,
-   "volume": 4176,
-   "qty": 46630,
-   "steam_ts": 1794739878,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Spectrum%202%20Case",
-   "skinport_url": "https://skinport.com/market?search=Spectrum%202%20Case"
-  },
-  {
-   "name": "Dual Berettas | Cobalt Quartz (Factory New)",
-   "buy": 0.48,
-   "steam": 0.7,
-   "profit": 0.13,
-   "roi": 26.8,
-   "volume": 113,
-   "qty": 344,
-   "steam_ts": 1794743328,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Dual%20Berettas%20%7C%20Cobalt%20Quartz%20%28Factory%20New%29",
-   "skinport_url": "https://skinport.com/market?search=Dual%20Berettas%20%7C%20Cobalt%20Quartz%20%28Factory%20New%29"
-  },
-  {
    "name": "Copenhagen 2024 Challengers Sticker Capsule",
    "buy": 0.35,
    "steam": 0.51,
@@ -2533,71 +2533,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Copenhagen%202024%20Challengers%20Sticker%20Capsule",
    "skinport_url": "https://skinport.com/market?search=Copenhagen%202024%20Challengers%20Sticker%20Capsule"
-  },
-  {
-   "name": "Berlin 2019 Legends Autograph Capsule",
-   "buy": 0.9,
-   "steam": 1.31,
-   "profit": 0.24,
-   "roi": 26.6,
-   "volume": 42,
-   "qty": 1400,
-   "steam_ts": 1794740039,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Berlin%202019%20Legends%20Autograph%20Capsule",
-   "skinport_url": "https://skinport.com/market?search=Berlin%202019%20Legends%20Autograph%20Capsule"
-  },
-  {
-   "name": "Sticker | 9z Team (Glitter) | Antwerp 2022",
-   "buy": 0.99,
-   "steam": 1.44,
-   "profit": 0.26,
-   "roi": 26.5,
-   "volume": 9,
-   "qty": 322,
-   "steam_ts": 1794740033,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%209z%20Team%20%28Glitter%29%20%7C%20Antwerp%202022",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%209z%20Team%20%28Glitter%29%20%7C%20Antwerp%202022"
-  },
-  {
-   "name": "StatTrak™ USP-S | Ticket to Hell (Field-Tested)",
-   "buy": 0.55,
-   "steam": 0.8,
-   "profit": 0.15,
-   "roi": 26.5,
-   "volume": 273,
-   "qty": 421,
-   "steam_ts": 1794743322,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20USP-S%20%7C%20Ticket%20to%20Hell%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20USP-S%20%7C%20Ticket%20to%20Hell%20%28Field-Tested%29"
-  },
-  {
-   "name": "StatTrak™ Music Kit | Skog, III-Arena",
-   "buy": 0.55,
-   "steam": 0.8,
-   "profit": 0.15,
-   "roi": 26.5,
-   "volume": 38,
-   "qty": 850,
-   "steam_ts": 1794743303,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20Music%20Kit%20%7C%20Skog%2C%20III-Arena",
-   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20Music%20Kit%20%7C%20Skog%2C%20III-Arena"
-  },
-  {
-   "name": "MAC-10 | Candy Apple (Factory New)",
-   "buy": 0.22,
-   "steam": 0.32,
-   "profit": 0.06,
-   "roi": 26.5,
-   "volume": 137,
-   "qty": 497,
-   "steam_ts": 1794747664,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Candy%20Apple%20%28Factory%20New%29",
-   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Candy%20Apple%20%28Factory%20New%29"
   },
   {
    "name": "M4A1-S | Night Terror (Minimal Wear)",
@@ -2626,17 +2561,56 @@
    "skinport_url": "https://skinport.com/market?search=Dual%20Berettas%20%7C%20Flora%20Carnivora%20%28Field-Tested%29"
   },
   {
-   "name": "Sticker | Great Wave (Holo)",
-   "buy": 5.14,
-   "steam": 7.47,
-   "profit": 1.36,
-   "roi": 26.4,
-   "volume": 1,
-   "qty": 400,
-   "steam_ts": 1794736675,
+   "name": "MAC-10 | Candy Apple (Factory New)",
+   "buy": 0.22,
+   "steam": 0.32,
+   "profit": 0.06,
+   "roi": 26.5,
+   "volume": 137,
+   "qty": 500,
+   "steam_ts": 1794747664,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Great%20Wave%20%28Holo%29",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Great%20Wave%20%28Holo%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Candy%20Apple%20%28Factory%20New%29",
+   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Candy%20Apple%20%28Factory%20New%29"
+  },
+  {
+   "name": "StatTrak™ USP-S | Ticket to Hell (Field-Tested)",
+   "buy": 0.55,
+   "steam": 0.8,
+   "profit": 0.15,
+   "roi": 26.5,
+   "volume": 273,
+   "qty": 421,
+   "steam_ts": 1794743322,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20USP-S%20%7C%20Ticket%20to%20Hell%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20USP-S%20%7C%20Ticket%20to%20Hell%20%28Field-Tested%29"
+  },
+  {
+   "name": "StatTrak™ Music Kit | Skog, III-Arena",
+   "buy": 0.55,
+   "steam": 0.8,
+   "profit": 0.15,
+   "roi": 26.5,
+   "volume": 38,
+   "qty": 850,
+   "steam_ts": 1794743303,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20Music%20Kit%20%7C%20Skog%2C%20III-Arena",
+   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20Music%20Kit%20%7C%20Skog%2C%20III-Arena"
+  },
+  {
+   "name": "Sticker | 9z Team (Glitter) | Antwerp 2022",
+   "buy": 0.99,
+   "steam": 1.44,
+   "profit": 0.26,
+   "roi": 26.5,
+   "volume": 9,
+   "qty": 322,
+   "steam_ts": 1794740033,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%209z%20Team%20%28Glitter%29%20%7C%20Antwerp%202022",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%209z%20Team%20%28Glitter%29%20%7C%20Antwerp%202022"
   },
   {
    "name": "Sticker | Cloud9 (Holo) | Antwerp 2022",
@@ -2652,17 +2626,17 @@
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Cloud9%20%28Holo%29%20%7C%20Antwerp%202022"
   },
   {
-   "name": "Stockholm 2021 Mirage Souvenir Package",
-   "buy": 2.49,
-   "steam": 3.62,
-   "profit": 0.66,
+   "name": "Sticker | Great Wave (Holo)",
+   "buy": 5.14,
+   "steam": 7.47,
+   "profit": 1.36,
    "roi": 26.4,
-   "volume": 62,
-   "qty": 897,
-   "steam_ts": 1794739847,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Stockholm%202021%20Mirage%20Souvenir%20Package",
-   "skinport_url": "https://skinport.com/market?search=Stockholm%202021%20Mirage%20Souvenir%20Package"
+   "volume": 1,
+   "qty": 400,
+   "steam_ts": 1794736675,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Great%20Wave%20%28Holo%29",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Great%20Wave%20%28Holo%29"
   },
   {
    "name": "StatTrak™ P90 | Vent Rush (Field-Tested)",
@@ -2697,24 +2671,11 @@
    "profit": 0.11,
    "roi": 26.3,
    "volume": 77,
-   "qty": 302,
+   "qty": 303,
    "steam_ts": 1794743377,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Tec-9%20%7C%20Bamboozle%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=Tec-9%20%7C%20Bamboozle%20%28Field-Tested%29"
-  },
-  {
-   "name": "Sticker | Gold Web (Foil)",
-   "buy": 2.7,
-   "steam": 3.91,
-   "profit": 0.7,
-   "roi": 25.9,
-   "volume": 52,
-   "qty": 705,
-   "steam_ts": 1794736902,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Gold%20Web%20%28Foil%29",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Gold%20Web%20%28Foil%29"
   },
   {
    "name": "Negev | dev_texture (Field-Tested)",
@@ -2728,6 +2689,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Negev%20%7C%20dev_texture%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=Negev%20%7C%20dev_texture%20%28Field-Tested%29"
+  },
+  {
+   "name": "Sticker | Gold Web (Foil)",
+   "buy": 2.7,
+   "steam": 3.91,
+   "profit": 0.7,
+   "roi": 25.9,
+   "volume": 52,
+   "qty": 705,
+   "steam_ts": 1794736902,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Gold%20Web%20%28Foil%29",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Gold%20Web%20%28Foil%29"
   },
   {
    "name": "UMP-45 | Arctic Wolf (Field-Tested)",
@@ -2756,6 +2730,19 @@
    "skinport_url": "https://skinport.com/market?search=Galil%20AR%20%7C%20Connexion%20%28Field-Tested%29"
   },
   {
+   "name": "Desert Eagle | Tilted (Minimal Wear)",
+   "buy": 0.36,
+   "steam": 0.52,
+   "profit": 0.09,
+   "roi": 25.6,
+   "volume": 622,
+   "qty": 1667,
+   "steam_ts": 1794743499,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Tilted%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Tilted%20%28Minimal%20Wear%29"
+  },
+  {
    "name": "Tec-9 | Cracked Opal (Battle-Scarred)",
    "buy": 0.18,
    "steam": 0.26,
@@ -2775,7 +2762,7 @@
    "profit": 0.22,
    "roi": 25.5,
    "volume": 21,
-   "qty": 325,
+   "qty": 333,
    "steam_ts": 1794740052,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Broken%20Fang",
@@ -2788,7 +2775,7 @@
    "profit": 0.09,
    "roi": 25.3,
    "volume": 165,
-   "qty": 1142,
+   "qty": 1143,
    "steam_ts": 1794747517,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/P90%20%7C%20Wave%20Breaker%20%28Field-Tested%29",
@@ -2801,11 +2788,63 @@
    "profit": 0.62,
    "roi": 25.2,
    "volume": 1960,
-   "qty": 22655,
+   "qty": 22705,
    "steam_ts": 1794736920,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Spectrum%20Case",
    "skinport_url": "https://skinport.com/market?search=Spectrum%20Case"
+  },
+  {
+   "name": "Antwerp 2022 Contenders Sticker Capsule",
+   "buy": 0.32,
+   "steam": 0.46,
+   "profit": 0.08,
+   "roi": 25.0,
+   "volume": 373,
+   "qty": 1682,
+   "steam_ts": 1794743579,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Antwerp%202022%20Contenders%20Sticker%20Capsule",
+   "skinport_url": "https://skinport.com/market?search=Antwerp%202022%20Contenders%20Sticker%20Capsule"
+  },
+  {
+   "name": "AK-47 | Uncharted (Minimal Wear)",
+   "buy": 0.64,
+   "steam": 0.92,
+   "profit": 0.16,
+   "roi": 25.0,
+   "volume": 301,
+   "qty": 342,
+   "steam_ts": 1794743239,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Uncharted%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Uncharted%20%28Minimal%20Wear%29"
+  },
+  {
+   "name": "M4A1-S | Black Lotus (Minimal Wear)",
+   "buy": 4.89,
+   "steam": 7.03,
+   "profit": 1.22,
+   "roi": 25.0,
+   "volume": 179,
+   "qty": 659,
+   "steam_ts": 1794736738,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20Black%20Lotus%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Black%20Lotus%20%28Minimal%20Wear%29"
+  },
+  {
+   "name": "Zeus x27 | Tosai (Field-Tested)",
+   "buy": 0.32,
+   "steam": 0.46,
+   "profit": 0.08,
+   "roi": 25.0,
+   "volume": 228,
+   "qty": 1474,
+   "steam_ts": 1794743576,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Zeus%20x27%20%7C%20Tosai%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=Zeus%20x27%20%7C%20Tosai%20%28Field-Tested%29"
   },
   {
    "name": "Katowice 2019 Legends Autograph Capsule",
@@ -2814,7 +2853,7 @@
    "profit": 0.82,
    "roi": 25.0,
    "volume": 22,
-   "qty": 389,
+   "qty": 388,
    "steam_ts": 1794736833,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Katowice%202019%20Legends%20Autograph%20Capsule",
@@ -2834,30 +2873,17 @@
    "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Vogue%20%28Field-Tested%29"
   },
   {
-   "name": "Zeus x27 | Tosai (Field-Tested)",
-   "buy": 0.32,
-   "steam": 0.46,
-   "profit": 0.08,
-   "roi": 25.0,
-   "volume": 228,
-   "qty": 1474,
-   "steam_ts": 1794743576,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Zeus%20x27%20%7C%20Tosai%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=Zeus%20x27%20%7C%20Tosai%20%28Field-Tested%29"
-  },
-  {
-   "name": "Antwerp 2022 Contenders Sticker Capsule",
-   "buy": 0.32,
-   "steam": 0.46,
-   "profit": 0.08,
-   "roi": 25.0,
-   "volume": 373,
-   "qty": 1682,
-   "steam_ts": 1794743579,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Antwerp%202022%20Contenders%20Sticker%20Capsule",
-   "skinport_url": "https://skinport.com/market?search=Antwerp%202022%20Contenders%20Sticker%20Capsule"
+   "name": "AK-47 | Ice Coaled (Field-Tested)",
+   "buy": 3.37,
+   "steam": 4.84,
+   "profit": 0.84,
+   "roi": 24.9,
+   "volume": 561,
+   "qty": 685,
+   "steam_ts": 1794736836,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Ice%20Coaled%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Ice%20Coaled%20%28Field-Tested%29"
   },
   {
    "name": "Operation Hydra Case",
@@ -2873,6 +2899,19 @@
    "skinport_url": "https://skinport.com/market?search=Operation%20Hydra%20Case"
   },
   {
+   "name": "AK-47 | Elite Build (Well-Worn)",
+   "buy": 1.08,
+   "steam": 1.55,
+   "profit": 0.27,
+   "roi": 24.8,
+   "volume": 284,
+   "qty": 429,
+   "steam_ts": 1794739999,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Elite%20Build%20%28Well-Worn%29",
+   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Elite%20Build%20%28Well-Worn%29"
+  },
+  {
    "name": "Fever Case",
    "buy": 0.46,
    "steam": 0.66,
@@ -2884,19 +2923,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Fever%20Case",
    "skinport_url": "https://skinport.com/market?search=Fever%20Case"
-  },
-  {
-   "name": "StatTrak™ Glock-18 | Block-18 (Field-Tested)",
-   "buy": 0.74,
-   "steam": 1.06,
-   "profit": 0.18,
-   "roi": 24.6,
-   "volume": 83,
-   "qty": 381,
-   "steam_ts": 1794740117,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20Glock-18%20%7C%20Block-18%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20Glock-18%20%7C%20Block-18%20%28Field-Tested%29"
   },
   {
    "name": "P90 | Wave Breaker (Well-Worn)",
@@ -2912,6 +2938,19 @@
    "skinport_url": "https://skinport.com/market?search=P90%20%7C%20Wave%20Breaker%20%28Well-Worn%29"
   },
   {
+   "name": "StatTrak™ Glock-18 | Block-18 (Field-Tested)",
+   "buy": 0.74,
+   "steam": 1.06,
+   "profit": 0.18,
+   "roi": 24.6,
+   "volume": 83,
+   "qty": 380,
+   "steam_ts": 1794740117,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20Glock-18%20%7C%20Block-18%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20Glock-18%20%7C%20Block-18%20%28Field-Tested%29"
+  },
+  {
    "name": "M4A1-S | Nitro (Field-Tested)",
    "buy": 0.3,
    "steam": 0.43,
@@ -2925,19 +2964,6 @@
    "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Nitro%20%28Field-Tested%29"
   },
   {
-   "name": "Lt. Commander Ricksaw | NSWC SEAL",
-   "buy": 10.0,
-   "steam": 14.33,
-   "profit": 2.46,
-   "roi": 24.6,
-   "volume": 109,
-   "qty": 453,
-   "steam_ts": 1794736532,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Lt.%20Commander%20Ricksaw%20%7C%20NSWC%20SEAL",
-   "skinport_url": "https://skinport.com/market?search=Lt.%20Commander%20Ricksaw%20%7C%20NSWC%20SEAL"
-  },
-  {
    "name": "MAG-7 | Carbon Fiber (Factory New)",
    "buy": 1.53,
    "steam": 2.19,
@@ -2949,19 +2975,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/MAG-7%20%7C%20Carbon%20Fiber%20%28Factory%20New%29",
    "skinport_url": "https://skinport.com/market?search=MAG-7%20%7C%20Carbon%20Fiber%20%28Factory%20New%29"
-  },
-  {
-   "name": "AK-47 | Ice Coaled (Field-Tested)",
-   "buy": 3.38,
-   "steam": 4.84,
-   "profit": 0.83,
-   "roi": 24.5,
-   "volume": 561,
-   "qty": 684,
-   "steam_ts": 1794736836,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Ice%20Coaled%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Ice%20Coaled%20%28Field-Tested%29"
   },
   {
    "name": "M4A1-S | Solitude (Field-Tested)",
@@ -2983,24 +2996,37 @@
    "profit": 6.33,
    "roi": 24.3,
    "volume": 90,
-   "qty": 359,
+   "qty": 358,
    "steam_ts": 1794736411,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Printstream%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Printstream%20%28Field-Tested%29"
   },
   {
-   "name": "StatTrak™ Glock-18 | Oxide Blaze (Field-Tested)",
-   "buy": 0.21,
-   "steam": 0.3,
-   "profit": 0.05,
+   "name": "USP-S | Check Engine (Field-Tested)",
+   "buy": 0.35,
+   "steam": 0.5,
+   "profit": 0.08,
    "roi": 24.2,
-   "volume": 87,
-   "qty": 315,
-   "steam_ts": 1794747713,
+   "volume": 109,
+   "qty": 506,
+   "steam_ts": 1794747495,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20Glock-18%20%7C%20Oxide%20Blaze%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20Glock-18%20%7C%20Oxide%20Blaze%20%28Field-Tested%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Check%20Engine%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Check%20Engine%20%28Field-Tested%29"
+  },
+  {
+   "name": "MAC-10 | Allure (Well-Worn)",
+   "buy": 0.28,
+   "steam": 0.4,
+   "profit": 0.07,
+   "roi": 24.2,
+   "volume": 68,
+   "qty": 390,
+   "steam_ts": 1794747601,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Allure%20%28Well-Worn%29",
+   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Allure%20%28Well-Worn%29"
   },
   {
    "name": "Sawed-Off | Analog Input (Battle-Scarred)",
@@ -3029,30 +3055,17 @@
    "skinport_url": "https://skinport.com/market?search=Nova%20%7C%20Rising%20Sun%20%28Field-Tested%29"
   },
   {
-   "name": "MAC-10 | Allure (Well-Worn)",
-   "buy": 0.28,
-   "steam": 0.4,
-   "profit": 0.07,
+   "name": "StatTrak™ Glock-18 | Oxide Blaze (Field-Tested)",
+   "buy": 0.21,
+   "steam": 0.3,
+   "profit": 0.05,
    "roi": 24.2,
-   "volume": 68,
-   "qty": 390,
-   "steam_ts": 1794747601,
+   "volume": 87,
+   "qty": 315,
+   "steam_ts": 1794747713,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Allure%20%28Well-Worn%29",
-   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Allure%20%28Well-Worn%29"
-  },
-  {
-   "name": "USP-S | Check Engine (Field-Tested)",
-   "buy": 0.35,
-   "steam": 0.5,
-   "profit": 0.08,
-   "roi": 24.2,
-   "volume": 109,
-   "qty": 506,
-   "steam_ts": 1794747495,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Check%20Engine%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Check%20Engine%20%28Field-Tested%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20Glock-18%20%7C%20Oxide%20Blaze%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20Glock-18%20%7C%20Oxide%20Blaze%20%28Field-Tested%29"
   },
   {
    "name": "Falchion Case",
@@ -3081,17 +3094,17 @@
    "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20G3SG1%20%7C%20Dream%20Glade%20%28Field-Tested%29"
   },
   {
-   "name": "AK-47 | Redline (Field-Tested)",
-   "buy": 20.79,
-   "steam": 29.63,
-   "profit": 4.98,
+   "name": "Chroma Case",
+   "buy": 3.44,
+   "steam": 4.9,
+   "profit": 0.82,
    "roi": 23.9,
-   "volume": 63,
-   "qty": 532,
-   "steam_ts": 1794736465,
+   "volume": 846,
+   "qty": 8954,
+   "steam_ts": 1794736827,
    "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Redline%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Redline%20%28Field-Tested%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Chroma%20Case",
+   "skinport_url": "https://skinport.com/market?search=Chroma%20Case"
   },
   {
    "name": "Desert Eagle | Serpent Strike (Field-Tested)",
@@ -3126,7 +3139,7 @@
    "profit": 10.56,
    "roi": 23.5,
    "volume": 109,
-   "qty": 521,
+   "qty": 522,
    "steam_ts": 1794739822,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/MP9%20%7C%20Starlight%20Protector%20%28Field-Tested%29",
@@ -3144,6 +3157,19 @@
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/MP7%20%7C%20Fade%20%28Factory%20New%29",
    "skinport_url": "https://skinport.com/market?search=MP7%20%7C%20Fade%20%28Factory%20New%29"
+  },
+  {
+   "name": "Souvenir FAMAS | Faulty Wiring (Factory New)",
+   "buy": 0.43,
+   "steam": 0.61,
+   "profit": 0.1,
+   "roi": 23.4,
+   "volume": 14,
+   "qty": 283,
+   "steam_ts": 1794711538,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Souvenir%20FAMAS%20%7C%20Faulty%20Wiring%20%28Factory%20New%29",
+   "skinport_url": "https://skinport.com/market?search=Souvenir%20FAMAS%20%7C%20Faulty%20Wiring%20%28Factory%20New%29"
   },
   {
    "name": "M4A1-S | Emphorosaur-S (Minimal Wear)",
@@ -3172,69 +3198,17 @@
    "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20P90%20%7C%20Wave%20Breaker%20%28Field-Tested%29"
   },
   {
-   "name": "AK-47 | Uncharted (Minimal Wear)",
-   "buy": 0.65,
-   "steam": 0.92,
-   "profit": 0.15,
-   "roi": 23.1,
-   "volume": 301,
-   "qty": 343,
-   "steam_ts": 1794743239,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Uncharted%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Uncharted%20%28Minimal%20Wear%29"
-  },
-  {
-   "name": "Sticker | GamerLegion (Holo) | Paris 2023",
-   "buy": 0.75,
-   "steam": 1.06,
-   "profit": 0.17,
-   "roi": 22.9,
-   "volume": 26,
-   "qty": 455,
-   "steam_ts": 1794740121,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20GamerLegion%20%28Holo%29%20%7C%20Paris%202023",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20GamerLegion%20%28Holo%29%20%7C%20Paris%202023"
-  },
-  {
-   "name": "P90 | Wave Breaker (Battle-Scarred)",
-   "buy": 0.29,
-   "steam": 0.41,
-   "profit": 0.07,
-   "roi": 22.9,
-   "volume": 53,
-   "qty": 335,
-   "steam_ts": 1794747486,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/P90%20%7C%20Wave%20Breaker%20%28Battle-Scarred%29",
-   "skinport_url": "https://skinport.com/market?search=P90%20%7C%20Wave%20Breaker%20%28Battle-Scarred%29"
-  },
-  {
-   "name": "MAC-10 | Sakkaku (Field-Tested)",
-   "buy": 0.46,
-   "steam": 0.65,
-   "profit": 0.11,
-   "roi": 22.9,
-   "volume": 355,
-   "qty": 809,
-   "steam_ts": 1794743340,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Sakkaku%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Sakkaku%20%28Field-Tested%29"
-  },
-  {
-   "name": "M249 | Downtown (Field-Tested)",
-   "buy": 0.29,
-   "steam": 0.41,
-   "profit": 0.07,
-   "roi": 22.9,
-   "volume": 130,
-   "qty": 925,
-   "steam_ts": 1794747570,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/M249%20%7C%20Downtown%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=M249%20%7C%20Downtown%20%28Field-Tested%29"
+   "name": "AK-47 | Redline (Field-Tested)",
+   "buy": 20.94,
+   "steam": 29.63,
+   "profit": 4.83,
+   "roi": 23.0,
+   "volume": 63,
+   "qty": 532,
+   "steam_ts": 1794736465,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Redline%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Redline%20%28Field-Tested%29"
   },
   {
    "name": "FAMAS | Half Sleeve (Factory New)",
@@ -3263,17 +3237,43 @@
    "skinport_url": "https://skinport.com/market?search=Antwerp%202022%20Legends%20Sticker%20Capsule"
   },
   {
-   "name": "Chroma Case",
-   "buy": 3.47,
-   "steam": 4.9,
-   "profit": 0.79,
-   "roi": 22.8,
-   "volume": 846,
-   "qty": 8954,
-   "steam_ts": 1794736827,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Chroma%20Case",
-   "skinport_url": "https://skinport.com/market?search=Chroma%20Case"
+   "name": "Sticker | GamerLegion (Holo) | Paris 2023",
+   "buy": 0.75,
+   "steam": 1.06,
+   "profit": 0.17,
+   "roi": 22.9,
+   "volume": 26,
+   "qty": 455,
+   "steam_ts": 1794740121,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20GamerLegion%20%28Holo%29%20%7C%20Paris%202023",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20GamerLegion%20%28Holo%29%20%7C%20Paris%202023"
+  },
+  {
+   "name": "M249 | Downtown (Field-Tested)",
+   "buy": 0.29,
+   "steam": 0.41,
+   "profit": 0.07,
+   "roi": 22.9,
+   "volume": 130,
+   "qty": 925,
+   "steam_ts": 1794747570,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/M249%20%7C%20Downtown%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=M249%20%7C%20Downtown%20%28Field-Tested%29"
+  },
+  {
+   "name": "P90 | Wave Breaker (Battle-Scarred)",
+   "buy": 0.29,
+   "steam": 0.41,
+   "profit": 0.07,
+   "roi": 22.9,
+   "volume": 53,
+   "qty": 335,
+   "steam_ts": 1794747486,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/P90%20%7C%20Wave%20Breaker%20%28Battle-Scarred%29",
+   "skinport_url": "https://skinport.com/market?search=P90%20%7C%20Wave%20Breaker%20%28Battle-Scarred%29"
   },
   {
    "name": "AK-47 | Elite Build (Field-Tested)",
@@ -3289,6 +3289,19 @@
    "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Elite%20Build%20%28Field-Tested%29"
   },
   {
+   "name": "Anubis Collection Package",
+   "buy": 1.49,
+   "steam": 2.1,
+   "profit": 0.34,
+   "roi": 22.6,
+   "volume": 578,
+   "qty": 3078,
+   "steam_ts": 1794739974,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Anubis%20Collection%20Package",
+   "skinport_url": "https://skinport.com/market?search=Anubis%20Collection%20Package"
+  },
+  {
    "name": "USP-S | Flashback (Field-Tested)",
    "buy": 0.39,
    "steam": 0.55,
@@ -3300,6 +3313,32 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Flashback%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Flashback%20%28Field-Tested%29"
+  },
+  {
+   "name": "P250 | Valence (Field-Tested)",
+   "buy": 0.22,
+   "steam": 0.31,
+   "profit": 0.05,
+   "roi": 22.5,
+   "volume": 125,
+   "qty": 318,
+   "steam_ts": 1794747695,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/P250%20%7C%20Valence%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=P250%20%7C%20Valence%20%28Field-Tested%29"
+  },
+  {
+   "name": "3rd Commando Company | KSK",
+   "buy": 8.78,
+   "steam": 12.36,
+   "profit": 1.97,
+   "roi": 22.4,
+   "volume": 84,
+   "qty": 334,
+   "steam_ts": 1794736544,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/3rd%20Commando%20Company%20%7C%20KSK",
+   "skinport_url": "https://skinport.com/market?search=3rd%20Commando%20Company%20%7C%20KSK"
   },
   {
    "name": "M4A4 | Etch Lord (Battle-Scarred)",
@@ -3326,19 +3365,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Charm%20%7C%20Glamour%20Shot",
    "skinport_url": "https://skinport.com/market?search=Charm%20%7C%20Glamour%20Shot"
-  },
-  {
-   "name": "Desert Eagle | Tilted (Minimal Wear)",
-   "buy": 0.37,
-   "steam": 0.52,
-   "profit": 0.08,
-   "roi": 22.2,
-   "volume": 622,
-   "qty": 1667,
-   "steam_ts": 1794743499,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Tilted%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Tilted%20%28Minimal%20Wear%29"
   },
   {
    "name": "Zeus x27 | Tosai (Minimal Wear)",
@@ -3393,17 +3419,30 @@
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Team%20Liquid%20%28Holo%29%20%7C%20Stockholm%202021"
   },
   {
-   "name": "MP7 | Cirrus (Field-Tested)",
-   "buy": 0.55,
-   "steam": 0.77,
-   "profit": 0.12,
+   "name": "Lt. Commander Ricksaw | NSWC SEAL",
+   "buy": 10.23,
+   "steam": 14.33,
+   "profit": 2.23,
+   "roi": 21.8,
+   "volume": 109,
+   "qty": 451,
+   "steam_ts": 1794736532,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Lt.%20Commander%20Ricksaw%20%7C%20NSWC%20SEAL",
+   "skinport_url": "https://skinport.com/market?search=Lt.%20Commander%20Ricksaw%20%7C%20NSWC%20SEAL"
+  },
+  {
+   "name": "USP-S | Tropical Breeze (Field-Tested)",
+   "buy": 0.2,
+   "steam": 0.28,
+   "profit": 0.04,
    "roi": 21.7,
-   "volume": 97,
-   "qty": 327,
-   "steam_ts": 1794743297,
+   "volume": 517,
+   "qty": 286,
+   "steam_ts": 1794711516,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/MP7%20%7C%20Cirrus%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=MP7%20%7C%20Cirrus%20%28Field-Tested%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Tropical%20Breeze%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Tropical%20Breeze%20%28Field-Tested%29"
   },
   {
    "name": "Five-SeveN | Flame Test (Field-Tested)",
@@ -3419,6 +3458,19 @@
    "skinport_url": "https://skinport.com/market?search=Five-SeveN%20%7C%20Flame%20Test%20%28Field-Tested%29"
   },
   {
+   "name": "MP7 | Cirrus (Field-Tested)",
+   "buy": 0.55,
+   "steam": 0.77,
+   "profit": 0.12,
+   "roi": 21.7,
+   "volume": 97,
+   "qty": 327,
+   "steam_ts": 1794743297,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/MP7%20%7C%20Cirrus%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=MP7%20%7C%20Cirrus%20%28Field-Tested%29"
+  },
+  {
    "name": "AK-47 | Searing Rage (Field-Tested)",
    "buy": 3.48,
    "steam": 4.87,
@@ -3430,19 +3482,6 @@
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Searing%20Rage%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Searing%20Rage%20%28Field-Tested%29"
-  },
-  {
-   "name": "USP-S | Tropical Breeze (Field-Tested)",
-   "buy": 0.2,
-   "steam": 0.28,
-   "profit": 0.04,
-   "roi": 21.7,
-   "volume": 517,
-   "qty": 287,
-   "steam_ts": 1794711516,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Tropical%20Breeze%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Tropical%20Breeze%20%28Field-Tested%29"
   },
   {
    "name": "Sticker | Ruby Wave (Lenticular)",
@@ -3471,19 +3510,6 @@
    "skinport_url": "https://skinport.com/market?search=P250%20%7C%20Visions%20%28Field-Tested%29"
   },
   {
-   "name": "StatTrak™ PP-Bizon | Space Cat (Field-Tested)",
-   "buy": 0.38,
-   "steam": 0.53,
-   "profit": 0.08,
-   "roi": 21.3,
-   "volume": 85,
-   "qty": 426,
-   "steam_ts": 1794743505,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20PP-Bizon%20%7C%20Space%20Cat%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20PP-Bizon%20%7C%20Space%20Cat%20%28Field-Tested%29"
-  },
-  {
    "name": "Glock-18 | Candy Apple (Factory New)",
    "buy": 1.24,
    "steam": 1.73,
@@ -3495,6 +3521,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Candy%20Apple%20%28Factory%20New%29",
    "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Candy%20Apple%20%28Factory%20New%29"
+  },
+  {
+   "name": "StatTrak™ PP-Bizon | Space Cat (Field-Tested)",
+   "buy": 0.38,
+   "steam": 0.53,
+   "profit": 0.08,
+   "roi": 21.3,
+   "volume": 85,
+   "qty": 427,
+   "steam_ts": 1794743505,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20PP-Bizon%20%7C%20Space%20Cat%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20PP-Bizon%20%7C%20Space%20Cat%20%28Field-Tested%29"
   },
   {
    "name": "Desert Eagle | Heat Treated (Minimal Wear)",
@@ -3523,30 +3562,17 @@
    "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Clear%20Polymer%20%28Field-Tested%29"
   },
   {
-   "name": "USP-S | Ticket to Hell (Minimal Wear)",
-   "buy": 0.61,
-   "steam": 0.85,
-   "profit": 0.13,
-   "roi": 21.2,
-   "volume": 483,
-   "qty": 431,
-   "steam_ts": 1794743248,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Ticket%20to%20Hell%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Ticket%20to%20Hell%20%28Minimal%20Wear%29"
-  },
-  {
-   "name": "SG 553 | Anodized Navy (Factory New)",
+   "name": "MAG-7 | Monster Call (Battle-Scarred)",
    "buy": 0.28,
    "steam": 0.39,
    "profit": 0.06,
    "roi": 21.1,
-   "volume": 78,
-   "qty": 779,
-   "steam_ts": 1794747611,
+   "volume": 46,
+   "qty": 303,
+   "steam_ts": 1794747533,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/SG%20553%20%7C%20Anodized%20Navy%20%28Factory%20New%29",
-   "skinport_url": "https://skinport.com/market?search=SG%20553%20%7C%20Anodized%20Navy%20%28Factory%20New%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/MAG-7%20%7C%20Monster%20Call%20%28Battle-Scarred%29",
+   "skinport_url": "https://skinport.com/market?search=MAG-7%20%7C%20Monster%20Call%20%28Battle-Scarred%29"
   },
   {
    "name": "P90 | Vent Rush (Field-Tested)",
@@ -3562,17 +3588,30 @@
    "skinport_url": "https://skinport.com/market?search=P90%20%7C%20Vent%20Rush%20%28Field-Tested%29"
   },
   {
-   "name": "MAG-7 | Monster Call (Battle-Scarred)",
+   "name": "Stockholm 2021 Mirage Souvenir Package",
+   "buy": 2.6,
+   "steam": 3.62,
+   "profit": 0.55,
+   "roi": 21.1,
+   "volume": 62,
+   "qty": 887,
+   "steam_ts": 1794739847,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Stockholm%202021%20Mirage%20Souvenir%20Package",
+   "skinport_url": "https://skinport.com/market?search=Stockholm%202021%20Mirage%20Souvenir%20Package"
+  },
+  {
+   "name": "SG 553 | Anodized Navy (Factory New)",
    "buy": 0.28,
    "steam": 0.39,
    "profit": 0.06,
    "roi": 21.1,
-   "volume": 46,
-   "qty": 303,
-   "steam_ts": 1794747533,
+   "volume": 78,
+   "qty": 779,
+   "steam_ts": 1794747611,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/MAG-7%20%7C%20Monster%20Call%20%28Battle-Scarred%29",
-   "skinport_url": "https://skinport.com/market?search=MAG-7%20%7C%20Monster%20Call%20%28Battle-Scarred%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/SG%20553%20%7C%20Anodized%20Navy%20%28Factory%20New%29",
+   "skinport_url": "https://skinport.com/market?search=SG%20553%20%7C%20Anodized%20Navy%20%28Factory%20New%29"
   },
   {
    "name": "P90 | Vent Rush (Minimal Wear)",
@@ -3633,7 +3672,7 @@
    "profit": 0.56,
    "roi": 20.8,
    "volume": 1638,
-   "qty": 19908,
+   "qty": 19958,
    "steam_ts": 1794736886,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Chroma%202%20Case",
@@ -3664,19 +3703,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Liquid%20Fire%20%28Holo%29",
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Liquid%20Fire%20%28Holo%29"
-  },
-  {
-   "name": "Glock-18 | Water Elemental (Minimal Wear)",
-   "buy": 14.96,
-   "steam": 20.74,
-   "profit": 3.07,
-   "roi": 20.6,
-   "volume": 35,
-   "qty": 327,
-   "steam_ts": 1794736474,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Water%20Elemental%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Water%20Elemental%20%28Minimal%20Wear%29"
   },
   {
    "name": "Tec-9 | Red Quartz (Factory New)",
@@ -3731,19 +3757,6 @@
    "skinport_url": "https://skinport.com/market?search=XM1014%20%7C%20Zombie%20Offensive%20%28Field-Tested%29"
   },
   {
-   "name": "Budapest 2025 Train Souvenir Highlight Package",
-   "buy": 2.11,
-   "steam": 2.92,
-   "profit": 0.43,
-   "roi": 20.3,
-   "volume": 72,
-   "qty": 286,
-   "steam_ts": 1794711522,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Budapest%202025%20Train%20Souvenir%20Highlight%20Package",
-   "skinport_url": "https://skinport.com/market?search=Budapest%202025%20Train%20Souvenir%20Highlight%20Package"
-  },
-  {
    "name": "AUG | Stymphalian (Field-Tested)",
    "buy": 2.5,
    "steam": 3.46,
@@ -3757,13 +3770,39 @@
    "skinport_url": "https://skinport.com/market?search=AUG%20%7C%20Stymphalian%20%28Field-Tested%29"
   },
   {
+   "name": "Budapest 2025 Train Souvenir Highlight Package",
+   "buy": 2.11,
+   "steam": 2.92,
+   "profit": 0.43,
+   "roi": 20.3,
+   "volume": 72,
+   "qty": 286,
+   "steam_ts": 1794711522,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Budapest%202025%20Train%20Souvenir%20Highlight%20Package",
+   "skinport_url": "https://skinport.com/market?search=Budapest%202025%20Train%20Souvenir%20Highlight%20Package"
+  },
+  {
+   "name": "Sticker | Enemy Spotted (Holo)",
+   "buy": 0.63,
+   "steam": 0.87,
+   "profit": 0.13,
+   "roi": 20.1,
+   "volume": 19,
+   "qty": 414,
+   "steam_ts": 1794743276,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Enemy%20Spotted%20%28Holo%29",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Enemy%20Spotted%20%28Holo%29"
+  },
+  {
    "name": "Enforcer | Phoenix",
    "buy": 3.59,
    "steam": 4.96,
    "profit": 0.72,
    "roi": 20.1,
    "volume": 119,
-   "qty": 387,
+   "qty": 388,
    "steam_ts": 1794736818,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Enforcer%20%7C%20Phoenix",
@@ -3776,7 +3815,7 @@
    "profit": 0.55,
    "roi": 20.1,
    "volume": 203,
-   "qty": 287,
+   "qty": 288,
    "steam_ts": 1794711519,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Cortex%20%28Field-Tested%29",
@@ -3796,19 +3835,6 @@
    "skinport_url": "https://skinport.com/market?search=XM1014%20%7C%20Entombed%20%28Field-Tested%29"
   },
   {
-   "name": "R8 Revolver | Crazy 8 (Well-Worn)",
-   "buy": 0.29,
-   "steam": 0.4,
-   "profit": 0.06,
-   "roi": 19.9,
-   "volume": 83,
-   "qty": 372,
-   "steam_ts": 1794747492,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/R8%20Revolver%20%7C%20Crazy%208%20%28Well-Worn%29",
-   "skinport_url": "https://skinport.com/market?search=R8%20Revolver%20%7C%20Crazy%208%20%28Well-Worn%29"
-  },
-  {
    "name": "MAC-10 | Allure (Battle-Scarred)",
    "buy": 0.29,
    "steam": 0.4,
@@ -3822,6 +3848,19 @@
    "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Allure%20%28Battle-Scarred%29"
   },
   {
+   "name": "R8 Revolver | Crazy 8 (Well-Worn)",
+   "buy": 0.29,
+   "steam": 0.4,
+   "profit": 0.06,
+   "roi": 19.9,
+   "volume": 83,
+   "qty": 372,
+   "steam_ts": 1794747492,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/R8%20Revolver%20%7C%20Crazy%208%20%28Well-Worn%29",
+   "skinport_url": "https://skinport.com/market?search=R8%20Revolver%20%7C%20Crazy%208%20%28Well-Worn%29"
+  },
+  {
    "name": "Desert Eagle | Light Rail (Field-Tested)",
    "buy": 0.87,
    "steam": 1.2,
@@ -3833,6 +3872,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Light%20Rail%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Light%20Rail%20%28Field-Tested%29"
+  },
+  {
+   "name": "Kilowatt Case",
+   "buy": 0.08,
+   "steam": 0.11,
+   "profit": 0.02,
+   "roi": 19.6,
+   "volume": 76893,
+   "qty": 10988,
+   "steam_ts": 1794711390,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Kilowatt%20Case",
+   "skinport_url": "https://skinport.com/market?search=Kilowatt%20Case"
   },
   {
    "name": "G3SG1 | Dream Glade (Battle-Scarred)",
@@ -3861,19 +3913,6 @@
    "skinport_url": "https://skinport.com/market?search=UMP-45%20%7C%20K.O.%20Factory%20%28Field-Tested%29"
   },
   {
-   "name": "Sticker | 9INE (Holo) | Paris 2023",
-   "buy": 0.75,
-   "steam": 1.03,
-   "profit": 0.15,
-   "roi": 19.4,
-   "volume": 42,
-   "qty": 425,
-   "steam_ts": 1794740111,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%209INE%20%28Holo%29%20%7C%20Paris%202023",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%209INE%20%28Holo%29%20%7C%20Paris%202023"
-  },
-  {
    "name": "StatTrak™ Zeus x27 | Tosai (Field-Tested)",
    "buy": 0.51,
    "steam": 0.7,
@@ -3887,17 +3926,17 @@
    "skinport_url": "https://skinport.com/market?search=StatTrak%E2%84%A2%20Zeus%20x27%20%7C%20Tosai%20%28Field-Tested%29"
   },
   {
-   "name": "3rd Commando Company | KSK",
-   "buy": 9.0,
-   "steam": 12.36,
-   "profit": 1.75,
+   "name": "Sticker | 9INE (Holo) | Paris 2023",
+   "buy": 0.75,
+   "steam": 1.03,
+   "profit": 0.15,
    "roi": 19.4,
-   "volume": 84,
-   "qty": 332,
-   "steam_ts": 1794736544,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/3rd%20Commando%20Company%20%7C%20KSK",
-   "skinport_url": "https://skinport.com/market?search=3rd%20Commando%20Company%20%7C%20KSK"
+   "volume": 42,
+   "qty": 425,
+   "steam_ts": 1794740111,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%209INE%20%28Holo%29%20%7C%20Paris%202023",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%209INE%20%28Holo%29%20%7C%20Paris%202023"
   },
   {
    "name": "MP5-SD | Phosphor (Field-Tested)",
@@ -3906,7 +3945,7 @@
    "profit": 0.66,
    "roi": 19.1,
    "volume": 38,
-   "qty": 317,
+   "qty": 318,
    "steam_ts": 1794736849,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/MP5-SD%20%7C%20Phosphor%20%28Field-Tested%29",
@@ -3945,7 +3984,7 @@
    "profit": 0.56,
    "roi": 18.9,
    "volume": 164,
-   "qty": 490,
+   "qty": 489,
    "steam_ts": 1794736895,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20Solitude%20%28Minimal%20Wear%29",
@@ -3989,19 +4028,6 @@
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Midnight%20Laminate%20%28Minimal%20Wear%29",
    "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Midnight%20Laminate%20%28Minimal%20Wear%29"
-  },
-  {
-   "name": "Anubis Collection Package",
-   "buy": 1.54,
-   "steam": 2.1,
-   "profit": 0.29,
-   "roi": 18.6,
-   "volume": 578,
-   "qty": 3078,
-   "steam_ts": 1794739974,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Anubis%20Collection%20Package",
-   "skinport_url": "https://skinport.com/market?search=Anubis%20Collection%20Package"
   },
   {
    "name": "USP-S | Tropical Breeze (Factory New)",
@@ -4062,7 +4088,7 @@
    "profit": 0.62,
    "roi": 17.9,
    "volume": 226,
-   "qty": 411,
+   "qty": 412,
    "steam_ts": 1794736861,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Shinobu%20%28Field-Tested%29",
@@ -4095,19 +4121,6 @@
    "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Black%20Lotus%20%28Field-Tested%29"
   },
   {
-   "name": "Katowice 2019 Returning Challengers Autograph Capsule",
-   "buy": 3.87,
-   "steam": 5.24,
-   "profit": 0.69,
-   "roi": 17.7,
-   "volume": 2,
-   "qty": 281,
-   "steam_ts": 1794711541,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Katowice%202019%20Returning%20Challengers%20Autograph%20Capsule",
-   "skinport_url": "https://skinport.com/market?search=Katowice%202019%20Returning%20Challengers%20Autograph%20Capsule"
-  },
-  {
    "name": "AK-47 | Slate (Minimal Wear)",
    "buy": 5.48,
    "steam": 7.42,
@@ -4121,17 +4134,17 @@
    "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Slate%20%28Minimal%20Wear%29"
   },
   {
-   "name": "PP-Bizon | Space Cat (Field-Tested)",
-   "buy": 0.4,
-   "steam": 0.54,
-   "profit": 0.07,
-   "roi": 17.4,
-   "volume": 394,
-   "qty": 1148,
-   "steam_ts": 1794743472,
+   "name": "Katowice 2019 Returning Challengers Autograph Capsule",
+   "buy": 3.87,
+   "steam": 5.24,
+   "profit": 0.69,
+   "roi": 17.7,
+   "volume": 2,
+   "qty": 281,
+   "steam_ts": 1794711541,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/PP-Bizon%20%7C%20Space%20Cat%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=PP-Bizon%20%7C%20Space%20Cat%20%28Field-Tested%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Katowice%202019%20Returning%20Challengers%20Autograph%20Capsule",
+   "skinport_url": "https://skinport.com/market?search=Katowice%202019%20Returning%20Challengers%20Autograph%20Capsule"
   },
   {
    "name": "M4A1-S | Fade (Factory New)",
@@ -4140,24 +4153,24 @@
    "profit": 22.86,
    "roi": 17.4,
    "volume": 28,
-   "qty": 304,
+   "qty": 305,
    "steam_ts": 1794736398,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20Fade%20%28Factory%20New%29",
    "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Fade%20%28Factory%20New%29"
   },
   {
-   "name": "Desert Eagle | Bronze Deco (Field-Tested)",
-   "buy": 0.2,
-   "steam": 0.27,
-   "profit": 0.03,
+   "name": "PP-Bizon | Space Cat (Field-Tested)",
+   "buy": 0.4,
+   "steam": 0.54,
+   "profit": 0.07,
    "roi": 17.4,
-   "volume": 82,
-   "qty": 411,
-   "steam_ts": 1794747744,
+   "volume": 394,
+   "qty": 1149,
+   "steam_ts": 1794743472,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Bronze%20Deco%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Bronze%20Deco%20%28Field-Tested%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/PP-Bizon%20%7C%20Space%20Cat%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=PP-Bizon%20%7C%20Space%20Cat%20%28Field-Tested%29"
   },
   {
    "name": "Copenhagen 2024 Contenders Sticker Capsule",
@@ -4173,17 +4186,17 @@
    "skinport_url": "https://skinport.com/market?search=Copenhagen%202024%20Contenders%20Sticker%20Capsule"
   },
   {
-   "name": "Sticker | Renegades (Holo) | Stockholm 2021",
-   "buy": 2.18,
-   "steam": 2.94,
-   "profit": 0.38,
+   "name": "USP-S | Alpine Camo (Factory New)",
+   "buy": 0.83,
+   "steam": 1.12,
+   "profit": 0.14,
    "roi": 17.3,
-   "volume": 5,
-   "qty": 335,
-   "steam_ts": 1794739915,
+   "volume": 51,
+   "qty": 840,
+   "steam_ts": 1794740067,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Renegades%20%28Holo%29%20%7C%20Stockholm%202021",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Renegades%20%28Holo%29%20%7C%20Stockholm%202021"
+   "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Alpine%20Camo%20%28Factory%20New%29",
+   "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Alpine%20Camo%20%28Factory%20New%29"
   },
   {
    "name": "AWP | Mortis (Field-Tested)",
@@ -4199,17 +4212,30 @@
    "skinport_url": "https://skinport.com/market?search=AWP%20%7C%20Mortis%20%28Field-Tested%29"
   },
   {
-   "name": "USP-S | Alpine Camo (Factory New)",
-   "buy": 0.83,
-   "steam": 1.12,
-   "profit": 0.14,
+   "name": "FAMAS | Rapid Eye Movement (Minimal Wear)",
+   "buy": 4.58,
+   "steam": 6.18,
+   "profit": 0.79,
    "roi": 17.3,
-   "volume": 51,
-   "qty": 840,
-   "steam_ts": 1794740067,
+   "volume": 99,
+   "qty": 306,
+   "steam_ts": 1794736735,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Minimal%20Wear%29"
+  },
+  {
+   "name": "Sticker | Renegades (Holo) | Stockholm 2021",
+   "buy": 2.18,
+   "steam": 2.94,
+   "profit": 0.38,
+   "roi": 17.3,
+   "volume": 5,
+   "qty": 335,
+   "steam_ts": 1794739915,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Alpine%20Camo%20%28Factory%20New%29",
-   "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Alpine%20Camo%20%28Factory%20New%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Renegades%20%28Holo%29%20%7C%20Stockholm%202021",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Renegades%20%28Holo%29%20%7C%20Stockholm%202021"
   },
   {
    "name": "M4A4 | Turbine (Field-Tested)",
@@ -4251,13 +4277,26 @@
    "skinport_url": "https://skinport.com/market?search=Dual%20Berettas%20%7C%20Flora%20Carnivora%20%28Well-Worn%29"
   },
   {
+   "name": "Glock-18 | Water Elemental (Minimal Wear)",
+   "buy": 15.46,
+   "steam": 20.74,
+   "profit": 2.57,
+   "roi": 16.7,
+   "volume": 35,
+   "qty": 325,
+   "steam_ts": 1794736474,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Water%20Elemental%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Water%20Elemental%20%28Minimal%20Wear%29"
+  },
+  {
    "name": "G3SG1 | Dream Glade (Field-Tested)",
    "buy": 0.41,
    "steam": 0.55,
    "profit": 0.07,
    "roi": 16.6,
    "volume": 308,
-   "qty": 879,
+   "qty": 881,
    "steam_ts": 1794743465,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/G3SG1%20%7C%20Dream%20Glade%20%28Field-Tested%29",
@@ -4290,19 +4329,6 @@
    "skinport_url": "https://skinport.com/market?search=USP-S%20%7C%20Jawbreaker%20%28Field-Tested%29"
   },
   {
-   "name": "AWP | Duality (Field-Tested)",
-   "buy": 2.28,
-   "steam": 3.05,
-   "profit": 0.37,
-   "roi": 16.3,
-   "volume": 281,
-   "qty": 591,
-   "steam_ts": 1794739865,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Duality%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=AWP%20%7C%20Duality%20%28Field-Tested%29"
-  },
-  {
    "name": "The Elite Mr. Muhlik | Elite Crew",
    "buy": 6.55,
    "steam": 8.76,
@@ -4314,6 +4340,19 @@
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/The%20Elite%20Mr.%20Muhlik%20%7C%20Elite%20Crew",
    "skinport_url": "https://skinport.com/market?search=The%20Elite%20Mr.%20Muhlik%20%7C%20Elite%20Crew"
+  },
+  {
+   "name": "AWP | Capillary (Minimal Wear)",
+   "buy": 0.8,
+   "steam": 1.07,
+   "profit": 0.13,
+   "roi": 16.3,
+   "volume": 255,
+   "qty": 323,
+   "steam_ts": 1794740099,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Capillary%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=AWP%20%7C%20Capillary%20%28Minimal%20Wear%29"
   },
   {
    "name": "Number K | The Professionals",
@@ -4329,32 +4368,6 @@
    "skinport_url": "https://skinport.com/market?search=Number%20K%20%7C%20The%20Professionals"
   },
   {
-   "name": "Nova | Yorkshire (Field-Tested)",
-   "buy": 0.21,
-   "steam": 0.28,
-   "profit": 0.03,
-   "roi": 15.9,
-   "volume": 44,
-   "qty": 310,
-   "steam_ts": 1794747760,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Nova%20%7C%20Yorkshire%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=Nova%20%7C%20Yorkshire%20%28Field-Tested%29"
-  },
-  {
-   "name": "MP7 | Just Smile (Battle-Scarred)",
-   "buy": 0.27,
-   "steam": 0.36,
-   "profit": 0.04,
-   "roi": 15.9,
-   "volume": 128,
-   "qty": 459,
-   "steam_ts": 1794747579,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/MP7%20%7C%20Just%20Smile%20%28Battle-Scarred%29",
-   "skinport_url": "https://skinport.com/market?search=MP7%20%7C%20Just%20Smile%20%28Battle-Scarred%29"
-  },
-  {
    "name": "M4A1-S | Wash me plz (Factory New)",
    "buy": 0.24,
    "steam": 0.32,
@@ -4366,19 +4379,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/M4A1-S%20%7C%20Wash%20me%20plz%20%28Factory%20New%29",
    "skinport_url": "https://skinport.com/market?search=M4A1-S%20%7C%20Wash%20me%20plz%20%28Factory%20New%29"
-  },
-  {
-   "name": "Desert Eagle | Urban Rubble (Field-Tested)",
-   "buy": 0.15,
-   "steam": 0.2,
-   "profit": 0.02,
-   "roi": 15.9,
-   "volume": 98,
-   "qty": 469,
-   "steam_ts": 1794751117,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Urban%20Rubble%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Urban%20Rubble%20%28Field-Tested%29"
   },
   {
    "name": "Tec-9 | Red Quartz (Field-Tested)",
@@ -4394,6 +4394,45 @@
    "skinport_url": "https://skinport.com/market?search=Tec-9%20%7C%20Red%20Quartz%20%28Field-Tested%29"
   },
   {
+   "name": "MP7 | Just Smile (Battle-Scarred)",
+   "buy": 0.27,
+   "steam": 0.36,
+   "profit": 0.04,
+   "roi": 15.9,
+   "volume": 128,
+   "qty": 459,
+   "steam_ts": 1794747579,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/MP7%20%7C%20Just%20Smile%20%28Battle-Scarred%29",
+   "skinport_url": "https://skinport.com/market?search=MP7%20%7C%20Just%20Smile%20%28Battle-Scarred%29"
+  },
+  {
+   "name": "Nova | Yorkshire (Field-Tested)",
+   "buy": 0.21,
+   "steam": 0.28,
+   "profit": 0.03,
+   "roi": 15.9,
+   "volume": 44,
+   "qty": 310,
+   "steam_ts": 1794747760,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Nova%20%7C%20Yorkshire%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=Nova%20%7C%20Yorkshire%20%28Field-Tested%29"
+  },
+  {
+   "name": "Desert Eagle | Urban Rubble (Field-Tested)",
+   "buy": 0.15,
+   "steam": 0.2,
+   "profit": 0.02,
+   "roi": 15.9,
+   "volume": 98,
+   "qty": 469,
+   "steam_ts": 1794751117,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Urban%20Rubble%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Urban%20Rubble%20%28Field-Tested%29"
+  },
+  {
    "name": "MP9 | Arctic Tri-Tone (Field-Tested)",
    "buy": 1.66,
    "steam": 2.21,
@@ -4407,26 +4446,13 @@
    "skinport_url": "https://skinport.com/market?search=MP9%20%7C%20Arctic%20Tri-Tone%20%28Field-Tested%29"
   },
   {
-   "name": "Dreams & Nightmares Case",
-   "buy": 0.73,
-   "steam": 0.97,
-   "profit": 0.11,
-   "roi": 15.5,
-   "volume": 110308,
-   "qty": 57053,
-   "steam_ts": 1794740114,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Dreams%20%26%20Nightmares%20Case",
-   "skinport_url": "https://skinport.com/market?search=Dreams%20%26%20Nightmares%20Case"
-  },
-  {
    "name": "AK-47 | Nightwish (Field-Tested)",
    "buy": 45.84,
    "steam": 60.89,
    "profit": 7.11,
    "roi": 15.5,
    "volume": 66,
-   "qty": 351,
+   "qty": 353,
    "steam_ts": 1794736404,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Nightwish%20%28Field-Tested%29",
@@ -4465,7 +4491,7 @@
    "profit": 0.14,
    "roi": 15.3,
    "volume": 183,
-   "qty": 559,
+   "qty": 558,
    "steam_ts": 1794740064,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Candy%20Apple%20%28Minimal%20Wear%29",
@@ -4485,19 +4511,6 @@
    "skinport_url": "https://skinport.com/market?search=XM1014%20%7C%20Solitude%20%28Field-Tested%29"
   },
   {
-   "name": "Sticker | FaZe Clan (Glitter) | Antwerp 2022",
-   "buy": 0.4,
-   "steam": 0.53,
-   "profit": 0.06,
-   "roi": 15.2,
-   "volume": 14,
-   "qty": 305,
-   "steam_ts": 1794743508,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20FaZe%20Clan%20%28Glitter%29%20%7C%20Antwerp%202022",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20FaZe%20Clan%20%28Glitter%29%20%7C%20Antwerp%202022"
-  },
-  {
    "name": "Five-SeveN | Heat Treated (Field-Tested)",
    "buy": 1.66,
    "steam": 2.2,
@@ -4509,6 +4522,32 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Five-SeveN%20%7C%20Heat%20Treated%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=Five-SeveN%20%7C%20Heat%20Treated%20%28Field-Tested%29"
+  },
+  {
+   "name": "AK-47 | Searing Rage (Well-Worn)",
+   "buy": 3.32,
+   "steam": 4.4,
+   "profit": 0.51,
+   "roi": 15.2,
+   "volume": 136,
+   "qty": 321,
+   "steam_ts": 1794736874,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Searing%20Rage%20%28Well-Worn%29",
+   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Searing%20Rage%20%28Well-Worn%29"
+  },
+  {
+   "name": "Sticker | FaZe Clan (Glitter) | Antwerp 2022",
+   "buy": 0.4,
+   "steam": 0.53,
+   "profit": 0.06,
+   "roi": 15.2,
+   "volume": 14,
+   "qty": 305,
+   "steam_ts": 1794743508,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20FaZe%20Clan%20%28Glitter%29%20%7C%20Antwerp%202022",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20FaZe%20Clan%20%28Glitter%29%20%7C%20Antwerp%202022"
   },
   {
    "name": "Sticker | Stone Scales (Foil)",
@@ -4524,17 +4563,17 @@
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Stone%20Scales%20%28Foil%29"
   },
   {
-   "name": "AK-47 | Searing Rage (Well-Worn)",
-   "buy": 3.32,
-   "steam": 4.4,
-   "profit": 0.51,
+   "name": "MP7 | Abyssal Apparition (Well-Worn)",
+   "buy": 4.12,
+   "steam": 5.46,
+   "profit": 0.63,
    "roi": 15.2,
-   "volume": 136,
-   "qty": 320,
-   "steam_ts": 1794736874,
+   "volume": 102,
+   "qty": 338,
+   "steam_ts": 1794736766,
    "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Searing%20Rage%20%28Well-Worn%29",
-   "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Searing%20Rage%20%28Well-Worn%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/MP7%20%7C%20Abyssal%20Apparition%20%28Well-Worn%29",
+   "skinport_url": "https://skinport.com/market?search=MP7%20%7C%20Abyssal%20Apparition%20%28Well-Worn%29"
   },
   {
    "name": "UMP-45 | Wild Child (Field-Tested)",
@@ -4563,19 +4602,6 @@
    "skinport_url": "https://skinport.com/market?search=UMP-45%20%7C%20Crimson%20Foil%20%28Field-Tested%29"
   },
   {
-   "name": "Sticker | Ruby Stream (Lenticular)",
-   "buy": 2.18,
-   "steam": 2.88,
-   "profit": 0.32,
-   "roi": 14.9,
-   "volume": 105,
-   "qty": 755,
-   "steam_ts": 1794739931,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Ruby%20Stream%20%28Lenticular%29",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Ruby%20Stream%20%28Lenticular%29"
-  },
-  {
    "name": "M4A4 | Tooth Fairy (Field-Tested)",
    "buy": 2.74,
    "steam": 3.62,
@@ -4589,17 +4615,30 @@
    "skinport_url": "https://skinport.com/market?search=M4A4%20%7C%20Tooth%20Fairy%20%28Field-Tested%29"
   },
   {
-   "name": "AWP | Capillary (Minimal Wear)",
-   "buy": 0.81,
-   "steam": 1.07,
-   "profit": 0.12,
+   "name": "Sticker | Ruby Stream (Lenticular)",
+   "buy": 2.18,
+   "steam": 2.88,
+   "profit": 0.32,
    "roi": 14.9,
-   "volume": 255,
-   "qty": 323,
-   "steam_ts": 1794740099,
+   "volume": 105,
+   "qty": 755,
+   "steam_ts": 1794739931,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Capillary%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=AWP%20%7C%20Capillary%20%28Minimal%20Wear%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Ruby%20Stream%20%28Lenticular%29",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Ruby%20Stream%20%28Lenticular%29"
+  },
+  {
+   "name": "AWP | Duality (Field-Tested)",
+   "buy": 2.31,
+   "steam": 3.05,
+   "profit": 0.34,
+   "roi": 14.8,
+   "volume": 281,
+   "qty": 590,
+   "steam_ts": 1794739865,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Duality%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=AWP%20%7C%20Duality%20%28Field-Tested%29"
   },
   {
    "name": "MAC-10 | Disco Tech (Field-Tested)",
@@ -4628,17 +4667,17 @@
    "skinport_url": "https://skinport.com/market?search=G3SG1%20%7C%20Dream%20Glade%20%28Minimal%20Wear%29"
   },
   {
-   "name": "Michael Syfers  | FBI Sniper",
-   "buy": 7.29,
-   "steam": 9.6,
-   "profit": 1.06,
-   "roi": 14.5,
-   "volume": 111,
-   "qty": 637,
-   "steam_ts": 1794736602,
+   "name": "FAMAS | Rapid Eye Movement (Well-Worn)",
+   "buy": 4.12,
+   "steam": 5.43,
+   "profit": 0.6,
+   "roi": 14.6,
+   "volume": 113,
+   "qty": 425,
+   "steam_ts": 1794736815,
    "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Michael%20Syfers%20%20%7C%20FBI%20Sniper",
-   "skinport_url": "https://skinport.com/market?search=Michael%20Syfers%20%20%7C%20FBI%20Sniper"
+   "steam_url": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Well-Worn%29",
+   "skinport_url": "https://skinport.com/market?search=FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Well-Worn%29"
   },
   {
    "name": "Glove Case",
@@ -4647,7 +4686,7 @@
    "profit": 0.98,
    "roi": 14.5,
    "volume": 1232,
-   "qty": 9582,
+   "qty": 9584,
    "steam_ts": 1794736611,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Glove%20Case",
@@ -4660,7 +4699,7 @@
    "profit": 2.0,
    "roi": 14.4,
    "volume": 69,
-   "qty": 443,
+   "qty": 444,
    "steam_ts": 1794736529,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Special%20Agent%20Ava%20%7C%20FBI",
@@ -4673,24 +4712,11 @@
    "profit": 0.32,
    "roi": 14.4,
    "volume": 214,
-   "qty": 985,
+   "qty": 978,
    "steam_ts": 1794739884,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Zeus%20x27%20%7C%20Olympus%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=Zeus%20x27%20%7C%20Olympus%20%28Field-Tested%29"
-  },
-  {
-   "name": "Galil AR | NV (Factory New)",
-   "buy": 0.35,
-   "steam": 0.46,
-   "profit": 0.05,
-   "roi": 14.3,
-   "volume": 81,
-   "qty": 351,
-   "steam_ts": 1794743567,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Galil%20AR%20%7C%20NV%20%28Factory%20New%29",
-   "skinport_url": "https://skinport.com/market?search=Galil%20AR%20%7C%20NV%20%28Factory%20New%29"
   },
   {
    "name": "Charm | Semi-Precious",
@@ -4706,13 +4732,26 @@
    "skinport_url": "https://skinport.com/market?search=Charm%20%7C%20Semi-Precious"
   },
   {
+   "name": "Galil AR | NV (Factory New)",
+   "buy": 0.35,
+   "steam": 0.46,
+   "profit": 0.05,
+   "roi": 14.3,
+   "volume": 81,
+   "qty": 351,
+   "steam_ts": 1794743567,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Galil%20AR%20%7C%20NV%20%28Factory%20New%29",
+   "skinport_url": "https://skinport.com/market?search=Galil%20AR%20%7C%20NV%20%28Factory%20New%29"
+  },
+  {
    "name": "Osiris | Elite Crew",
    "buy": 6.54,
    "steam": 8.58,
    "profit": 0.92,
    "roi": 14.1,
    "volume": 106,
-   "qty": 328,
+   "qty": 329,
    "steam_ts": 1794736668,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Osiris%20%7C%20Elite%20Crew",
@@ -4745,19 +4784,6 @@
    "skinport_url": "https://skinport.com/market?search=SSG%2008%20%7C%20Zeno%20%28Factory%20New%29"
   },
   {
-   "name": "Snakebite Case",
-   "buy": 0.26,
-   "steam": 0.34,
-   "profit": 0.04,
-   "roi": 13.7,
-   "volume": 6332,
-   "qty": 25372,
-   "steam_ts": 1794747685,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Snakebite%20Case",
-   "skinport_url": "https://skinport.com/market?search=Snakebite%20Case"
-  },
-  {
    "name": "Stockholm 2021 Legends Patch Pack",
    "buy": 2.27,
    "steam": 2.96,
@@ -4769,19 +4795,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Stockholm%202021%20Legends%20Patch%20Pack",
    "skinport_url": "https://skinport.com/market?search=Stockholm%202021%20Legends%20Patch%20Pack"
-  },
-  {
-   "name": "UMP-45 | K.O. Factory (Well-Worn)",
-   "buy": 3.25,
-   "steam": 4.23,
-   "profit": 0.43,
-   "roi": 13.2,
-   "volume": 36,
-   "qty": 327,
-   "steam_ts": 1794736871,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/UMP-45%20%7C%20K.O.%20Factory%20%28Well-Worn%29",
-   "skinport_url": "https://skinport.com/market?search=UMP-45%20%7C%20K.O.%20Factory%20%28Well-Worn%29"
   },
   {
    "name": "M4A4 | Temukau (Field-Tested)",
@@ -4797,6 +4810,19 @@
    "skinport_url": "https://skinport.com/market?search=M4A4%20%7C%20Temukau%20%28Field-Tested%29"
   },
   {
+   "name": "Glock-18 | Shinobu (Minimal Wear)",
+   "buy": 5.75,
+   "steam": 7.47,
+   "profit": 0.75,
+   "roi": 13.0,
+   "volume": 116,
+   "qty": 290,
+   "steam_ts": 1794711460,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Shinobu%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Shinobu%20%28Minimal%20Wear%29"
+  },
+  {
    "name": "MP9 | Arctic Tri-Tone (Factory New)",
    "buy": 4.04,
    "steam": 5.25,
@@ -4808,19 +4834,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/MP9%20%7C%20Arctic%20Tri-Tone%20%28Factory%20New%29",
    "skinport_url": "https://skinport.com/market?search=MP9%20%7C%20Arctic%20Tri-Tone%20%28Factory%20New%29"
-  },
-  {
-   "name": "Glock-18 | Shinobu (Minimal Wear)",
-   "buy": 5.75,
-   "steam": 7.47,
-   "profit": 0.75,
-   "roi": 13.0,
-   "volume": 116,
-   "qty": 291,
-   "steam_ts": 1794711460,
-   "pass": true,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Shinobu%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Shinobu%20%28Minimal%20Wear%29"
   },
   {
    "name": "Sticker | Ancient Beast (Foil)",
@@ -4855,7 +4868,7 @@
    "profit": 1.15,
    "roi": 12.5,
    "volume": 38,
-   "qty": 340,
+   "qty": 339,
    "steam_ts": 1794736550,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Five-SeveN%20%7C%20Monkey%20Business%20%28Field-Tested%29",
@@ -4888,17 +4901,17 @@
    "skinport_url": "https://skinport.com/market?search=Nova%20%7C%20Rising%20Sun%20%28Well-Worn%29"
   },
   {
-   "name": "Sticker | G2 Esports (Holo) | Stockholm 2021",
-   "buy": 2.29,
-   "steam": 2.95,
-   "profit": 0.28,
-   "roi": 12.0,
-   "volume": 17,
-   "qty": 301,
-   "steam_ts": 1794751074,
+   "name": "UMP-45 | K.O. Factory (Well-Worn)",
+   "buy": 3.28,
+   "steam": 4.23,
+   "profit": 0.4,
+   "roi": 12.1,
+   "volume": 36,
+   "qty": 326,
+   "steam_ts": 1794736871,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20G2%20Esports%20%28Holo%29%20%7C%20Stockholm%202021",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20G2%20Esports%20%28Holo%29%20%7C%20Stockholm%202021"
+   "steam_url": "https://steamcommunity.com/market/listings/730/UMP-45%20%7C%20K.O.%20Factory%20%28Well-Worn%29",
+   "skinport_url": "https://skinport.com/market?search=UMP-45%20%7C%20K.O.%20Factory%20%28Well-Worn%29"
   },
   {
    "name": "AUG | Steel Sentinel (Factory New)",
@@ -4914,6 +4927,19 @@
    "skinport_url": "https://skinport.com/market?search=AUG%20%7C%20Steel%20Sentinel%20%28Factory%20New%29"
   },
   {
+   "name": "Sticker | G2 Esports (Holo) | Stockholm 2021",
+   "buy": 2.29,
+   "steam": 2.95,
+   "profit": 0.28,
+   "roi": 12.0,
+   "volume": 17,
+   "qty": 301,
+   "steam_ts": 1794751074,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20G2%20Esports%20%28Holo%29%20%7C%20Stockholm%202021",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20G2%20Esports%20%28Holo%29%20%7C%20Stockholm%202021"
+  },
+  {
    "name": "G3SG1 | Dream Glade (Well-Worn)",
    "buy": 0.42,
    "steam": 0.54,
@@ -4927,30 +4953,17 @@
    "skinport_url": "https://skinport.com/market?search=G3SG1%20%7C%20Dream%20Glade%20%28Well-Worn%29"
   },
   {
-   "name": "Dual Berettas | Melondrama (Well-Worn)",
-   "buy": 4.18,
-   "steam": 5.37,
-   "profit": 0.49,
-   "roi": 11.7,
-   "volume": 112,
-   "qty": 427,
-   "steam_ts": 1794739841,
+   "name": "Desert Eagle | Bronze Deco (Field-Tested)",
+   "buy": 0.21,
+   "steam": 0.27,
+   "profit": 0.02,
+   "roi": 11.8,
+   "volume": 82,
+   "qty": 410,
+   "steam_ts": 1794747744,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Dual%20Berettas%20%7C%20Melondrama%20%28Well-Worn%29",
-   "skinport_url": "https://skinport.com/market?search=Dual%20Berettas%20%7C%20Melondrama%20%28Well-Worn%29"
-  },
-  {
-   "name": "Desert Eagle | Serpent Strike (Minimal Wear)",
-   "buy": 0.6,
-   "steam": 0.77,
-   "profit": 0.07,
-   "roi": 11.6,
-   "volume": 355,
-   "qty": 537,
-   "steam_ts": 1794743263,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Serpent%20Strike%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Serpent%20Strike%20%28Minimal%20Wear%29"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Bronze%20Deco%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Bronze%20Deco%20%28Field-Tested%29"
   },
   {
    "name": "XM1014 | Incinegator (Field-Tested)",
@@ -4964,6 +4977,19 @@
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/XM1014%20%7C%20Incinegator%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=XM1014%20%7C%20Incinegator%20%28Field-Tested%29"
+  },
+  {
+   "name": "Desert Eagle | Serpent Strike (Minimal Wear)",
+   "buy": 0.6,
+   "steam": 0.77,
+   "profit": 0.07,
+   "roi": 11.6,
+   "volume": 355,
+   "qty": 536,
+   "steam_ts": 1794743263,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Serpent%20Strike%20%28Minimal%20Wear%29",
+   "skinport_url": "https://skinport.com/market?search=Desert%20Eagle%20%7C%20Serpent%20Strike%20%28Minimal%20Wear%29"
   },
   {
    "name": "Operator | FBI SWAT",
@@ -5011,11 +5037,24 @@
    "profit": 1.04,
    "roi": 11.3,
    "volume": 27,
-   "qty": 295,
+   "qty": 294,
    "steam_ts": 1794699862,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/P250%20%7C%20Asiimov%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=P250%20%7C%20Asiimov%20%28Field-Tested%29"
+  },
+  {
+   "name": "Michael Syfers  | FBI Sniper",
+   "buy": 7.5,
+   "steam": 9.6,
+   "profit": 0.85,
+   "roi": 11.3,
+   "volume": 111,
+   "qty": 637,
+   "steam_ts": 1794736602,
+   "pass": true,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Michael%20Syfers%20%20%7C%20FBI%20Sniper",
+   "skinport_url": "https://skinport.com/market?search=Michael%20Syfers%20%20%7C%20FBI%20Sniper"
   },
   {
    "name": "B Squadron Officer | SAS",
@@ -5024,7 +5063,7 @@
    "profit": 0.64,
    "roi": 11.2,
    "volume": 76,
-   "qty": 367,
+   "qty": 368,
    "steam_ts": 1794736671,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/B%20Squadron%20Officer%20%7C%20SAS",
@@ -5044,26 +5083,13 @@
    "skinport_url": "https://skinport.com/market?search=Negev%20%7C%20Man-o%27-war%20%28Minimal%20Wear%29"
   },
   {
-   "name": "FAMAS | Rapid Eye Movement (Field-Tested)",
-   "buy": 4.43,
-   "steam": 5.66,
-   "profit": 0.49,
-   "roi": 11.1,
-   "volume": 173,
-   "qty": 1089,
-   "steam_ts": 1794736754,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Field-Tested%29"
-  },
-  {
    "name": "Desert Eagle | Tilted (Factory New)",
    "buy": 1.05,
    "steam": 1.34,
    "profit": 0.12,
    "roi": 11.0,
    "volume": 129,
-   "qty": 729,
+   "qty": 728,
    "steam_ts": 1794740036,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Tilted%20%28Factory%20New%29",
@@ -5076,24 +5102,11 @@
    "profit": 0.53,
    "roi": 10.9,
    "volume": 108,
-   "qty": 292,
+   "qty": 293,
    "steam_ts": 1794711453,
    "pass": true,
    "steam_url": "https://steamcommunity.com/market/listings/730/Slingshot%20%7C%20Phoenix",
    "skinport_url": "https://skinport.com/market?search=Slingshot%20%7C%20Phoenix"
-  },
-  {
-   "name": "MP7 | Abyssal Apparition (Well-Worn)",
-   "buy": 4.28,
-   "steam": 5.46,
-   "profit": 0.47,
-   "roi": 10.9,
-   "volume": 102,
-   "qty": 336,
-   "steam_ts": 1794736766,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/MP7%20%7C%20Abyssal%20Apparition%20%28Well-Worn%29",
-   "skinport_url": "https://skinport.com/market?search=MP7%20%7C%20Abyssal%20Apparition%20%28Well-Worn%29"
   },
   {
    "name": "Glock-18 | Teal Graf (Factory New)",
@@ -5122,19 +5135,6 @@
    "skinport_url": "https://skinport.com/market?search=Tec-9%20%7C%20Brother%20%28Well-Worn%29"
   },
   {
-   "name": "FAMAS | Rapid Eye Movement (Well-Worn)",
-   "buy": 4.27,
-   "steam": 5.43,
-   "profit": 0.45,
-   "roi": 10.6,
-   "volume": 113,
-   "qty": 425,
-   "steam_ts": 1794736815,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Well-Worn%29",
-   "skinport_url": "https://skinport.com/market?search=FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Well-Worn%29"
-  },
-  {
    "name": "Sticker | Taste Buddy (Holo)",
    "buy": 2.78,
    "steam": 3.53,
@@ -5154,7 +5154,7 @@
    "profit": 0.46,
    "roi": 10.3,
    "volume": 184,
-   "qty": 1017,
+   "qty": 1016,
    "steam_ts": 1794736748,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Dual%20Berettas%20%7C%20Melondrama%20%28Field-Tested%29",
@@ -5200,19 +5200,6 @@
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Heroic%20%28Holo%29%20%7C%20Stockholm%202021"
   },
   {
-   "name": "Glock-18 | Water Elemental (Field-Tested)",
-   "buy": 14.67,
-   "steam": 18.49,
-   "profit": 1.41,
-   "roi": 9.6,
-   "volume": 24,
-   "qty": 334,
-   "steam_ts": 1794736480,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Water%20Elemental%20%28Field-Tested%29",
-   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Water%20Elemental%20%28Field-Tested%29"
-  },
-  {
    "name": "AK-47 | Olive Polycam (Factory New)",
    "buy": 0.23,
    "steam": 0.29,
@@ -5226,13 +5213,26 @@
    "skinport_url": "https://skinport.com/market?search=AK-47%20%7C%20Olive%20Polycam%20%28Factory%20New%29"
   },
   {
+   "name": "Glock-18 | Water Elemental (Field-Tested)",
+   "buy": 14.67,
+   "steam": 18.49,
+   "profit": 1.41,
+   "roi": 9.6,
+   "volume": 24,
+   "qty": 333,
+   "steam_ts": 1794736480,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Water%20Elemental%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=Glock-18%20%7C%20Water%20Elemental%20%28Field-Tested%29"
+  },
+  {
    "name": "Desert Eagle | Mulberry (Minimal Wear)",
    "buy": 4.89,
    "steam": 6.16,
    "profit": 0.47,
    "roi": 9.5,
    "volume": 108,
-   "qty": 352,
+   "qty": 358,
    "steam_ts": 1794736684,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Mulberry%20%28Minimal%20Wear%29",
@@ -5330,6 +5330,19 @@
    "skinport_url": "https://skinport.com/market?search=Berlin%202019%20Legends%20%28Holo-Foil%29"
   },
   {
+   "name": "Dual Berettas | Melondrama (Well-Worn)",
+   "buy": 4.33,
+   "steam": 5.37,
+   "profit": 0.34,
+   "roi": 7.8,
+   "volume": 112,
+   "qty": 426,
+   "steam_ts": 1794739841,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Dual%20Berettas%20%7C%20Melondrama%20%28Well-Worn%29",
+   "skinport_url": "https://skinport.com/market?search=Dual%20Berettas%20%7C%20Melondrama%20%28Well-Worn%29"
+  },
+  {
    "name": "P2000 | Wicked Sick (Field-Tested)",
    "buy": 2.54,
    "steam": 3.15,
@@ -5341,6 +5354,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/P2000%20%7C%20Wicked%20Sick%20%28Field-Tested%29",
    "skinport_url": "https://skinport.com/market?search=P2000%20%7C%20Wicked%20Sick%20%28Field-Tested%29"
+  },
+  {
+   "name": "FAMAS | Rapid Eye Movement (Field-Tested)",
+   "buy": 4.57,
+   "steam": 5.66,
+   "profit": 0.35,
+   "roi": 7.7,
+   "volume": 173,
+   "qty": 1088,
+   "steam_ts": 1794736754,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Field-Tested%29"
   },
   {
    "name": "Sticker | Natus Vincere (Holo) | Stockholm 2021",
@@ -5382,6 +5408,19 @@
    "skinport_url": "https://skinport.com/market?search=MP7%20%7C%20Anodized%20Navy%20%28Factory%20New%29"
   },
   {
+   "name": "MAC-10 | Sakkaku (Field-Tested)",
+   "buy": 0.53,
+   "steam": 0.65,
+   "profit": 0.04,
+   "roi": 6.6,
+   "volume": 355,
+   "qty": 809,
+   "steam_ts": 1794743340,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/MAC-10%20%7C%20Sakkaku%20%28Field-Tested%29",
+   "skinport_url": "https://skinport.com/market?search=MAC-10%20%7C%20Sakkaku%20%28Field-Tested%29"
+  },
+  {
    "name": "Sticker | High Heat",
    "buy": 0.49,
    "steam": 0.6,
@@ -5393,32 +5432,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20High%20Heat",
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20High%20Heat"
-  },
-  {
-   "name": "FAMAS | Rapid Eye Movement (Minimal Wear)",
-   "buy": 5.05,
-   "steam": 6.18,
-   "profit": 0.32,
-   "roi": 6.4,
-   "volume": 99,
-   "qty": 305,
-   "steam_ts": 1794736735,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Minimal%20Wear%29",
-   "skinport_url": "https://skinport.com/market?search=FAMAS%20%7C%20Rapid%20Eye%20Movement%20%28Minimal%20Wear%29"
-  },
-  {
-   "name": "Souvenir FAMAS | Faulty Wiring (Factory New)",
-   "buy": 0.5,
-   "steam": 0.61,
-   "profit": 0.03,
-   "roi": 6.1,
-   "volume": 14,
-   "qty": 284,
-   "steam_ts": 1794711538,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Souvenir%20FAMAS%20%7C%20Faulty%20Wiring%20%28Factory%20New%29",
-   "skinport_url": "https://skinport.com/market?search=Souvenir%20FAMAS%20%7C%20Faulty%20Wiring%20%28Factory%20New%29"
   },
   {
    "name": "Sticker | MOUZ (Holo) | Paris 2023",
@@ -5447,6 +5460,19 @@
    "skinport_url": "https://skinport.com/market?search=MP7%20%7C%20Abyssal%20Apparition%20%28Field-Tested%29"
   },
   {
+   "name": "Sticker | Fnatic (Holo) | Paris 2023",
+   "buy": 0.55,
+   "steam": 0.66,
+   "profit": 0.02,
+   "roi": 4.3,
+   "volume": 30,
+   "qty": 522,
+   "steam_ts": 1794743325,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Fnatic%20%28Holo%29%20%7C%20Paris%202023",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Fnatic%20%28Holo%29%20%7C%20Paris%202023"
+  },
+  {
    "name": "Sticker | Into The Breach (Holo) | Paris 2023",
    "buy": 0.35,
    "steam": 0.42,
@@ -5458,19 +5484,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Into%20The%20Breach%20%28Holo%29%20%7C%20Paris%202023",
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Into%20The%20Breach%20%28Holo%29%20%7C%20Paris%202023"
-  },
-  {
-   "name": "Sticker | Fnatic (Holo) | Paris 2023",
-   "buy": 0.55,
-   "steam": 0.66,
-   "profit": 0.02,
-   "roi": 4.3,
-   "volume": 30,
-   "qty": 517,
-   "steam_ts": 1794743325,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Fnatic%20%28Holo%29%20%7C%20Paris%202023",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Fnatic%20%28Holo%29%20%7C%20Paris%202023"
   },
   {
    "name": "Sticker | donk (Glitter, Champion) | Shanghai 2024",
@@ -5518,7 +5531,7 @@
    "profit": 0.03,
    "roi": 2.0,
    "volume": 142,
-   "qty": 334,
+   "qty": 333,
    "steam_ts": 1794740008,
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Serpent%20Strike%20%28Factory%20New%29",
@@ -5616,19 +5629,6 @@
    "skinport_url": "https://skinport.com/market?search=Budapest%202025%20Legends%20Sticker%20Capsule"
   },
   {
-   "name": "Sticker | Enemy Spotted (Holo)",
-   "buy": 0.82,
-   "steam": 0.87,
-   "profit": -0.06,
-   "roi": -7.7,
-   "volume": 19,
-   "qty": 413,
-   "steam_ts": 1794743276,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Enemy%20Spotted%20%28Holo%29",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Enemy%20Spotted%20%28Holo%29"
-  },
-  {
    "name": "Charm | Die-cast AK",
    "buy": 2.4,
    "steam": 2.54,
@@ -5655,19 +5655,6 @@
    "skinport_url": "https://skinport.com/market?search=Shanghai%202024%20Challengers%20Sticker%20Capsule"
   },
   {
-   "name": "Sticker | Grayhound Gaming (Holo) | Paris 2023",
-   "buy": 0.34,
-   "steam": 0.35,
-   "profit": -0.04,
-   "roi": -10.5,
-   "volume": 34,
-   "qty": 308,
-   "steam_ts": 1794747639,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Grayhound%20Gaming%20%28Holo%29%20%7C%20Paris%202023",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Grayhound%20Gaming%20%28Holo%29%20%7C%20Paris%202023"
-  },
-  {
    "name": "Sticker | FaZe Clan (Holo) | Paris 2023",
    "buy": 1.03,
    "steam": 1.06,
@@ -5679,6 +5666,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20FaZe%20Clan%20%28Holo%29%20%7C%20Paris%202023",
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20FaZe%20Clan%20%28Holo%29%20%7C%20Paris%202023"
+  },
+  {
+   "name": "Sticker | Grayhound Gaming (Holo) | Paris 2023",
+   "buy": 0.34,
+   "steam": 0.35,
+   "profit": -0.04,
+   "roi": -10.5,
+   "volume": 34,
+   "qty": 308,
+   "steam_ts": 1794747639,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Grayhound%20Gaming%20%28Holo%29%20%7C%20Paris%202023",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Grayhound%20Gaming%20%28Holo%29%20%7C%20Paris%202023"
   },
   {
    "name": "Sticker | GODSENT (Holo) | Stockholm 2021",
@@ -5694,19 +5694,6 @@
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20GODSENT%20%28Holo%29%20%7C%20Stockholm%202021"
   },
   {
-   "name": "Sticker | Fluxo (Holo) | Paris 2023",
-   "buy": 1.27,
-   "steam": 1.27,
-   "profit": -0.17,
-   "roi": -13.0,
-   "volume": 94,
-   "qty": 865,
-   "steam_ts": 1794740027,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Fluxo%20%28Holo%29%20%7C%20Paris%202023",
-   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Fluxo%20%28Holo%29%20%7C%20Paris%202023"
-  },
-  {
    "name": "Souvenir R8 Revolver | Desert Brush (Factory New)",
    "buy": 0.17,
    "steam": 0.17,
@@ -5720,6 +5707,19 @@
    "skinport_url": "https://skinport.com/market?search=Souvenir%20R8%20Revolver%20%7C%20Desert%20Brush%20%28Factory%20New%29"
   },
   {
+   "name": "Snakebite Case",
+   "buy": 0.34,
+   "steam": 0.34,
+   "profit": -0.04,
+   "roi": -13.0,
+   "volume": 6332,
+   "qty": 25349,
+   "steam_ts": 1794747685,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Snakebite%20Case",
+   "skinport_url": "https://skinport.com/market?search=Snakebite%20Case"
+  },
+  {
    "name": "MP7 | Coral Paisley (Factory New)",
    "buy": 0.21,
    "steam": 0.21,
@@ -5731,6 +5731,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/MP7%20%7C%20Coral%20Paisley%20%28Factory%20New%29",
    "skinport_url": "https://skinport.com/market?search=MP7%20%7C%20Coral%20Paisley%20%28Factory%20New%29"
+  },
+  {
+   "name": "Sticker | Fluxo (Holo) | Paris 2023",
+   "buy": 1.27,
+   "steam": 1.27,
+   "profit": -0.17,
+   "roi": -13.0,
+   "volume": 94,
+   "qty": 865,
+   "steam_ts": 1794740027,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Fluxo%20%28Holo%29%20%7C%20Paris%202023",
+   "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Fluxo%20%28Holo%29%20%7C%20Paris%202023"
   },
   {
    "name": "Sticker | MOUZ | Stockholm 2021",
@@ -5772,19 +5785,6 @@
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%209z%20Team%20%7C%20Antwerp%202022"
   },
   {
-   "name": "Recoil Case",
-   "buy": 0.3,
-   "steam": 0.27,
-   "profit": -0.07,
-   "roi": -21.7,
-   "volume": 16617,
-   "qty": 47589,
-   "steam_ts": 1794751102,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Recoil%20Case",
-   "skinport_url": "https://skinport.com/market?search=Recoil%20Case"
-  },
-  {
    "name": "Antwerp 2022 Challengers Autograph Capsule",
    "buy": 0.3,
    "steam": 0.27,
@@ -5796,6 +5796,19 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Antwerp%202022%20Challengers%20Autograph%20Capsule",
    "skinport_url": "https://skinport.com/market?search=Antwerp%202022%20Challengers%20Autograph%20Capsule"
+  },
+  {
+   "name": "Recoil Case",
+   "buy": 0.3,
+   "steam": 0.27,
+   "profit": -0.07,
+   "roi": -21.7,
+   "volume": 16617,
+   "qty": 47589,
+   "steam_ts": 1794751102,
+   "pass": false,
+   "steam_url": "https://steamcommunity.com/market/listings/730/Recoil%20Case",
+   "skinport_url": "https://skinport.com/market?search=Recoil%20Case"
   },
   {
    "name": "Revolution Case",
@@ -5811,17 +5824,17 @@
    "skinport_url": "https://skinport.com/market?search=Revolution%20Case"
   },
   {
-   "name": "Kilowatt Case",
-   "buy": 0.14,
-   "steam": 0.11,
-   "profit": -0.04,
-   "roi": -31.7,
-   "volume": 76893,
-   "qty": 10987,
-   "steam_ts": 1794711390,
+   "name": "Sealed Dead Hand Terminal",
+   "buy": 0.27,
+   "steam": 0.21,
+   "profit": -0.09,
+   "roi": -32.4,
+   "volume": 47487,
+   "qty": 2713,
+   "steam_ts": 1794751108,
    "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Kilowatt%20Case",
-   "skinport_url": "https://skinport.com/market?search=Kilowatt%20Case"
+   "steam_url": "https://steamcommunity.com/market/listings/730/Sealed%20Dead%20Hand%20Terminal",
+   "skinport_url": "https://skinport.com/market?search=Sealed%20Dead%20Hand%20Terminal"
   },
   {
    "name": "Sticker | Counter-Tech",
@@ -5835,19 +5848,6 @@
    "pass": false,
    "steam_url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20Counter-Tech",
    "skinport_url": "https://skinport.com/market?search=Sticker%20%7C%20Counter-Tech"
-  },
-  {
-   "name": "Sealed Dead Hand Terminal",
-   "buy": 0.27,
-   "steam": 0.21,
-   "profit": -0.09,
-   "roi": -32.4,
-   "volume": 47487,
-   "qty": 2713,
-   "steam_ts": 1794751108,
-   "pass": false,
-   "steam_url": "https://steamcommunity.com/market/listings/730/Sealed%20Dead%20Hand%20Terminal",
-   "skinport_url": "https://skinport.com/market?search=Sealed%20Dead%20Hand%20Terminal"
   },
   {
    "name": "2020 RMR Contenders",
