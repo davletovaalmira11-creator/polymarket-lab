@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T10:45:04Z",
+ "updated": "2026-11-19T11:40:57Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,12 +9,27 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 340672 против среднего 63250",
-   "liq": 282558,
-   "v24": 340672,
+   "note": "объём 24ч 385116 против среднего 69599",
+   "liq": 337869,
+   "v24": 385116,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 42.6,
+   "days_left": 42.5,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "will-bitcoin-reach-64k-november-16-22-2026-from-november-18",
+   "question": "Will Bitcoin reach $64,000 November 16-22?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 59250 против среднего 8464",
+   "liq": 116815,
+   "v24": 59250,
+   "z": 0.0,
+   "end": "2026-11-23",
+   "days_left": 3.5,
    "tradeable": false
   }
  ]
