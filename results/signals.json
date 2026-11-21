@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T16:58:48Z",
+ "updated": "2026-11-21T17:41:32Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,12 +9,27 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 85141 против среднего 24581",
-   "liq": 145184,
-   "v24": 85141,
+   "note": "объём 24ч 83703 против среднего 24540",
+   "liq": 148119,
+   "v24": 83703,
    "z": 0.0,
    "end": "2027-01-01",
    "days_left": 40.3,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "bitcoin-above-62k-on-november-21-2026",
+   "question": "Will the price of Bitcoin be above $62,000 on November 21?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 126682 против среднего 23692",
+   "liq": 145322,
+   "v24": 126682,
+   "z": 0.0,
+   "end": "2026-11-21",
+   "days_left": 0.0,
    "tradeable": false
   },
   {
@@ -25,7 +40,7 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 138714 против среднего 23626",
-   "liq": 142557,
+   "liq": 140888,
    "v24": 138714,
    "z": 0.0,
    "end": "2027-01-01",
@@ -34,17 +49,17 @@
   },
   {
    "strategy": "vols",
-   "slug": "will-bitcoin-reach-150000-by-december-31-2026-557-246-971",
-   "question": "Will Bitcoin reach $150,000 by December 31, 2026?",
+   "slug": "bitcoin-above-56k-on-november-21-2026",
+   "question": "Will the price of Bitcoin be above $56,000 on November 21?",
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 23266 против среднего 5677",
-   "liq": 117222,
-   "v24": 23266,
+   "note": "объём 24ч 166166 против среднего 29230",
+   "liq": 126006,
+   "v24": 166166,
    "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 40.3,
+   "end": "2026-11-21",
+   "days_left": 0.0,
    "tradeable": false
   }
  ]
