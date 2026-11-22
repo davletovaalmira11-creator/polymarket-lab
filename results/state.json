@@ -1,19 +1,6 @@
 {
- "cash": 2861.39855462296,
- "positions": {
-  "will-bitcoin-reach-90k-in-november-2026": {
-   "question": "Will Bitcoin reach $90,000 in November?",
-   "slug": "will-bitcoin-reach-90k-in-november-2026",
-   "outcome": "No",
-   "strategy": "fav",
-   "entry": 0.915,
-   "last": 0.9965,
-   "shares": 54.56,
-   "usd": 49.98,
-   "opened": "2026-11-08T02:29:10Z",
-   "epoch": 1794104950.605626
-  }
- },
+ "cash": 2915.71322558296,
+ "positions": {},
  "closed": [
   {
    "question": "Bitcoin Up or Down - November 8, 4:30AM-4:45AM ET",
@@ -1994,6 +1981,18 @@
    "opened": "2026-11-08T01:16:14Z",
    "closed": "2026-11-13T04:17:48Z",
    "reason": "стоп-лосс -10%"
+  },
+  {
+   "question": "Will Bitcoin reach $90,000 in November?",
+   "slug": "will-bitcoin-reach-90k-in-november-2026",
+   "outcome": "No",
+   "entry": 0.915,
+   "exit": 0.9965,
+   "ret_pct": 8.71,
+   "strategy": "fav",
+   "opened": "2026-11-08T02:29:10Z",
+   "closed": "2026-11-22T03:09:55Z",
+   "reason": "макс. срок 14 дней"
   }
  ],
  "curve": [
@@ -3476,19 +3475,23 @@
   [
    "2026-11-22T02:16:26Z",
    2915.77
+  ],
+  [
+   "2026-11-22T03:09:57Z",
+   2915.71
   ]
  ],
- "runs": 373,
+ "runs": 374,
  "stats": {
-  "equity": 2915.77,
-  "cash": 2861.4,
-  "open": 1,
-  "trades": 165,
-  "wins": 76,
-  "winrate": 46.1,
-  "pnl_pct": 191.58,
-  "updated": "2026-11-22T02:16:26Z",
-  "runs": 373,
+  "equity": 2915.71,
+  "cash": 2915.71,
+  "open": 0,
+  "trades": 166,
+  "wins": 77,
+  "winrate": 46.4,
+  "pnl_pct": 191.57,
+  "updated": "2026-11-22T03:09:57Z",
+  "runs": 374,
   "sht_open": 0,
   "sht_trades": 160,
   "sht_pnl": 1933.41
