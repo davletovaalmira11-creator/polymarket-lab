@@ -1,22 +1,7 @@
 {
- "updated": "2026-11-22T20:15:37Z",
+ "updated": "2026-11-22T21:01:52Z",
  "scanned": 200,
  "signals": [
-  {
-   "strategy": "vols",
-   "slug": "btc-updown-15m-1795377600",
-   "question": "Bitcoin Up or Down - November 22, 3:00PM-3:15PM ET",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 4548 против среднего 650",
-   "liq": 212796,
-   "v24": 4548,
-   "z": 0.0,
-   "end": "2026-11-22",
-   "days_left": 0.0,
-   "tradeable": false
-  },
   {
    "strategy": "vols",
    "slug": "will-solana-reach-180-in-november-2026",
@@ -29,7 +14,22 @@
    "v24": 2000,
    "z": 0.0,
    "end": "2026-12-01",
-   "days_left": 8.2,
+   "days_left": 8.1,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "will-bitcoin-reach-97pt5k-in-november-2026",
+   "question": "Will Bitcoin reach $97,500 in November?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 47346 против среднего 11273",
+   "liq": 113467,
+   "v24": 47346,
+   "z": 0.0,
+   "end": "2026-12-01",
+   "days_left": 8.1,
    "tradeable": false
   }
  ]
