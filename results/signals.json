@@ -1,7 +1,37 @@
 {
- "updated": "2026-11-24T19:15:08Z",
+ "updated": "2026-11-24T20:16:00Z",
  "scanned": 200,
  "signals": [
+  {
+   "strategy": "vols",
+   "slug": "btc-updown-15m-1795550400",
+   "question": "Bitcoin Up or Down - November 24, 3:00PM-3:15PM ET",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 5026 против среднего 718",
+   "liq": 258690,
+   "v24": 5026,
+   "z": 0.0,
+   "end": "2026-11-24",
+   "days_left": 0.0,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "eth-updown-15m-1795550400",
+   "question": "Ethereum Up or Down - November 24, 3:00PM-3:15PM ET",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 1602 против среднего 229",
+   "liq": 168302,
+   "v24": 1602,
+   "z": 0.0,
+   "end": "2026-11-24",
+   "days_left": 0.0,
+   "tradeable": false
+  },
   {
    "strategy": "vols",
    "slug": "will-bitcoin-reach-200000-by-december-31-2026-752-232-389",
@@ -10,26 +40,11 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 17927 против среднего 2840",
-   "liq": 162911,
+   "liq": 165756,
    "v24": 17927,
    "z": 0.0,
    "end": "2027-01-01",
    "days_left": 37.2,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-reach-87pt5k-in-november-2026",
-   "question": "Will Bitcoin reach $87,500 in November?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 55648 против среднего 15763",
-   "liq": 120934,
-   "v24": 55648,
-   "z": 0.0,
-   "end": "2026-12-01",
-   "days_left": 6.2,
    "tradeable": false
   }
  ]
