@@ -1,7 +1,22 @@
 {
- "updated": "2026-11-27T07:29:29Z",
+ "updated": "2026-11-27T08:46:04Z",
  "scanned": 200,
  "signals": [
+  {
+   "strategy": "vols",
+   "slug": "btc-updown-15m-1795768200",
+   "question": "Bitcoin Up or Down - November 27, 3:30AM-3:45AM ET",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 5893 против среднего 842",
+   "liq": 259593,
+   "v24": 5893,
+   "z": 0.0,
+   "end": "2026-11-27",
+   "days_left": 0.0,
+   "tradeable": false
+  },
   {
    "strategy": "vols",
    "slug": "will-bitcoin-reach-500000-by-december-31-2026-864",
@@ -10,26 +25,26 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 100281 против среднего 14682",
-   "liq": 246478,
+   "liq": 245957,
    "v24": 100281,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 34.7,
+   "days_left": 34.6,
    "tradeable": false
   },
   {
    "strategy": "vols",
-   "slug": "will-ethereum-reach-3100-in-november-2026",
-   "question": "Will Ethereum reach $3,100 in November?",
+   "slug": "bitcoin-above-50k-on-november-27-2026",
+   "question": "Will the price of Bitcoin be above $50,000 on November 27?",
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 39263 против среднего 10801",
-   "liq": 128858,
-   "v24": 39263,
+   "note": "объём 24ч 41666 против среднего 13016",
+   "liq": 142420,
+   "v24": 41666,
    "z": 0.0,
-   "end": "2026-12-01",
-   "days_left": 3.7,
+   "end": "2026-11-27",
+   "days_left": 0.0,
    "tradeable": false
   }
  ]
